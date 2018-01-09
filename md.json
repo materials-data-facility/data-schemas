@@ -1,0 +1,8 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MDF MD (molecular dynamics) Block",
+  "description": "Schema for MDF MD block. Note: Composition, code used, and elements are elsewhere in the schema",
+  "type": "object",
+  "properties":{
+  }
+}
