@@ -1,0 +1,62 @@
+{
+"title": "MDF Block Schema",
+"type": "object",
+"description": "Administrative metadata.",
+"properties": {
+    "source_name": {
+        "type": "string",
+        "description": "A unique program-friendly name for the dataset."
+    },
+    "mdf_id": {
+        "type": "string",
+        "description": "The BSON ID of the entry."
+    },
+    "scroll_id": {
+        "type": "integer",
+        "description": "A number to enable aggregating (via simulated scrolling) in Forge."
+    },
+    "parent_id": {
+        "type": "string",
+        "description": "The BSON ID of the entry's parent."
+    },
+    "acl": {
+        "type": "array",
+        "description": "The IDs of users or groups allowed to view this entry (or [\"public\"]).",
+        "items": {
+            "type": "string",
+            "description": "A single Globus User or Globus Group UUID."
+        }
+    },
+    "landing_page": {
+        "type": "string",
+        "format": "uri",
+        "description": "The human-friendly website for the data."
+    },
+    "ingest_date": {
+        "type": "string",
+        "format": "date-time",
+        "description": "The RFC 3339 date of ingest."
+    },
+    "resource_type": {
+        "type": "string",
+        "description": "The type of entry.",
+        "oneOf": [
+            {"pattern": "^dataset$"},
+            {"pattern": "^record$"},
+            {"pattern": "^collection$"}
+        ]
+    },
+    "version": {
+        "type": "integer",
+        "description": "The version number for the dataset."
+    }
+},
+"additionalProperties": false,
+"required": [
+    "source_name",
+    "mdf_id",
+    "acl",
+    "landing_page",
+    "ingest_date"
+]
+}
