@@ -16,10 +16,6 @@
         "type": "number",
         "description": "Volume of the unit cell."
     },
-    "cif": {
-        "type": "string",
-        "description": "Path to a cif file which specifies this crystal structure."
-    },
 	"cross_reference": {
         "type": "object",
 		"description": "Cross-references of this crystal structure in other databases.",
