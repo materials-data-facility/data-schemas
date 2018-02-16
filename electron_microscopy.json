@@ -3,13 +3,29 @@
     "title": "MDF Electron Microscopy schema",
     "description": "Schema to describe electron microscopy data.",
     "properties": {
-      "acquisition_mode":{"type":"string"}, 
-      "beam_current":{"type":"number"},
-      "beam_energy": {"type":"number"},
-      "detector": {"type":"string"},
-      "magnification":{"type":"number"},
-      "microscope":{"type":"string"},
-      "exposure":{"type":"number"},
-      "collection_angle":{"type":"number"}
+        "acquisition_mode":{
+            "type":"string"
+        }, 
+        "beam_current":{
+            "type":"number"
+        },
+        "beam_energy":{
+            "type":"number"
+        },
+        "detector":{
+            "type":"string"
+        },
+        "magnification":{
+            "type":"number"
+        },
+        "microscope":{
+            "type":"string"
+        },
+        "exposure":{
+            "type":"number"
+        },
+        "collection_angle":{
+            "type":"number"
+        }
     }
 }
