@@ -1,0 +1,22 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MDF image schema",
+    "description": "Schema to describe general images.",
+    "properties": {
+        "width":{
+            "type":"integer"
+        }, 
+        "height":{
+            "type":"integer"
+        },
+        "bits":{
+            "type":"integer"
+        },
+        "scale":{
+            "type":"number"
+        },
+        "pixel_format":{
+            "type":"string"
+        }
+    }
+}
