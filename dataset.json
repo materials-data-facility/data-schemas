@@ -602,33 +602,32 @@
         "type": "object",
         "description": "BDBags containing the dataset files.",
         "properties": {
-            "all": {
+            "current": {
                 "type": "string",
                 "description": "The bag of all dataset files."
-            },
-            "indexed": {
-                "type": "string",
-                "description": "The bag of indexed dataset files."
             },
             "deprecated": {
                 "type": "array",
                 "description": "Bags containing old versions of the dataset.",
                 "items": {
                     "properties": {
-                        "all": {
+                        "bag": {
                             "type": "string",
                             "description": "The bag of all dataset files."
                         },
-                        "indexed": {
-                            "type": "string",
-                            "description": "The bag of indexed dataset files."
+                        "version": {
+                            "type": "number",
+                            "description": "The version number for this bag."
                         }
                     },
                     "additionalProperties": false
                 }
             }
         },
-        "additionalProperties": false
+        "additionalProperties": false,
+        "required": [
+            "current"
+        ]
     },
     "publications": {
         "type": "array",
