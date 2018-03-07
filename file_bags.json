@@ -1,0 +1,39 @@
+{
+"$schema": "http://json-schema.org/draft-04/schema#",
+"title": "dc",
+"description": "Schema for DataCite block in MDF.",
+"type": "object",
+"properties": {
+    "file_bags": {
+        "type": "object",
+        "description": "BDBags containing the dataset files.",
+        "properties": {
+            "current": {
+                "type": "string",
+                "description": "The bag of all dataset files."
+            },
+            "deprecated": {
+                "type": "array",
+                "description": "Bags containing old versions of the dataset.",
+                "items": {
+                    "properties": {
+                        "bag": {
+                            "type": "string",
+                            "description": "The bag of all dataset files."
+                        },
+                        "version": {
+                            "type": "number",
+                            "description": "The version number for this bag."
+                        }
+                    },
+                    "additionalProperties": false
+                }
+            }
+        },
+        "additionalProperties": false,
+        "required": [
+            "current"
+        ]
+    }
+}
+}

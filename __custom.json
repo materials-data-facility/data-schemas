@@ -1,0 +1,15 @@
+{
+"$schema": "http://json-schema.org/draft-04/schema#",
+"title": "source_name block",
+"type": "object",
+"description": "Schema for user-defined source_name block.",
+"properties": {
+    "__custom": {
+        "type": "object",
+        "description": "User-defined source_name block",
+        "properties": {
+        },
+        "additionalProperties": true
+    }
+}
+}

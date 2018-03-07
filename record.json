@@ -4,64 +4,38 @@
 "type": "object",
 "description": "Schema for record entry in MDF.",
 "properties": {
+    "mdf": {
+        "$ref": "mdf.json#/properties/mdf"
+    },
     "files": {
-        "type": "array",
-        "description": "Data files and their metadata.",
-        "items": {
-            "type": "object",
-            "description": "Data file metadata.",
-            "properties": {
-                "globus": {
-                    "type": "string",
-                    "description": "The Globus Endpoint ID and path to the data."
-                },
-                "url": {
-                    "type": "string",
-                    "format": "uri",
-                    "description": "The URL to the data."
-                },
-                "data_type": {
-                    "type": "string",
-                    "description": "The type of data in this file."
-                },
-                "mime_type": {
-                    "type": "string",
-                    "description": "The MIME type of the file."
-                },
-                "length": {
-                    "type": "integer",
-                    "description": "The size of the file in bytes."
-                },
-                "filename": {
-                    "type": "string",
-                    "description": "The file's name."
-                },
-                "md5": {
-                    "type": "string",
-                    "description": "The MD5 has of the file."
-                },
-                "sha1": {
-                    "type": "string",
-                    "description": "The SHA1 hash of the file."
-                },
-                "sha256": {
-                    "type": "string",
-                    "description": "The SHA256 hash of the file."
-                },
-                "sha512": {
-                    "type": "string",
-                    "description": "The SHA512 hash of the file."
-                }
-            },
-            "additionalProperties": false,
-            "required": [
-                "data_type",
-                "filename"
-            ]
-        }
+        "$ref": "files.json#/properties/files"
+    },
+    "material": {
+        "$ref": "material.json#/properties/material"
+    },
+    "calphad": {
+        "$ref": "calphad.json#/properties/calphad"
+    },
+    "crystal_structure": {
+        "$ref": "crystal_structure.json#/properties/crystal_structure"
+    },
+    "dft": {
+        "$ref": "dft.json#/properties/dft"
+    },
+    "electron_microscopy": {
+        "$ref": "electron_microscopy.json#/properties/electron_microscopy"
+    },
+    "image": {
+        "$ref": "image.json#/properties/image"
+    },
+    "md": {
+        "$ref": "md.json#/properties/md"
+    },
+    "__custom":
+        "$ref": "__custom.json#/properties/__custom"
     }
 },
-"additionalProperties": true,
+"additionalProperties": false,
 "required": [
     "mdf",
     "files",

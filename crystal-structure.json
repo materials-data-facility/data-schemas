@@ -4,40 +4,46 @@
 "description": "Schema to describe a crystal structure.",
 "type": "object",
 "properties": {
-    "space_group_number": {
-        "type": "integer",
-        "description": "International Union of Crystallography space group number."
-    },
-    "number_of_atoms": {
-        "type": "integer",
-        "description": "Number of atoms in the unit cell."
-    },
-    "volume": {
-        "type": "number",
-        "description": "Volume of the unit cell."
-    },
-	"cross_reference": {
+    "crystal_structure": {
         "type": "object",
-		"description": "Cross-references of this crystal structure in other databases.",
-        "additionalProperties": false,
+        "description": "crystal_structure block",
         "properties": {
-            "icsd": {
+            "space_group_number": {
                 "type": "integer",
-                "description": "Inorganic Crystal Structure Database (ICSD) collection code."
+                "description": "International Union of Crystallography space group number."
             },
-            "cod": {
+            "number_of_atoms": {
                 "type": "integer",
-                "description": "Crystallography Open Database (COD) identification code."
+                "description": "Number of atoms in the unit cell."
             },
-            "amcsd": {
-                "type": "integer",
-                "description": "American Mineralogist Crystal Structure Database (AMCSD) identification code."
+            "volume": {
+                "type": "number",
+                "description": "Volume of the unit cell."
+            },
+            "cross_reference": {
+                "type": "object",
+                "description": "Cross-references of this crystal structure in other databases.",
+                "additionalProperties": false,
+                "properties": {
+                    "icsd": {
+                        "type": "integer",
+                        "description": "Inorganic Crystal Structure Database (ICSD) collection code."
+                    },
+                    "cod": {
+                        "type": "integer",
+                        "description": "Crystallography Open Database (COD) identification code."
+                    },
+                    "amcsd": {
+                        "type": "integer",
+                        "description": "American Mineralogist Crystal Structure Database (AMCSD) identification code."
+                    }
+                }
             }
-        }
-	}
-},
-"additionalProperties": false,
-"required": [
-    "space_group_number",
-]
+        },
+        "additionalProperties": false,
+        "required": [
+            "space_group_number"
+        ]
+    }
+}
 }
