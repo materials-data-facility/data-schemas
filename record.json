@@ -31,7 +31,7 @@
     "md": {
         "$ref": "md.json#/properties/md"
     },
-    "__custom":
+    "__custom": {
         "$ref": "__custom.json#/properties/__custom"
     }
 },
