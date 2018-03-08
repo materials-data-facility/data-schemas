@@ -1,0 +1,151 @@
+{
+"$schema": "http://json-schema.org/draft-04/schema#",
+"title": "MOC Submission",
+"description": "Schema for a submission to MDF Connect.",
+"type": "object",
+"properties": {
+    "dc": {
+        "$ref": "dc.json#/properties/dc"
+    },
+    "mdf": {
+        "type": "object",
+        "description": "Administrative metadata",
+        "properties": {
+            "acl": {
+                "type": "array",
+                "description": "The UUIDs of users or groups allowed to view this dataset, or the special (and default) value 'public'.",
+                "items": {
+                    "type": "string",
+                    "description": "One Globus UUID."
+                }
+            },
+            "source_name": {
+                "type": "string",
+                "description": "A unique program-friendly name for this dataset (will be generated from the title if not specified)."
+            }
+        },
+        "additionalProperties": false
+    },
+    "publications": {
+        "type": "array",
+        "description": "A list of publication DOIs associated with this dataset",
+        "items": {
+            "type": "string",
+            "description": "One DOI."
+        },
+        "minItems": 1
+    },
+    "mrr": {
+        "$ref": "mrr.json#/properties/mrr"
+    },
+    "__custom": {
+        "$ref": "__custom.json#/properties/__custom"
+    },
+    "data": {
+        "type": "array",
+        "description": "The location(s) of the data, including protocol.",
+        "items": {
+            "type": "string",
+            "description": "One data location, with protocol (e.g. globus://ep_id/path/data.txt"
+        }
+    },
+    "index": {
+        "type": "object",
+        "description": "Special indexing instructions.",
+        "properties": {
+            "json": {
+                "type": "object",
+                "description": "JSON parsing parameters.",
+                "properties": {
+                    "mapping": {
+                        "type": "object",
+                        "description": "The mapping of mdf.fields: data.fields"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "mapping"
+                ]
+            },
+            "csv": {
+                "type": "object",
+                "description": "CSV parsing parameters.",
+                "properties": {
+                    "mapping": {
+                        "type": "object",
+                        "description": "The mapping of mdf.fields: data.fields"
+                    },
+                    "delimiter": {
+                        "type": "string",
+                        "description": "The delimiter for column separation. Default comma."
+                    },
+                    "na_values": {
+                        "type": "array",
+                        "description": "Values to treat as None/null. Default blank and space.",
+                        "items": {
+                            "type": "string",
+                            "description": "One None/null value."
+                        },
+                        "minItems": 1
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "mapping"
+                ]
+            },
+            "yaml": {
+                "type": "object",
+                "description": "YAML parsing parameters.",
+                "properties": {
+                    "mapping": {
+                        "type": "object",
+                        "description": "The mapping of mdf.fields: data.fields"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "mapping"
+                ]
+            },
+            "excel": {
+                "type": "object",
+                "description": "MS Excel file parsing parameters.",
+                "properties": {
+                    "mapping": {
+                        "type": "object",
+                        "description": "The mapping of mdf.fields: data.fields"
+                    },
+                    "na_values": {
+                        "type": "array",
+                        "description": "Values to treat as None/null.",
+                        "items": {
+                            "type": "string",
+                            "description": "One None/null value."
+                        },
+                        "minItems": 1
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "mapping"
+                ]
+            }
+        },
+        "additionalProperties": false
+    },
+    "services": {
+        "type": "array",
+        "description": "Services to push data to.",
+        "items": {
+            "type": "string",
+            "enum": ["globus_publish", "citrine"]
+        }
+    }
+},
+"additionalProperties": false,
+"required": [
+    "dc",
+    "data"
+]
+}
