@@ -21,6 +21,9 @@
             },
             "pixel_format":{
                 "type":"string"
+            },
+            "format": {
+                "type": "string"
             }
         },
         "additionalProperties": false
