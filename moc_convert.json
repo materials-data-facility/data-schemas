@@ -135,12 +135,36 @@
         "additionalProperties": false
     },
     "services": {
-        "type": "array",
+        "type": "object",
         "description": "Services to push data to.",
-        "items": {
-            "type": "string",
-            "enum": ["globus_publish", "citrine"]
-        }
+        "properties": {
+            "globus_publish": {
+                "type": "object",
+                "description": "Configuration for Globus Publish ingestion.",
+                "properties": {
+                    "collection_name": {
+                        "type": "string",
+                        "description": "The name of the collection."
+                    },
+                    "collection_id": {
+                        "type": "integer",
+                        "description": "The ID number of the collection."
+                    }
+                },
+                "additionalProperties": false
+            },
+            "citrine": {
+                "type": "object",
+                "description": "Submission to Citrine Informatics.",
+                "properties": {},
+                "additionalProperties": false
+            }
+        },
+        "additionalProperties": false
+    },
+    "test": {
+        "type": "boolean",
+        "description": "When true, will ingest into the test index and collection."
     }
 },
 "additionalProperties": false,
