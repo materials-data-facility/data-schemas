@@ -139,25 +139,42 @@
         "description": "Services to push data to.",
         "properties": {
             "globus_publish": {
-                "type": "object",
-                "description": "Configuration for Globus Publish ingestion.",
-                "properties": {
-                    "collection_name": {
-                        "type": "string",
-                        "description": "The name of the collection."
+                "oneOf": [{
+                    "type": "object",
+                    "description": "Configuration for Globus Publish ingestion.",
+                    "properties": {
+                        "collection_name": {
+                            "type": "string",
+                            "description": "The name of the collection."
+                        },
+                        "collection_id": {
+                            "type": "integer",
+                            "description": "The ID number of the collection."
+                        }
                     },
-                    "collection_id": {
-                        "type": "integer",
-                        "description": "The ID number of the collection."
-                    }
+                    "additionalProperties": false
                 },
-                "additionalProperties": false
+                {
+                    "type": "boolean",
+                    "description": "When true, will use default parameters to ingest to Globus Publish."
+                }]
             },
             "citrine": {
-                "type": "object",
-                "description": "Submission to Citrine Informatics.",
-                "properties": {},
-                "additionalProperties": false
+                "oneOf": [{
+                    "type": "object",
+                    "description": "Submission to Citrine Informatics.",
+                    "properties": {
+                        "public": {
+                            "type": "boolean",
+                            "description": "When true, will make data public. Will otherwise be inaccessible."
+                        }
+                    },
+                    "additionalProperties": false
+                },
+                {
+                    "type": "boolean",
+                    "description": "When true, will use default parameters to ingest to Citrine."
+                }]
             }
         },
         "additionalProperties": false
