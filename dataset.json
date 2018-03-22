@@ -10,9 +10,6 @@
     "mdf": {
         "$ref": "mdf.json#/properties/mdf"
     },
-    "file_bags": {
-        "$ref": "file_bags.json#/properties/file_bags"
-    },
     "publications": {
         "$ref": "publications.json#/properties/publications"
     },
@@ -26,7 +23,6 @@
 "additionalProperties": false,
 "required": [
     "dc",
-    "mdf",
-    "file_bags"
+    "mdf"
 ]
 }
