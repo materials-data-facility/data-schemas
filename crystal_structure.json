@@ -14,7 +14,7 @@
             },
             "number_of_atoms": {
                 "type": "integer",
-                "description": "Number of atoms in the unit cell."
+                "description": "Number of atoms in the unit cell. Units: angstrom^3"
             },
             "volume": {
                 "type": "number",
