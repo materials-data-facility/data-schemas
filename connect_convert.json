@@ -175,6 +175,10 @@
                     "type": "boolean",
                     "description": "When true, will use default parameters to ingest to Citrine."
                 }]
+            },
+            "mrr": {
+                "type": "boolean",
+                "description": "When true, will create entry in Materials Resource Registry."
             }
         },
         "additionalProperties": false
