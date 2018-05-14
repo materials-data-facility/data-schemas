@@ -64,6 +64,7 @@
         "additionalProperties": false,
         "required": [
             "source_name",
+            "source_id",
             "mdf_id",
             "acl",
             "ingest_date"
