@@ -9,7 +9,11 @@
         "properties": {
             "source_name": {
                 "type": "string",
-                "description": "A unique program-friendly name for the dataset."
+                "description": "A unique (to this dataset) program-friendly name for the dataset."
+            },
+            "source_id": {
+                "type": "string",
+                "description": "A unique (globally) identifier for the dataset."
             },
             "mdf_id": {
                 "type": "string",
@@ -39,15 +43,22 @@
             "resource_type": {
                 "type": "string",
                 "description": "The type of entry.",
-                "oneOf": [
-                    {"pattern": "^dataset$"},
-                    {"pattern": "^record$"},
-                    {"pattern": "^collection$"}
+                "enum": [
+                    "dataset",
+                    "record"
                 ]
             },
             "version": {
                 "type": "integer",
                 "description": "The version number for the dataset."
+            },
+            "repositories": {
+                "type": "array",
+                "description": "The organizations responsible for dataset creation.",
+                "items": {
+                    "type": "string",
+                    "description": "One repository."
+                }
             }
         },
         "additionalProperties": false,
