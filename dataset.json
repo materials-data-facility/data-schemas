@@ -40,14 +40,12 @@
                 "description": "Information on the dataset as registered in the MRR."
             }
         },
-        "additionalProperties": false,
-        "required": [
-        ]
+        "additionalProperties": false
     },
     "data": {
         "type": "object",
         "description": "The location of the full dataset.",
-        "properties":
+        "properties": {
             "endpoint_path": {
                 "type": "string",
                 "description": "The Globus Endpoint and path to the dataset, as a URI."
