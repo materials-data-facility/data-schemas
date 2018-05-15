@@ -38,12 +38,21 @@
         },
         "additionalProperties": false,
         "required": [
-            "mdf_search"
         ]
     },
     "data": {
-        "type": "string",
-        "description": "The Globus Endpoint ID and path to the dataset."
+        "type": "object",
+        "description": "The location of the full dataset.",
+        "properties":
+            "endpoint_path": {
+                "type": "string",
+                "description": "The Globus Endpoint and path to the dataset, as a URI."
+            },
+            "link": {
+                "type": "string",
+                "description": "A link to the dataset through the Globus Web App."
+            }
+        }
     }
 },
 "additionalProperties": false,
