@@ -22,7 +22,7 @@
             "source_name": {
                 "type": "string",
                 "description": "A unique program-friendly name for this dataset (will be generated from the title if not specified)."
-            }
+            },
             "repositories": {
                 "type": "array",
                 "description": "The organizations responsible for dataset creation.",
