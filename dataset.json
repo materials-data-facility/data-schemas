@@ -18,11 +18,50 @@
     },
     "__custom": {
         "$ref": "__custom.json#/properties/__custom"
+    },
+    "services": {
+        "type": "object",
+        "description": "Information on services this dataset was ingested to.",
+        "properties": {
+            "mdf_search": {
+                "type": "string",
+                "description": "Information on the dataset in MDF Search"
+            },
+            "globus_publish": {
+                "type": "string",
+                "description": "The link to the Globus Publish dataset."
+            },
+            "citrine": {
+                "type": "string",
+                "description": "The link to the Citrine dataset."
+            },
+            "mrr": {
+                "type": "string",
+                "description": "Information on the dataset as registered in the MRR."
+            }
+        },
+        "additionalProperties": false
+    },
+    "data": {
+        "type": "object",
+        "description": "The location of the full dataset.",
+        "properties": {
+            "endpoint_path": {
+                "type": "string",
+                "description": "The Globus Endpoint and path to the dataset, as a URI."
+            },
+            "link": {
+                "type": "string",
+                "description": "A link to the dataset through the Globus Web App."
+            }
+        }
     }
 },
 "additionalProperties": false,
 "required": [
     "dc",
-    "mdf"
+    "mdf",
+    "services",
+    "data"
 ]
 }
