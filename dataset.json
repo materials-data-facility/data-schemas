@@ -10,9 +10,6 @@
     "mdf": {
         "$ref": "mdf.json#/properties/mdf"
     },
-    "publications": {
-        "$ref": "publications.json#/properties/publications"
-    },
     "mrr": {
         "$ref": "mrr.json#/properties/mrr"
     },
