@@ -34,15 +34,6 @@
         },
         "additionalProperties": false
     },
-    "publications": {
-        "type": "array",
-        "description": "A list of publication DOIs associated with this dataset",
-        "items": {
-            "type": "string",
-            "description": "One DOI."
-        },
-        "minItems": 1
-    },
     "mrr": {
         "$ref": "mrr.json#/properties/mrr"
     },
