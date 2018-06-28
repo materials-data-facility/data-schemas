@@ -107,6 +107,20 @@
                     "mapping"
                 ]
             },
+            "xml": {
+                "type": "object",
+                "description": "XML parsing parameters.",
+                "properties": {
+                    "mapping": {
+                        "type": "object",
+                        "description": "The mapping of mdf.fields: data.fields"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "mapping"
+                ]
+            },
             "excel": {
                 "type": "object",
                 "description": "MS Excel file parsing parameters.",
