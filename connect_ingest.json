@@ -1,0 +1,8 @@
+{
+"$schema": "http://json-schema.org/draft-04/schema#",
+"title": "MDF Connect Ingest",
+"description": "Schema for an ingest submission to MDF Connect.",
+"type": "object",
+"properties": {
+}
+}
