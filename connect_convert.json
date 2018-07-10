@@ -44,7 +44,7 @@
         "type": "array",
         "description": "The location(s) of the data, including protocol.",
         "items": {
-            "type": "string",
+            "type": "uri",
             "description": "One data location, with protocol (e.g. globus://ep_id/path/data.txt"
         }
     },
