@@ -8,26 +8,40 @@
         "type": "uri",
         "description": "The location of the feedstock file (only one is allowed per ingest)."
     },
+    "title": {
+        "type": "string",
+        "minLength": 1
+    },
     "source_name": {
-        "$ref": "convert.json#/properties/mdf/properties/source_name"
+        "$ref": "connect_convert.json#/properties/mdf/properties/source_name"
     },
     "services": {
-        "$ref": "convert.json#/properties/services"
+        "$ref": "connect_convert.json#/properties/services"
     },
     "data": {
-        "$ref": "convert.json#/properties/data",
+        "$ref": "connect_convert.json#/properties/data",
         "description": "The dataset data, required for data publication."
     },
     "service_data": {
-        "$ref": "convert.json#/properties/data",
+        "$ref": "connect_convert.json#/properties/data",
         "description": "Data specific to service integrations, such as Citrine PIFs."
     },
     "test": {
-        "$ref": "convert.json#/properties/test"
+        "$ref": "connect_convert.json#/properties/test"
     }
 },
 "additionalProperties": false,
 "required": [
     "feedstock_location"
+],
+"anyOf": [{
+        "required": [
+            "title"
+        ]
+    }, {
+        "required": [
+            "source_name"
+        ]
+    }
 ]
 }
