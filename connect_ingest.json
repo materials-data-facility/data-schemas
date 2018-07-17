@@ -5,7 +5,8 @@
 "type": "object",
 "properties": {
     "feedstock_location": {
-        "type": "uri",
+        "type": "string",
+        "format": "uri",
         "description": "The location of the feedstock file (only one is allowed per ingest)."
     },
     "title": {
