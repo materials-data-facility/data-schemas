@@ -1,0 +1,84 @@
+{
+"$schema": "http://json-schema.org/draft-04/schema#",
+"title": "MDF Connect Internal Status Entry",
+"description": "Schema for a submission status entry in MDF Connect.",
+"type": "object",
+"properties": {
+    "acl": {
+        "$ref": "mdf.json#/properties/mdf/properties/acl"
+    },
+    "active": {
+        "type": "boolean",
+        "description": "True when the submission is in progress, False otherwise."
+    },
+    "cancelled": {
+        "type": "boolean",
+        "description": "True when submission has been cancelled or is pending cancellation, False otherwise."
+    },
+    "code": {
+        "type": "string",
+        "description": "The submission's status code. Each character represents a step in the process."
+    },
+    "messages": {
+        "type": "array",
+        "description": "Detailed status message to be paired with a code character.",
+        "items": {
+            "type": "string",
+            "description": "One message."
+        }
+    },
+    "pid": {
+        "type": "number",
+        "description": "The ID of the submission-processing process."
+    },
+    "source_id": {
+        "$ref": "mdf.json#/properties/mdf/properties/source_id"
+    },
+    "submission_code": {
+        "type": "string",
+        "description": "The type of submission: 'C' for Convert or 'I' for Ingest.",
+        "enum": [
+            "C",
+            "I"
+        ]
+    },
+    "submission_time": {
+        "type": "string",
+        "description": "The time of submission."
+    },
+    "submitter": {
+        "type": "string",
+        "description": "The name of the submission submitter (and therefore owner)."
+    },
+    "test": {
+        "$ref": "connect_convert.json#/properties/test"
+    },
+    "title": {
+        "$ref": "dc.json#/properties/dc/properties/titles/items/properties/title"
+    },
+    "user_email": {
+        "type": "string",
+        "description": "The contact email for the submission owner."
+    },
+    "user_id": {
+        "type": "string",
+        "description": "The Globus UUID of the submission owner."
+    }
+},
+"additionalProperties": false,
+"required": [
+    "acl",
+    "active",
+    "cancelled",
+    "code",
+    "messages",
+    "pid",
+    "source_id",
+    "submission_code",
+    "submission_time",
+    "submitter",
+    "test",
+    "title",
+    "user_id"
+]
+}

@@ -33,7 +33,8 @@
                 "items": {
                     "type": "string",
                     "description": "A single Globus User or Globus Group UUID."
-                }
+                },
+                "minItems": 1
             },
             "ingest_date": {
                 "type": "string",
