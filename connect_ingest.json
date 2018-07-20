@@ -1,0 +1,48 @@
+{
+"$schema": "http://json-schema.org/draft-04/schema#",
+"title": "MDF Connect Ingest",
+"description": "Schema for an ingest submission to MDF Connect.",
+"type": "object",
+"properties": {
+    "feedstock_location": {
+        "type": "string",
+        "format": "uri",
+        "description": "The location of the feedstock file (only one is allowed per ingest)."
+    },
+    "title": {
+        "type": "string",
+        "minLength": 1
+    },
+    "source_name": {
+        "$ref": "connect_convert.json#/properties/mdf/properties/source_name"
+    },
+    "services": {
+        "$ref": "connect_convert.json#/properties/services"
+    },
+    "data": {
+        "$ref": "connect_convert.json#/properties/data",
+        "description": "The dataset data, required for data publication."
+    },
+    "service_data": {
+        "$ref": "connect_convert.json#/properties/data",
+        "description": "Data specific to service integrations, such as Citrine PIFs."
+    },
+    "test": {
+        "$ref": "connect_convert.json#/properties/test"
+    }
+},
+"additionalProperties": false,
+"required": [
+    "feedstock_location"
+],
+"anyOf": [{
+        "required": [
+            "title"
+        ]
+    }, {
+        "required": [
+            "source_name"
+        ]
+    }
+]
+}

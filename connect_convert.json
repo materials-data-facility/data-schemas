@@ -34,15 +34,6 @@
         },
         "additionalProperties": false
     },
-    "publications": {
-        "type": "array",
-        "description": "A list of publication DOIs associated with this dataset",
-        "items": {
-            "type": "string",
-            "description": "One DOI."
-        },
-        "minItems": 1
-    },
     "mrr": {
         "$ref": "mrr.json#/properties/mrr"
     },
@@ -54,7 +45,8 @@
         "description": "The location(s) of the data, including protocol.",
         "items": {
             "type": "string",
-            "description": "One data location, with protocol (e.g. globus://ep_id/path/data.txt"
+            "format": "uri",
+            "description": "One data location, with protocol (e.g. globus://ep_id/path/data.txt)"
         }
     },
     "index": {
@@ -105,6 +97,20 @@
             "yaml": {
                 "type": "object",
                 "description": "YAML parsing parameters.",
+                "properties": {
+                    "mapping": {
+                        "type": "object",
+                        "description": "The mapping of mdf.fields: data.fields"
+                    }
+                },
+                "additionalProperties": false,
+                "required": [
+                    "mapping"
+                ]
+            },
+            "xml": {
+                "type": "object",
+                "description": "XML parsing parameters.",
                 "properties": {
                     "mapping": {
                         "type": "object",

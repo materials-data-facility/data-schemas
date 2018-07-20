@@ -20,7 +20,10 @@
                 "type":"string"
             },
             "magnification":{
-                "type":"number"
+                "type": [
+                    "number",
+                    "string"
+                ]
             },
             "microscope":{
                 "type":"string"
