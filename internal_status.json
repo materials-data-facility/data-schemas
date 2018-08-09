@@ -27,8 +27,17 @@
         "type": "array",
         "description": "Detailed status message to be paired with a code character.",
         "items": {
-            "type": "string",
-            "description": "One message."
+            "oneOf": [{
+                "type": "string",
+                "description": "One message."
+            }, {
+                "type": "array",
+                "description": "A multi-part message (ex. A message and a link).",
+                "items": {
+                    "type": "string",
+                    "description": "One message part."
+                }
+            }]
         }
     },
     "pid": {
