@@ -15,6 +15,10 @@
         "type": "boolean",
         "description": "True when submission has been cancelled or is pending cancellation, False otherwise."
     },
+    "citrine_id": {
+        "type": "number",
+        "description": "The ID of the dataset in Citrination."
+    },
     "code": {
         "type": "string",
         "description": "The submission's status code. Each character represents a step in the process."
