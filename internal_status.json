@@ -15,6 +15,10 @@
         "type": "boolean",
         "description": "True when submission has been cancelled or is pending cancellation, False otherwise."
     },
+    "citrine_id": {
+        "type": "number",
+        "description": "The ID of the dataset in Citrination."
+    },
     "code": {
         "type": "string",
         "description": "The submission's status code. Each character represents a step in the process."
@@ -23,8 +27,17 @@
         "type": "array",
         "description": "Detailed status message to be paired with a code character.",
         "items": {
-            "type": "string",
-            "description": "One message."
+            "oneOf": [{
+                "type": "string",
+                "description": "One message."
+            }, {
+                "type": "array",
+                "description": "A multi-part message (ex. A message and a link).",
+                "items": {
+                    "type": "string",
+                    "description": "One message part."
+                }
+            }]
         }
     },
     "pid": {
