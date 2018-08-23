@@ -6,7 +6,14 @@
 "properties": {
     "__custom": {
         "type": "object",
-        "description": "User-defined source_name block",
+        "description": "User-defined block.",
+        "properties": {
+        },
+        "additionalProperties": true
+    },
+    "__custom_desc": {
+        "type": "object",
+        "description": "Descriptions of __custom fields.",
         "properties": {
         },
         "additionalProperties": true

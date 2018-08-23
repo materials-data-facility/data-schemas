@@ -40,6 +40,9 @@
     "__custom": {
         "$ref": "__custom.json#/properties/__custom"
     },
+    "__custom_desc": {
+        "$ref": "__custom.json#/properties/__custom_desc"
+    },
     "data": {
         "type": "array",
         "description": "The location(s) of the data, including protocol.",
