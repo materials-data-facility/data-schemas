@@ -9,7 +9,7 @@
             "properties": {
                 "megapixels": {
                     "description": "Millions of pixels within an image",
-                    "type": "integer"
+                    "type": "number"
                 },
                 "color_depth": {
                     "description": "Number of bits used to describe each color",
