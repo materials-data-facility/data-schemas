@@ -1,7 +1,7 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
     "title": "dc",
-    "description": "Schema for a collection of many data records.",
+    "description": "Schema for a dataset. Datasets in the MDF are collections of many data records, which correspond to data from a specific group of files.",
     "type": "object",
     "properties": {
         "dc": {
