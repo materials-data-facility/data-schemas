@@ -1,0 +1,18 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "instrument",
+    "description": "Metadata that describe what instrument collected this data",
+    "properties": {
+        "instrument": {
+            "manufacturer": {
+                "type": "string",
+                "description": "Name of the instrument manufacturer"
+            },
+            "model": {
+                "type": "string",
+                "description": "Name of the instrument used to collected this data"
+            }
+        }
+    },
+    "additionalProperties": false
+}

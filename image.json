@@ -1,32 +1,26 @@
 {
-"$schema": "http://json-schema.org/draft-04/schema#",
-"title": "MDF image schema",
-"description": "Schema to describe general images.",
-"properties": {
-    "image": {
-        "type": "object",
-        "description": "image block",
-        "properties": {
-            "width":{
-                "type":"integer"
-            }, 
-            "height":{
-                "type":"integer"
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MDF image schema",
+    "description": "Schema to describe general images.",
+    "properties": {
+        "image": {
+            "type": "object",
+            "description": "Key metadata about images",
+            "properties": {
+                "megapixels": {
+                    "description": "Millions of pixels within an image",
+                    "type": "integer"
+                },
+                "color_depth": {
+                    "description": "Number of bits used to describe each color",
+                    "type": "integer"
+                },
+                "channels": {
+                    "description": "Number of color channels or spectra",
+                    "type": "integer"
+                }
             },
-            "bits":{
-                "type":"integer"
-            },
-            "scale":{
-                "type":"number"
-            },
-            "pixel_format":{
-                "type":"string"
-            },
-            "format": {
-                "type": "string"
-            }
-        },
-        "additionalProperties": false
+            "additionalProperties": false
+        }
     }
-}
 }
