@@ -12,7 +12,7 @@
                     "type": "string",
                     "description": "Which statistical ensemble used for the simulation"
                 },
-                "number_of_atoms": {
+                "particle_count": {
                     "type": "integer",
                     "description": "Number of particles in the simulation"
                 },
