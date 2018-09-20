@@ -20,14 +20,6 @@
                     "format": "uri",
                     "description": "The URL to the data."
                 },
-                "format": {
-                    "type": "string",
-                    "description": "Format of the file. Will be specific to the kind of data (e.g., images can be `gif`s)"
-                },
-                "data_type": {
-                    "type": "string",
-                    "description": "The type of data in this file."
-                },
                 "mime_type": {
                     "type": "string",
                     "description": "The MIME type of the file."
