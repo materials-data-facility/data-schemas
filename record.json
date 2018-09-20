@@ -28,14 +28,8 @@
         "image": {
             "$ref": "image.json#/properties/image"
         },
-        "instrument": {
-            "$ref": "instrument.json#/properties/instrument"
-        },
         "md": {
             "$ref": "md.json#/properties/md"
-        },
-        "software": {
-            "$ref": "software.json#/properties/software"
         },
         "xrd": {
             "$ref": "xrd.json#/properties/xrd"
