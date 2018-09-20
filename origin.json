@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "origin",
+    "description": "Schema for the origin block. The origin defines the source of the data",
+    "properties": {
+        "name": {
+            "type": "string",
+            "description": "Name of the software or instrument used to generate this data"
+        },
+        "version": {
+            "type": "string",
+            "description": "Model of a device, version of the software, etc."
+        },
+        "creator": {
+            "type": "string",
+            "description": "Developer of a software, manufacturer of a device, etc."
+        },
+        "type": {
+            "type": "string",
+            "enum": ["computation", "experiment", "informatics", "other"],
+            "description": "Developer of a software, "
+        }
+    }
+}

@@ -13,6 +13,9 @@
         "material": {
             "$ref": "material.json#/properties/material"
         },
+        "origin": {
+            "$ref": "origin.json#/properties/origin"
+        },
         "calphad": {
             "$ref": "calphad.json#/properties/calphad"
         },
