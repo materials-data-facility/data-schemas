@@ -204,6 +204,15 @@
       },
       "additionalProperties": false
     },
+    "tags": {
+        "type": "array",
+        "description": "Tags or keywords describing the dataset.",
+        "items": {
+            "type": "string",
+            "description": "One tag or keyword."
+        },
+        "minItems": 1
+    },
     "test": {
       "type": "boolean",
       "description": "When true, will ingest into the test index and collection."
