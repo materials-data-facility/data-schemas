@@ -1,6 +1,7 @@
-import jsonschema
 import json
 import os
+
+import jsonschema
 
 
 def test_all_schemas():
