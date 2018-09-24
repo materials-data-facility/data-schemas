@@ -9,36 +9,60 @@
         "description": "NIST Materials Resource Registry metadata.",
         "properties": {
             "dataOrigin":{
-                "type": "string",
-                "description": "A category reflecting broadly how the data was produced."
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "description": "A category reflecting broadly how the data was produced."
+                }
             },
             "materialType": {
-                "type": "string",
-                "description": "The category of material studied in the data contained in this resource."
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "description": "The category of material studied in the data contained in this resource."
+                }
             },
             "structuralFeature": {
-                "type": "string",
-                "description": "The primary or prevalent characteristic of the structure of the material of interest to this resource."
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "description": "The primary or prevalent characteristic of the structure of the material of interest to this resource."
+                }
             },
             "propertiesAddressed": {
-                "type": "string",
-                "description": "A category of property that is sampled by the contained data."
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "description": "A category of property that is sampled by the contained data."
+                }
             },
             "characterizationMethod": {
-                "type": "string",
-                "description": "The experimental technique used to acquire the data within this resource."
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "description": "The experimental technique used to acquire the data within this resource."
+                }
             },
             "computationalMethod": {
-                "type": "string",
-                "description": "The computational technique used to acquire the data within this resource."
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "description": "The computational technique used to acquire the data within this resource."
+                }
             },
             "computeScale": {
-                "type": "string",
-                "description": "The physical scale that is represented by a computation."
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "description": "The physical scale that is represented by a computation."
+                }
             },
             "synthesisProcessing": {
-                "type": "string",
-                "description": "The physical processing or preparation technique applied to the material being studied."
+                "type": "array",
+                "items": {
+                    "type": "string",
+                    "description": "The physical processing or preparation technique applied to the material being studied."
+                }
             }
         },
         "additionalProperties": false

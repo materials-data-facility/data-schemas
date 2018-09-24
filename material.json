@@ -1,28 +1,28 @@
 {
-"$schema": "http://json-schema.org/draft-04/schema#",
-"title": "MDF Materials Block",
-"description": "Schema for the materials block in MDF records.",
-"type": "object",
-"properties": {
-    "material": {
-        "type": "object",
-        "description": "material block",
-        "properties": {
-            "composition": {
-                "type": "string",
-                "description": "The composition of the material studied."
-            },
-            "elements": {
-                "type": "array",
-                "description": "The individual elements in the composition.",
-                "items": {
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MDF Materials Block",
+    "description": "Schema for the materials block in MDF records.",
+    "type": "object",
+    "properties": {
+        "material": {
+            "type": "object",
+            "description": "material block",
+            "properties": {
+                "composition": {
                     "type": "string",
-                    "description": "An element."
+                    "description": "The composition of the material studied."
                 },
-                "minItems": 1
-            }
-        },
-        "additionalProperties": false
+                "elements": {
+                    "type": "array",
+                    "description": "The individual elements in the composition.",
+                    "items": {
+                        "type": "string",
+                        "description": "An element."
+                    },
+                    "minItems": 1
+                }
+            },
+            "additionalProperties": false
+        }
     }
-}
 }
