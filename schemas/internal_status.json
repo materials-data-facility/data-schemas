@@ -78,8 +78,8 @@
         "description": "The Globus UUID of the submission owner."
     },
     "original_submission": {
-        "type": "object",
-        "description": "The original Connect submission, unaltered."
+        "type": "string",
+        "description": "The original Connect submission, as a JSON string."
     },
     "extensions": {
         "type": "array",
