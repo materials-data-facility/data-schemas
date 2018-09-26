@@ -22,8 +22,7 @@
                 },
                 "stoichiometry": {
                     "type": "string",
-                    "description": "Generic formula of the crystal (e.g., A2B)",
-                    "pattern": "^([A-Z][0-9]*)*$"
+                    "description": "Generic formula of the crystal (e.g., A2B)"
                 },
                 "cross_reference": {
                     "type": "object",
