@@ -1,0 +1,226 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "MOC Submission",
+  "description": "Schema for a submission to MDF Connect.",
+  "type": "object",
+  "properties": {
+    "dc": {
+      "$ref": "dc.json#/properties/dc"
+    },
+    "mdf": {
+      "type": "object",
+      "description": "Administrative metadata",
+      "properties": {
+        "acl": {
+          "type": "array",
+          "description": "The UUIDs of Users or Groups allowed to view this dataset, or the special (and default) value 'public'.",
+          "items": {
+            "type": "string",
+            "description": "UUID for Globus User or Group."
+          }
+        },
+        "source_name": {
+          "type": "string",
+          "description": "A unique program-friendly name for this dataset (will be generated from the title if not specified)."
+        },
+        "repositories": {
+          "type": "array",
+          "description": "The organizations responsible for dataset creation.",
+          "items": {
+            "type": "string",
+            "description": "Name of a repository (e.g., NREL)."
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "mrr": {
+      "$ref": "mrr.json#/properties/mrr"
+    },
+    "__custom": {
+      "$ref": "__custom.json#/properties/__custom"
+    },
+    "__custom_desc": {
+        "$ref": "__custom.json#/properties/__custom_desc"
+    },
+    "data": {
+      "type": "array",
+      "description": "The location(s) of the data, including protocol.",
+      "items": {
+        "type": "string",
+        "format": "uri",
+        "description": "One data location, with protocol (e.g. globus://ep_id/path/data.txt)"
+      }
+    },
+    "index": {
+      "type": "object",
+      "description": "Special instructions used by MDF Connect to index the data.",
+      "properties": {
+        "json": {
+          "type": "object",
+          "description": "JSON parsing parameters.",
+          "properties": {
+            "mapping": {
+              "type": "object",
+              "description": "The mapping of mdf.fields: data.fields"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "mapping"
+          ]
+        },
+        "csv": {
+          "type": "object",
+          "description": "CSV parsing parameters.",
+          "properties": {
+            "mapping": {
+              "type": "object",
+              "description": "The mapping of mdf.fields: data.fields"
+            },
+            "delimiter": {
+              "type": "string",
+              "description": "The delimiter for column separation. Default comma."
+            },
+            "na_values": {
+              "type": "array",
+              "description": "Values to treat as None/null. Default blank and space.",
+              "items": {
+                "type": "string",
+                "description": "One None/null value."
+              },
+              "minItems": 1
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "mapping"
+          ]
+        },
+        "yaml": {
+          "type": "object",
+          "description": "YAML parsing parameters.",
+          "properties": {
+            "mapping": {
+              "type": "object",
+              "description": "The mapping of mdf.fields: data.fields"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "mapping"
+          ]
+        },
+        "xml": {
+          "type": "object",
+          "description": "XML parsing parameters.",
+          "properties": {
+            "mapping": {
+              "type": "object",
+              "description": "The mapping of mdf.fields: data.fields"
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "mapping"
+          ]
+        },
+        "excel": {
+          "type": "object",
+          "description": "MS Excel file parsing parameters.",
+          "properties": {
+            "mapping": {
+              "type": "object",
+              "description": "The mapping of mdf.fields: data.fields"
+            },
+            "na_values": {
+              "type": "array",
+              "description": "Values to treat as None/null.",
+              "items": {
+                "type": "string",
+                "description": "One None/null value."
+              },
+              "minItems": 1
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "mapping"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "services": {
+      "type": "object",
+      "description": "Options for sending data to integrated services.",
+      "properties": {
+        "globus_publish": {
+          "oneOf": [
+            {
+              "type": "object",
+              "description": "Configuration for Globus Publish ingestion.",
+              "properties": {
+                "collection_name": {
+                  "type": "string",
+                  "description": "The name of the collection."
+                },
+                "collection_id": {
+                  "type": "integer",
+                  "description": "The ID number of the collection."
+                }
+              },
+              "additionalProperties": false
+            },
+            {
+              "type": "boolean",
+              "description": "When true, will use default parameters to ingest to Globus Publish."
+            }
+          ]
+        },
+        "citrine": {
+          "oneOf": [
+            {
+              "type": "object",
+              "description": "Submission to Citrine Informatics.",
+              "properties": {
+                "public": {
+                  "type": "boolean",
+                  "description": "When true, will make data public. Will otherwise be inaccessible."
+                }
+              },
+              "additionalProperties": false
+            },
+            {
+              "type": "boolean",
+              "description": "When true, will use default parameters to ingest to Citrine."
+            }
+          ]
+        },
+        "mrr": {
+          "type": "boolean",
+          "description": "When true, will create entry in Materials Resource Registry."
+        }
+      },
+      "additionalProperties": false
+    },
+    "tags": {
+        "type": "array",
+        "description": "Tags or keywords describing the dataset.",
+        "items": {
+            "type": "string",
+            "description": "One tag or keyword."
+        },
+        "minItems": 1
+    },
+    "test": {
+      "type": "boolean",
+      "description": "When true, will ingest into the test index and collection."
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "dc",
+    "data"
+  ]
+}

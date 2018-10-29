@@ -1,0 +1,40 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MDF MD (molecular dynamics) Block",
+    "description": "Schema for MDF Molecular Dynamics block. Note: Composition, code used, and elements are elsewhere in the schema",
+    "type": "object",
+    "properties": {
+        "md": {
+            "type": "object",
+            "description": "md block",
+            "properties": {
+                "ensemble": {
+                    "type": "string",
+                    "description": "Which statistical ensemble used for the simulation"
+                },
+                "particle_count": {
+                    "type": "integer",
+                    "description": "Number of particles in the simulation"
+                },
+                "timesteps": {
+                    "type": "integer",
+                    "descriptions": "Number of timesteps in the simulation"
+                },
+                "simulation_time": {
+                    "type": "object",
+                    "description": "Real length of the simulation",
+                    "properties": {
+                        "value": { "type": "number" },
+                        "units": { "type": "string"}
+                    },
+                    "additionalProperties": false
+                },
+                "potential": {
+                    "type": "string",
+                    "description": "Method used to compute the energy and forces"
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}

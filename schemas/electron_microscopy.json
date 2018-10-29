@@ -1,0 +1,34 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MDF Electron Microscopy schema",
+    "description": "Schema to describe electron microscopy data.",
+    "properties": {
+        "electron_microscopy": {
+            "type": "object",
+            "description": "Electron microscopy data.",
+            "properties": {
+                "acquisition_mode": {
+                    "description": "Type of image (e.g., secondary electron)",
+                    "type": "string"
+                },
+                "beam_energy": {
+                    "description": "Beam energy. Units: keV",
+                    "type": "number"
+                },
+                "detector": {
+                    "description": "Type of detector.",
+                    "type": "string"
+                },
+                "magnification": {
+                    "description": "Magnitude of magnification.",
+                    "type": "number"
+                },
+                "collection_angle": {
+                    "description": "Collection angle. Unit: degrees",
+                    "type": "number"
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}

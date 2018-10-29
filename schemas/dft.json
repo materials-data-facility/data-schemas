@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MDF DFT Block",
+    "description": "Schema for Density Functional Theory data",
+    "type": "object",
+    "properties": {
+        "dft": {
+            "type": "object",
+            "description": "DFT block",
+            "properties": {
+                "converged": {
+                    "type": "boolean",
+                    "description": "Whether or not the simulation achieved electronic convergence."
+                },
+                "exchange_correlation_functional": {
+                    "type": "string",
+                    "description": "The exchange correlation functional used in this calculation."
+                },
+                "cutoff_energy": {
+                    "type": "number",
+                    "description": "The cutoff energy used in the calculation."
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}

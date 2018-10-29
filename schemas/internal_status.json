@@ -76,6 +76,18 @@
     "user_id": {
         "type": "string",
         "description": "The Globus UUID of the submission owner."
+    },
+    "original_submission": {
+        "type": "string",
+        "description": "The original Connect submission, as a JSON string."
+    },
+    "extensions": {
+        "type": "array",
+        "description": "The file extensions found in the data (for re-processing purposes).",
+        "items": {
+            "type": "string",
+            "description": "One extension."
+        }
     }
 },
 "additionalProperties": false,

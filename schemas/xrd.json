@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "X-Ray Diffraction (XRD) Block",
+    "description": "Schema for X-ray Diffraction data",
+    "type": "object",
+    "properties": {
+        "xrd": {
+            "type": "object",
+            "properties": {
+                "wavelength": {
+                    "type": "number",
+                    "description": "Wavelength of diffracted radiation. Units: Angstrom"
+                },
+                "xray_source": {
+                    "type": "string",
+                    "description": "Method used to generate radiation. E.g., Copper K-alpha, synchrotron"
+                },
+                "sample_condition": {
+                    "type": "string",
+                    "description": "Whether the sample was powder, single crystal, etc."
+                },
+                "detector_dimensionality": {
+                    "type": "integer",
+                    "description": "Whether the pattern is one or two dimensional"
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}

@@ -1,0 +1,13 @@
+language: python
+python:
+- '3.6'
+install:
+- pip install -r tests/test_requirements.txt
+script:
+- flake8 . && travis_wait 50 py.test
+notifications:
+    email:
+        recipients:
+        - jgaff@uchicago.edu
+        on_success: never
+        on_failure: change

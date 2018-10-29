@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MDF CALPHAD schema",
+    "description": "Schema to describe CALPHAD data. Other fields to consider: 'composition range', 'list of phases', 'temperature range', 'transition points', 'magnetic field' ,'pressure'",
+    "type": "object",
+    "properties": {
+        "calphad": {
+            "type": "object",
+            "description": "calphad block",
+            "properties": {
+                "phases": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}
