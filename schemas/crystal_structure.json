@@ -13,7 +13,7 @@
                     "description": "International Union of Crystallography space group number."
                 },
                 "number_of_atoms": {
-                    "type": "integer",
+                    "type": "number",
                     "description": "Number of atoms in the unit cell."
                 },
                 "volume": {
