@@ -88,6 +88,10 @@
             "type": "string",
             "description": "One extension."
         }
+    },
+    "converted": {
+        "type": "boolean",
+        "description": "Whether or not the submission finished converting. Used as a sentinel for checking if a conversion succeeded or unexpectedly died."
     }
 },
 "additionalProperties": false,
@@ -96,6 +100,7 @@
     "active",
     "cancelled",
     "code",
+    "converted",
     "messages",
     "pid",
     "source_id",
