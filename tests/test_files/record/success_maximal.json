@@ -47,7 +47,7 @@
         "space_group_number": 5,
         "number_of_atoms": 1.5,
         "volume": 5.5,
-        "stochiometry": "A2B",
+        "stoichiometry": "A2B",
         "cross_reference": {
             "icsd": 555,
             "cod": 5555,
@@ -77,7 +77,7 @@
         "ensemble": "Something",
         "particle_count": 5,
         "timesteps": 500,
-        "simulation_type": {
+        "simulation_time": {
             "value": 159,
             "units": "spherical cows"
         },
