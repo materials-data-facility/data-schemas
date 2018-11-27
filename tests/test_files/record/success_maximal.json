@@ -1,0 +1,96 @@
+{
+    "mdf": {
+        "source_name": "foobar",
+        "source_id": "foobar_v1-2",
+        "mdf_id": "abcd123",
+        "scroll_id": 0,
+        "parent_id": "abcd123",
+        "acl": ["public"],
+        "ingest_date": "2018-11-15T17:04:10.315060Z",
+        "resource_type": "dataset",
+        "version": 1,
+        "repositories": ["Repo1", "Repo2"]
+    },
+    "files": [{
+        "globus": "globus://abcdef123/path/data.txt",
+        "url": "https://example.com/data.txt",
+        "data_type": "type",
+        "mime_type": "text",
+        "length": 5000,
+        "filename": "data.txt",
+        "md5": "abcdef123",
+        "sha1": "abcdef123",
+        "sha256": "abcdef123",
+        "sha512": "abcdef123"
+    }, {
+        "data_type": "type",
+        "filename": "data.txt"
+    }],
+    "material": {
+        "composition": "N12O",
+        "elements": ["N", "O"]
+    },
+    "origin": {
+        "name": "Software.exe",
+        "version": "1.1.1.2",
+        "creator": "DevCorp",
+        "type": "other"
+    },
+    "calphad": {
+        "phases": [
+            "Assembly",
+            "denial",
+            "acceptance"
+        ]
+    },
+    "crystal_structure": {
+        "space_group_number": 5,
+        "number_of_atoms": 1.5,
+        "volume": 5.5,
+        "stochiometry": "A2B",
+        "cross_reference": {
+            "icsd": 555,
+            "cod": 5555,
+            "amcsd": 55555
+        }
+    },
+    "dft": {
+        "converged": true,
+        "exchange_correlation_functional": "Yes",
+        "cutoff_energy": 42.123
+    },
+    "electron_microscopy": {
+        "acquisition_mode": "Secondary electron",
+        "beam_energy": 5,
+        "detector": "On",
+        "magnification": 5,
+        "collection_angle": 360
+    },
+    "image": {
+        "megapixels": 55,
+        "width": 555,
+        "height": 5555,
+        "color_depth": 5,
+        "channels": 2
+    },
+    "md": {
+        "ensemble": "Something",
+        "particle_count": 5,
+        "timesteps": 500,
+        "simulation_type": {
+            "value": 159,
+            "units": "spherical cows"
+        },
+        "potential": "Untapped"
+    },
+    "xrd": {
+        "wavelength": 5,
+        "xray_source": "Microwave",
+        "sample_condition": "Good for what it is",
+        "detector_dimensionality": 18
+    },
+    "__custom": {
+        "foo": "bar",
+        "baz": 123
+    }
+}

@@ -1,0 +1,99 @@
+{
+    "dc": {
+        "creators": [{
+                "affiliations": ["Legal Dept."],
+                "creatorName": "Lawyer, Bar",
+                "familyName": "Lawyer",
+                "givenName": "Bar"
+            },
+            {
+                "affiliations": ["Hospital, LLC"],
+                "creatorName": "Baz, Doctor",
+                "familyName": "Baz",
+                "givenName": "Doctor"
+            },
+            {
+                "affiliations": ["Place of Work", "Workplace"],
+                "creatorName": "Person III, Author",
+                "familyName": "Person III",
+                "givenName": "Author"
+            }
+        ],
+        "descriptions": [{
+            "description": "A Sample Dataset",
+            "descriptionType": "Other"
+        }],
+        "identifier": {
+            "identifier": "10.555/555-555-5555",
+            "identifierType": "DOI"
+        },
+        "publicationYear": "2000",
+        "publisher": "Journal of Sample Data",
+        "relatedIdentifiers": [{
+                "relatedIdentifier": "10.555/555-5554",
+                "relatedIdentifierType": "DOI",
+                "relationType": "IsPartOf"
+            },
+            {
+                "relatedIdentifier": "10.555/555-5556",
+                "relatedIdentifierType": "DOI",
+                "relationType": "IsPartOf"
+            }
+        ],
+        "resourceType": {
+            "resourceType": "Dataset",
+            "resourceTypeGeneral": "Dataset"
+        },
+        "subjects": [{
+                "subject": "Sub"
+            },
+            {
+                "subject": "Keyword"
+            },
+            {
+                "subject": "kwargs"
+            }
+        ],
+        "titles": [{
+            "title": "Foo Other"
+        }]
+    },
+    "mdf": {
+        "source_name": "foobar",
+        "source_id": "foobar_v1-2",
+        "mdf_id": "abcd123",
+        "scroll_id": 0,
+        "parent_id": "abcd123",
+        "acl": ["public"],
+        "ingest_date": "2018-11-15T17:04:10.315060Z",
+        "resource_type": "dataset",
+        "version": 1,
+        "repositories": ["Repo1", "Repo2"]
+    },
+    "mrr": {
+        "characterizationMethod": ["Other"],
+        "computationalMethod": ["Other"],
+        "computeScale": ["Other"],
+        "dataOrigin": ["Other"],
+        "materialType": ["Other"],
+        "propertiesAddressed": ["Other"],
+        "structuralFeature": ["Other"],
+        "synthesisProcessing": ["Other"]
+    },
+    "__custom": {
+        "foo": "bar",
+        "baz": 123
+    },
+    "services": {
+        "mdf_search": "Ingested",
+        "citrine": "https://citrination.org/foo123",
+        "globus_publish": "https://publish.globus.org/foo123",
+        "mrr": "Ingested"
+    },
+    "data": {
+        "endpoint_path": "globus://abcdef123/path/data/",
+        "link": "https://app.globus.org/foo",
+        "external_uri": "https://example.com/data"
+    },
+    "extra": "no"
+}

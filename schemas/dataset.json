@@ -57,7 +57,7 @@
                 "external_uri": {
                     "type": "string",
                     "format": "uri",
-                    "description": "Location of the whole dataset. "
+                    "description": "Location of the whole dataset."
                 }
             }
         }
