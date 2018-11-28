@@ -1,0 +1,131 @@
+{
+    "__custom": {
+        "bar_desc": "Sample Bar",
+        "baz": 123,
+        "foo": "bar",
+        "foo_desc": "Sample Foo"
+    },
+    "data": ["globus://abcdef123/path/data.zip"],
+    "dc": {
+        "creators": [{
+                "affiliations": ["Legal Dept."],
+                "creatorName": "Lawyer, Bar",
+                "familyName": "Lawyer",
+                "givenName": "Bar"
+            },
+            {
+                "affiliations": ["Hospital, LLC"],
+                "creatorName": "Baz, Doctor",
+                "familyName": "Baz",
+                "givenName": "Doctor"
+            },
+            {
+                "affiliations": ["Place of Work", "Workplace"],
+                "creatorName": "Person III, Author",
+                "familyName": "Person III",
+                "givenName": "Author"
+            }
+        ],
+        "descriptions": [{
+            "description": "A Sample Dataset",
+            "descriptionType": "Other"
+        }],
+        "identifier": {
+            "identifier": "10.555/555-555-5555",
+            "identifierType": "DOI"
+        },
+        "publicationYear": "2000",
+        "publisher": "Journal of Sample Data",
+        "relatedIdentifiers": [{
+                "relatedIdentifier": "10.555/555-5554",
+                "relatedIdentifierType": "DOI",
+                "relationType": "IsPartOf"
+            },
+            {
+                "relatedIdentifier": "10.555/555-5556",
+                "relatedIdentifierType": "DOI",
+                "relationType": "IsPartOf"
+            }
+        ],
+        "resourceType": {
+            "resourceType": "Dataset",
+            "resourceTypeGeneral": "Dataset"
+        },
+        "subjects": [{
+                "subject": "Sub"
+            },
+            {
+                "subject": "Keyword"
+            },
+            {
+                "subject": "kwargs"
+            }
+        ],
+        "titles": [{
+            "title": "Foo Other"
+        }]
+    },
+    "index": {
+        "csv": {
+            "delimiter": ";",
+            "mapping": {
+                "__custom.foo": "foo"
+            },
+            "na_values": ["NULL"]
+        },
+        "excel": {
+            "mapping": {
+                "__custom.foo": "foo"
+            },
+            "na_values": ["NULL"]
+        },
+        "filename": {
+            "mapping": {
+                "__custom.foo": ".*foo.*"
+            },
+            "na_values": ["NULL"]
+        },
+        "json": {
+            "mapping": {
+                "__custom.foo": "foo"
+            },
+            "na_values": ["NULL"]
+        },
+        "xml": {
+            "mapping": {
+                "__custom.foo": "foo"
+            },
+            "na_values": ["NULL"]
+        },
+        "yaml": {
+            "mapping": {
+                "__custom.foo": "foo"
+            },
+            "na_values": ["NULL"]
+        }
+    },
+    "mdf": {
+        "acl": ["public"],
+        "repositories": ["Repo1", "Repo2"],
+        "source_name": "src_nm"
+    },
+    "mrr": {
+        "characterizationMethod": ["Other"],
+        "computationalMethod": ["Other"],
+        "computeScale": ["Other"],
+        "dataOrigin": ["Other"],
+        "materialType": ["Other"],
+        "propertiesAddressed": ["Other"],
+        "structuralFeature": ["Other"],
+        "synthesisProcessing": ["Other"]
+    },
+    "services": {
+        "citrine": true,
+        "globus_publish": true,
+        "mrr": true
+    },
+    "test": false,
+    "no_good": {
+        "bad_data": true
+    }
+}

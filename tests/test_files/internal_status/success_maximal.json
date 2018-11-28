@@ -1,0 +1,26 @@
+{
+    "acl": ["public"],
+    "active": true,
+    "cancelled": false,
+    "citrine_id": -123,
+    "code": "SMSPzzzzzzzz",
+    "messages": [
+        "",
+        "Message1",
+        ["Message", "Link"]
+    ],
+    "pid": 123,
+    "source_id": "_test_thing_v1-2",
+    "submission_code": "C",
+    "submission_time": "2018-11-20T16:33:57.259787Z",
+    "submitter": "Tester McPerson",
+    "test": true,
+    "title": "Thing",
+    "user_email": "test@example.com",
+    "user_id": "abc123",
+    "original_submission": "{...}",
+    "extensions": [
+        "json"
+    ],
+    "converted": false
+}

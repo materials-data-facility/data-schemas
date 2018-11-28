@@ -63,6 +63,15 @@
             "mapping": {
               "type": "object",
               "description": "The mapping of mdf.fields: data.fields"
+            },
+            "na_values": {
+              "type": "array",
+              "description": "Values to treat as None/null. Default no values.",
+              "items": {
+                "type": "string",
+                "description": "One None/null value."
+              },
+              "minItems": 1
             }
           },
           "additionalProperties": false,
@@ -104,6 +113,15 @@
             "mapping": {
               "type": "object",
               "description": "The mapping of mdf.fields: data.fields"
+            },
+            "na_values": {
+              "type": "array",
+              "description": "Values to treat as None/null. Default no values.",
+              "items": {
+                "type": "string",
+                "description": "One None/null value."
+              },
+              "minItems": 1
             }
           },
           "additionalProperties": false,
@@ -118,6 +136,15 @@
             "mapping": {
               "type": "object",
               "description": "The mapping of mdf.fields: data.fields"
+            },
+            "na_values": {
+              "type": "array",
+              "description": "Values to treat as None/null. Default no values.",
+              "items": {
+                "type": "string",
+                "description": "One None/null value."
+              },
+              "minItems": 1
             }
           },
           "additionalProperties": false,
@@ -136,6 +163,29 @@
             "na_values": {
               "type": "array",
               "description": "Values to treat as None/null.",
+              "items": {
+                "type": "string",
+                "description": "One None/null value."
+              },
+              "minItems": 1
+            }
+          },
+          "additionalProperties": false,
+          "required": [
+            "mapping"
+          ]
+        },
+        "filename": {
+          "type": "object",
+          "description": "Filename parsing parameters.",
+          "properties": {
+            "mapping": {
+              "type": "object",
+              "description": "The mapping of mdf.fields: regex_match"
+            },
+            "na_values": {
+              "type": "array",
+              "description": "Values to treat as None/null. Default no values.",
               "items": {
                 "type": "string",
                 "description": "One None/null value."

@@ -68,7 +68,8 @@
             "source_id",
             "mdf_id",
             "acl",
-            "ingest_date"
+            "ingest_date",
+            "resource_type"
         ]
     }
 }

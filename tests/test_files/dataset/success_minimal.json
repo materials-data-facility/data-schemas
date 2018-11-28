@@ -1,0 +1,38 @@
+{
+    "dc": {
+        "creators": [{
+                "affiliations": ["Legal Dept."],
+                "creatorName": "Lawyer, Bar",
+                "familyName": "Lawyer",
+                "givenName": "Bar"
+            }],
+        "publicationYear": "2000",
+        "publisher": "Journal of Sample Data",
+        "resourceType": {
+            "resourceType": "Dataset",
+            "resourceTypeGeneral": "Dataset"
+        },
+        "titles": [{
+            "title": "Foo Other"
+        }]
+    },
+    "mdf": {
+        "source_name": "foobar",
+        "source_id": "foobar_v1-2",
+        "mdf_id": "abcd123",
+        "acl": ["public"],
+        "ingest_date": "2018-11-15T17:04:10.315060Z",
+        "resource_type": "dataset"
+    },
+    "services": {
+        "mdf_search": "Ingested",
+        "citrine": "https://citrination.org/foo123",
+        "globus_publish": "https://publish.globus.org/foo123",
+        "mrr": "Ingested"
+    },
+    "data": {
+        "endpoint_path": "globus://abcdef123/path/data/",
+        "link": "https://app.globus.org/foo",
+        "external_uri": "https://example.com/data"
+    }
+}

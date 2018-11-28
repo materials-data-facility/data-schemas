@@ -1,0 +1,22 @@
+{
+    "data": [
+        "globus://abcdef123/path/data.zip"
+    ],
+    "dc": {
+        "creators": [{
+            "creatorName": "Bar, Doctor",
+            "familyName": "Bar",
+            "givenName": "Doctor"
+        }],
+        "publicationYear": "2018",
+        "publisher": "Materials Data Facility",
+        "resourceType": {
+            "resourceType": "Dataset",
+            "resourceTypeGeneral": "Dataset"
+        },
+        "titles": [{
+            "title": "Foo Sample"
+        }]
+    },
+    "test": false
+}

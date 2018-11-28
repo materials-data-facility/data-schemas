@@ -1,0 +1,16 @@
+{
+    "data": [
+    ],
+    "dc": {
+        "publicationYear": "2018",
+        "publisher": "Materials Data Facility",
+        "resourceType": {
+            "resourceType": "Dataset",
+            "resourceTypeGeneral": "Dataset"
+        },
+        "titles": [{
+            "title": "Foo Sample"
+        }]
+    },
+    "test": false
+}

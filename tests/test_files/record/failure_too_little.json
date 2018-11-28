@@ -1,0 +1,12 @@
+{
+    "mdf": {
+        "source_name": "foobar",
+        "source_id": "foobar_v1-2",
+        "mdf_id": "abcd123",
+        "acl": ["public"],
+        "ingest_date": "2018-11-15T17:04:10.315060Z",
+        "resource_type": "dataset"
+    },
+    "material": {
+    }
+}
