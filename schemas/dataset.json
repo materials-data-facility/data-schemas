@@ -19,6 +19,9 @@
         "custom": {
             "$ref": "custom.json#/properties/custom"
         },
+        "__source_name":{
+            "$ref": "source_name.json#/properties/__source_name"
+        },
         "services": {
             "type": "object",
             "description": "Cross references to other integrated services.",
