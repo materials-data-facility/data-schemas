@@ -82,7 +82,7 @@
     },
     "custom": {
         "foo": "bar",
-        "baz": 123
+        "baz": "123"
     },
     "services": {
         "mdf_search": "Ingested",

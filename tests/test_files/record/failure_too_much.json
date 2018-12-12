@@ -91,7 +91,7 @@
     },
     "custom": {
         "foo": "bar",
-        "baz": 123
+        "baz": "123"
     },
     "stuff": "nope"
 }
