@@ -80,7 +80,7 @@
         "structuralFeature": ["Other"],
         "synthesisProcessing": ["Other"]
     },
-    "__custom": {
+    "custom": {
         "foo": "bar",
         "baz": 123
     },

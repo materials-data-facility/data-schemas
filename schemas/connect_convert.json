@@ -37,11 +37,11 @@
     "mrr": {
       "$ref": "mrr.json#/properties/mrr"
     },
-    "__custom": {
-      "$ref": "__custom.json#/properties/__custom"
+    "custom": {
+      "$ref": "custom.json#/properties/custom"
     },
-    "__custom_desc": {
-        "$ref": "__custom.json#/properties/__custom_desc"
+    "custom_desc": {
+        "$ref": "custom.json#/properties/custom_desc"
     },
     "data": {
       "type": "array",

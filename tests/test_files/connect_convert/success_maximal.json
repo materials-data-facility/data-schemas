@@ -1,5 +1,5 @@
 {
-    "__custom": {
+    "custom": {
         "bar_desc": "Sample Bar",
         "baz": 123,
         "foo": "bar",
@@ -69,37 +69,37 @@
         "csv": {
             "delimiter": ";",
             "mapping": {
-                "__custom.foo": "foo"
+                "custom.foo": "foo"
             },
             "na_values": ["NULL"]
         },
         "excel": {
             "mapping": {
-                "__custom.foo": "foo"
+                "custom.foo": "foo"
             },
             "na_values": ["NULL"]
         },
         "filename": {
             "mapping": {
-                "__custom.foo": ".*foo.*"
+                "custom.foo": ".*foo.*"
             },
             "na_values": ["NULL"]
         },
         "json": {
             "mapping": {
-                "__custom.foo": "foo"
+                "custom.foo": "foo"
             },
             "na_values": ["NULL"]
         },
         "xml": {
             "mapping": {
-                "__custom.foo": "foo"
+                "custom.foo": "foo"
             },
             "na_values": ["NULL"]
         },
         "yaml": {
             "mapping": {
-                "__custom.foo": "foo"
+                "custom.foo": "foo"
             },
             "na_values": ["NULL"]
         }

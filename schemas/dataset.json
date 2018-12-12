@@ -16,8 +16,8 @@
         "origin": {
             "$ref": "origin.json#/properties/origin"
         },
-        "__custom": {
-            "$ref": "__custom.json#/properties/__custom"
+        "custom": {
+            "$ref": "custom.json#/properties/custom"
         },
         "services": {
             "type": "object",

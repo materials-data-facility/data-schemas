@@ -37,8 +37,8 @@
         "xrd": {
             "$ref": "xrd.json#/properties/xrd"
         },
-        "__custom": {
-            "$ref": "__custom.json#/properties/__custom"
+        "custom": {
+            "$ref": "custom.json#/properties/custom"
         }
     },
     "additionalProperties": false,
