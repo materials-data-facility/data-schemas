@@ -43,6 +43,9 @@
     "custom_desc": {
         "$ref": "custom.json#/properties/custom_desc"
     },
+    "projects": {
+        "$ref": "projects.json#/properties/projects"
+    },
     "data": {
       "type": "array",
       "description": "The location(s) of the data, including protocol.",

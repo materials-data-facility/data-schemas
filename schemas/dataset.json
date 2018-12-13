@@ -22,6 +22,9 @@
         "__source_name":{
             "$ref": "__source_name.json#/properties/__source_name"
         },
+        "projects": {
+            "$ref": "projects.json#/properties/projects"
+        },
         "services": {
             "type": "object",
             "description": "Cross references to other integrated services.",

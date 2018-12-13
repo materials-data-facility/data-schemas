@@ -84,6 +84,12 @@
         "foo": "bar",
         "baz": "123"
     },
+    "projects": {
+        "nanomfg": {
+            "base_pressure": 19.1,
+            "carbon_source": "CH4"
+        }
+    },
     "services": {
         "mdf_search": "Ingested",
         "citrine": "https://citrination.org/foo123",

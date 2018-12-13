@@ -39,6 +39,9 @@
         },
         "custom": {
             "$ref": "custom.json#/properties/custom"
+        },
+        "projects": {
+            "$ref": "projects.json#/properties/projects"
         }
     },
     "additionalProperties": false,

@@ -1,0 +1,46 @@
+{
+"$schema": "http://json-schema.org/draft-04/schema#",
+"title": "projects block",
+"type": "object",
+"description": "Schema for organization-defined project blocks.",
+"properties": {
+    "projects": {
+        "type": "object",
+        "description": "External organization-defined block.",
+        "properties": {
+            "nanomfg": {
+                "type": "object",
+                "description": "Project block for NanoMFG.",
+                "properties": {
+                    "base_pressure": {
+                        "type": "number"
+                    },
+                    "carbon_source": {
+                        "type": "string"
+                    },
+                    "catalyst": {
+                        "type": "string"
+                    },
+                    "grain_size": {
+                        "type": "string"
+                    },
+                    "max_temperature": {
+                        "type": "number"
+                    },
+                    "orientation": {
+                        "type": "string"
+                    },
+                    "sample_surface_area": {
+                        "type": "number"
+                    },
+                    "sample_thickness": {
+                        "type": "number"
+                    }
+                },
+                "additionalProperties": false
+            }
+        },
+        "additionalProperties": false
+    }
+}
+}

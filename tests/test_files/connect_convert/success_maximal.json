@@ -5,6 +5,12 @@
         "foo": "bar",
         "foo_desc": "Sample Foo"
     },
+    "projects": {
+        "nanomfg": {
+            "base_pressure": 19.1,
+            "carbon_source": "CH4"
+        }
+    },
     "data": ["globus://abcdef123/path/data.zip"],
     "dc": {
         "creators": [{
