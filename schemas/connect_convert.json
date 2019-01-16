@@ -204,6 +204,21 @@
       },
       "additionalProperties": false
     },
+    "conversion_config": {
+        "type": "object",
+        "description": "Advanced conversion configuration, including file grouping configuration.",
+        "properties": {
+            "group_by_dir": {
+                "type": "boolean",
+                "description": "When true, will group all files in a directory together. When false, will group according to known datatypes. Default false."
+            },
+            "known_formats": {
+                "type": "object",
+                "description": "Known grouping patterns. Advanced users only."
+            }
+        },
+        "additionalProperties": false
+    },
     "services": {
       "type": "object",
       "description": "Options for sending data to integrated services.",
