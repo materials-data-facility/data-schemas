@@ -89,8 +89,14 @@
         "sample_condition": "Good for what it is",
         "detector_dimensionality": 18
     },
-    "__custom": {
+    "custom": {
         "foo": "bar",
-        "baz": 123
+        "baz": "123"
+    },
+    "projects": {
+        "nanomfg": {
+            "base_pressure": 19.1,
+            "carbon_source": "CH4"
+        }
     }
 }

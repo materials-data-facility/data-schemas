@@ -20,6 +20,13 @@
                         "description": "An element."
                     },
                     "minItems": 1
+                },
+                "elemental_proportions": {
+                    "type": "object",
+                    "description": "The proportion of each element present.",
+                    "additionalProperties": {
+                        "type": "number"
+                    }
                 }
             },
             "additionalProperties": false

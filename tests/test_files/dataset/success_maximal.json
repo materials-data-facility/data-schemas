@@ -80,9 +80,15 @@
         "structuralFeature": ["Other"],
         "synthesisProcessing": ["Other"]
     },
-    "__custom": {
+    "custom": {
         "foo": "bar",
-        "baz": 123
+        "baz": "123"
+    },
+    "projects": {
+        "nanomfg": {
+            "base_pressure": 19.1,
+            "carbon_source": "CH4"
+        }
     },
     "services": {
         "mdf_search": "Ingested",

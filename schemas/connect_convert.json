@@ -37,11 +37,14 @@
     "mrr": {
       "$ref": "mrr.json#/properties/mrr"
     },
-    "__custom": {
-      "$ref": "__custom.json#/properties/__custom"
+    "custom": {
+      "$ref": "custom.json#/properties/custom"
     },
-    "__custom_desc": {
-        "$ref": "__custom.json#/properties/__custom_desc"
+    "custom_desc": {
+        "$ref": "custom.json#/properties/custom_desc"
+    },
+    "projects": {
+        "$ref": "projects.json#/properties/projects"
     },
     "data": {
       "type": "array",
@@ -200,6 +203,21 @@
         }
       },
       "additionalProperties": false
+    },
+    "conversion_config": {
+        "type": "object",
+        "description": "Advanced conversion configuration, including file grouping configuration.",
+        "properties": {
+            "group_by_dir": {
+                "type": "boolean",
+                "description": "When true, will group all files in a directory together. When false, will group according to known datatypes. Default false."
+            },
+            "known_formats": {
+                "type": "object",
+                "description": "Known grouping patterns. Advanced users only."
+            }
+        },
+        "additionalProperties": false
     },
     "services": {
       "type": "object",

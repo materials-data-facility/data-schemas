@@ -1,0 +1,25 @@
+{
+"$schema": "http://json-schema.org/draft-04/schema#",
+"title": "custom block",
+"type": "object",
+"description": "Schema for user-defined custom block.",
+"properties": {
+    "custom": {
+        "type": "object",
+        "description": "User-defined block.",
+        "properties": {},
+        "additionalProperties": {
+            "type": "string"
+        }
+    },
+    "custom_desc": {
+        "type": "object",
+        "description": "Descriptions of custom fields.",
+        "properties": {
+        },
+        "additionalProperties": {
+            "type": "string"
+        }
+    }
+}
+}
