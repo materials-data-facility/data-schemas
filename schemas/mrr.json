@@ -1,7 +1,7 @@
 {
 "$schema": "http://json-schema.org/draft-04/schema#",
-"title": "publications",
-"description": "Schema for publications block in MDF.",
+"title": "mrr",
+"description": "Schema for Materials Resource Registry integration.",
 "type": "object",
 "properties": {
     "mrr": {
@@ -65,7 +65,7 @@
                 }
             }
         },
-        "additionalProperties": false
+        "additionalProperties": true
     }
 }
 }
