@@ -1,0 +1,95 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "organization",
+    "description": "Schema for an organizational ruleset in MDF.",
+    "type": "object",
+    "properties": {
+        "canonical_name": {
+            "type": "string",
+            "description": "The name of the organization to be displayed in the 'organization' field."
+        },
+        "aliases": {
+            "type": "array",
+            "description": "Other names or abbreviations that refer to the same organization.",
+            "items": {
+                "type": "string",
+                "description": "One organization alias or abbreviation."
+            }
+        },
+        "description": {
+            "type": "string",
+            "description": "The description of the organization."
+        },
+        "homepage": {
+            "type": "string",
+            "format": "uri",
+            "description": "The organization's website, landing page, or other informational URI."
+        },
+        "permission_groups": {
+            "type": "array",
+            "description": "UUIDs of Globus Groups. Members, managers, and admins of the group(s) will be given permissions within this organization in MDF.",
+            "items": {
+                "type": "string",
+                "description": "One Globus Group UUID."
+            },
+            "minItems": 1
+        },
+        "acl": {
+            "type": "array",
+            "description": "The minimum Access Control List for access to datasets in thie organization.",
+            "items": {
+                "type": "string",
+                "description": "One Globus Auth UUID or the special value 'public' to require all datasets be public."
+            }
+        },
+        "data_locations": {
+            "type": "array",
+            "description": "Data locations (Globus endpoints) to send data for this organization.",
+            "items": {
+                "type": "string",
+                "description": "One Globus link."
+            }
+        },
+        "curation": {
+            "type": "boolean",
+            "description": "Whether or not curation is required for all datasets in this organization."
+        },
+        "project_blocks": {
+            "type": "array",
+            "description": "The special project blocks associated with this organization's metadata.",
+            "items": {
+                "type": "string",
+                "description": "One project block name."
+            }
+        },
+        "required_fields": {
+            "type": "array",
+            "description": "Fields or blocks that are required for an organizational dataset to be valid, using dot syntax.",
+            "items": {
+                "type": "string",
+                "description": "One required field or block."
+            }
+        },
+        "parent_organizations": {
+            "type": "array",
+            "descriptions": "The organization(s) that are direct parents to this one.",
+            "items": {
+                "type": "string",
+                "description": "The canonical_name of one parent organization."
+            }
+        },
+        "integrations": {
+            "type": "array",
+            "description": "The required services and other integrations for the organization.",
+            "items": {
+                "type": "string",
+                "description": "One service integration"
+            }
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "canonical_name",
+        "permission_groups"
+    ]
+}
