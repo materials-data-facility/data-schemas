@@ -1,5 +1,5 @@
 {
-    "data": [
+    "data_sources": [
         "globus://abcdef123/path/data.zip"
     ],
     "dc": {

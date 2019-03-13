@@ -42,7 +42,7 @@
                 "description": "One Globus Auth UUID or the special value 'public' to require all datasets be public."
             }
         },
-        "data_locations": {
+        "data_destinations": {
             "type": "array",
             "description": "Data locations (Globus endpoints) to send data for this organization.",
             "items": {
@@ -78,13 +78,17 @@
                 "description": "The canonical_name of one parent organization."
             }
         },
-        "integrations": {
-            "type": "array",
-            "description": "The required services and other integrations for the organization.",
-            "items": {
-                "type": "string",
-                "description": "One service integration"
-            }
+        "services": {
+            "oneOf": [{
+                "type": "array",
+                "description": "The required services and other integrations for the organization.",
+                "items": {
+                        "type": "string",
+                        "description": "One service integration."
+                }
+            }, {
+                "$ref": "services.json#/properties/services"
+            }]
         }
     },
     "additionalProperties": false,

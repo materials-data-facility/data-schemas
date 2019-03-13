@@ -22,12 +22,12 @@
     "services": {
         "$ref": "connect_convert.json#/properties/services"
     },
-    "data": {
-        "$ref": "connect_convert.json#/properties/data",
+    "data_sources": {
+        "$ref": "connect_convert.json#/properties/data_sources",
         "description": "The dataset data, required for data publication."
     },
     "service_data": {
-        "$ref": "connect_convert.json#/properties/data",
+        "$ref": "connect_convert.json#/properties/data_sources",
         "description": "Data specific to service integrations, such as Citrine PIFs."
     },
     "test": {

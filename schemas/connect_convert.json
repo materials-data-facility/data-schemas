@@ -23,12 +23,12 @@
           "type": "string",
           "description": "A unique program-friendly name for this dataset (will be generated from the title if not specified)."
         },
-        "repositories": {
+        "organizations": {
           "type": "array",
-          "description": "The organizations responsible for dataset creation.",
+          "description": "The organizations responsible for dataset creation. Adding organizations here will apply any organizational rules and requirements to the dataset.",
           "items": {
             "type": "string",
-            "description": "Name of a repository (e.g., NREL)."
+            "description": "Name of an organization (e.g., NIST)."
           }
         }
       },
@@ -46,7 +46,7 @@
     "projects": {
         "$ref": "projects.json#/properties/projects"
     },
-    "data": {
+    "data_sources": {
       "type": "array",
       "description": "The location(s) of the data, including protocol.",
       "items": {
@@ -54,6 +54,14 @@
         "format": "uri",
         "description": "One data location, with protocol (e.g. globus://ep_id/path/data.txt)"
       }
+    },
+    "data_destinations": {
+        "type": "array",
+        "description": "Data locations (Globus endpoints) to send the raw data to.",
+        "items": {
+            "type": "string",
+            "description": "One Globus link."
+        }
     },
     "index": {
       "type": "object",
@@ -220,57 +228,7 @@
         "additionalProperties": false
     },
     "services": {
-      "type": "object",
-      "description": "Options for sending data to integrated services.",
-      "properties": {
-        "globus_publish": {
-          "oneOf": [
-            {
-              "type": "object",
-              "description": "Configuration for Globus Publish ingestion.",
-              "properties": {
-                "collection_name": {
-                  "type": "string",
-                  "description": "The name of the collection."
-                },
-                "collection_id": {
-                  "type": "integer",
-                  "description": "The ID number of the collection."
-                }
-              },
-              "additionalProperties": false
-            },
-            {
-              "type": "boolean",
-              "description": "When true, will use default parameters to ingest to Globus Publish."
-            }
-          ]
-        },
-        "citrine": {
-          "oneOf": [
-            {
-              "type": "object",
-              "description": "Submission to Citrine Informatics.",
-              "properties": {
-                "public": {
-                  "type": "boolean",
-                  "description": "When true, will make data public. Will otherwise be inaccessible."
-                }
-              },
-              "additionalProperties": false
-            },
-            {
-              "type": "boolean",
-              "description": "When true, will use default parameters to ingest to Citrine."
-            }
-          ]
-        },
-        "mrr": {
-          "type": "boolean",
-          "description": "When true, will create entry in Materials Resource Registry."
-        }
-      },
-      "additionalProperties": false
+      "$ref": "services.json#/properties/services"
     },
     "tags": {
         "type": "array",
@@ -281,6 +239,14 @@
         },
         "minItems": 1
     },
+    "update": {
+        "type": "boolean",
+        "description": "Must be true for dataset updates, and false for new datasets. Serves as a check against accidental dataset overwriting."
+    },
+    "curation": {
+        "type": "boolean",
+        "description": "When true, trigger curation for this submission. This is normally set by an organization."
+    },
     "test": {
       "type": "boolean",
       "description": "When true, will ingest into the test index and collection."
@@ -289,6 +255,6 @@
   "additionalProperties": false,
   "required": [
     "dc",
-    "data"
+    "data_sources"
   ]
 }

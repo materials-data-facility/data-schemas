@@ -12,7 +12,7 @@
         },
         "mrr": true
     },
-    "data": ["globus:/.abcdef123/path/data.txt"],
+    "data_sources": ["globus:/.abcdef123/path/data.txt"],
     "service_data": ["globus:/.abcdef123/path/data.txt"],
     "test": true
 }
