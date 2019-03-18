@@ -106,7 +106,7 @@
     },
     "mdf": {
         "acl": ["public"],
-        "repositories": ["Repo1", "Repo2"],
+        "organizations": ["Repo1", "Repo2"],
         "source_name": "src_nm"
     },
     "mrr": {

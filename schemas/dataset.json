@@ -19,9 +19,6 @@
         "custom": {
             "$ref": "custom.json#/properties/custom"
         },
-        "__source_name":{
-            "$ref": "__source_name.json#/properties/__source_name"
-        },
         "projects": {
             "$ref": "projects.json#/properties/projects"
         },
