@@ -64,10 +64,10 @@
         },
         "required_fields": {
             "type": "array",
-            "description": "Fields or blocks that are required for an organizational dataset to be valid, using dot syntax.",
+            "description": "Fields or blocks in the dataset metadata that are required for an organizational dataset to be valid, using dot syntax.",
             "items": {
                 "type": "string",
-                "description": "One required field or block."
+                "description": "One required field or block in the dataset metadata."
             }
         },
         "parent_organizations": {

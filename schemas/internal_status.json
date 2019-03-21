@@ -49,14 +49,6 @@
     "source_id": {
         "$ref": "mdf.json#/properties/mdf/properties/source_id"
     },
-    "submission_code": {
-        "type": "string",
-        "description": "The type of submission: 'C' for Convert or 'I' for Ingest.",
-        "enum": [
-            "C",
-            "I"
-        ]
-    },
     "submission_time": {
         "type": "string",
         "description": "The time of submission."
@@ -66,7 +58,7 @@
         "description": "The name of the submission submitter (and therefore owner)."
     },
     "test": {
-        "$ref": "connect_convert.json#/properties/test"
+        "$ref": "connect_submission.json#/properties/test"
     },
     "title": {
         "$ref": "dc.json#/properties/dc/properties/titles/items/properties/title"
@@ -91,9 +83,8 @@
             "description": "One extension."
         }
     },
-    "converted": {
-        "type": "boolean",
-        "description": "Whether or not the submission finished converting. Used as a sentinel for checking if a conversion succeeded or unexpectedly died."
+    "curation": {
+        "description": "Curation status of the submission."
     }
 },
 "additionalProperties": false,
@@ -102,11 +93,9 @@
     "active",
     "cancelled",
     "code",
-    "converted",
     "messages",
     "pid",
     "source_id",
-    "submission_code",
     "submission_time",
     "submitter",
     "test",
