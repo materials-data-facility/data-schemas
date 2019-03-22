@@ -21,9 +21,7 @@
     },
     "code": {
         "type": "string",
-        "description": "The submission's status code. Each character represents a step in the process.",
-        "minLength": 12,
-        "maxLength": 12
+        "description": "The submission's status code. Each character represents a step in the process."
     },
     "messages": {
         "type": "array",
