@@ -8,26 +8,23 @@
       "type": "object",
       "description": "Options for sending data to integrated services.",
       "properties": {
-        "globus_publish": {
+        "mdf_publish": {
           "oneOf": [
             {
               "type": "object",
-              "description": "Configuration for Globus Publish ingestion.",
+              "description": "Configuration for MDF Publish ingestion.",
               "properties": {
-                "collection_name": {
-                  "type": "string",
-                  "description": "The name of the collection."
-                },
-                "collection_id": {
-                  "type": "integer",
-                  "description": "The ID number of the collection."
+                "publication_location": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "The Globus link to the publication location."
                 }
               },
               "additionalProperties": false
             },
             {
               "type": "boolean",
-              "description": "When true, will use default parameters to ingest to Globus Publish."
+              "description": "When true, will use default parameters to ingest to MDF Publish."
             }
           ]
         },
