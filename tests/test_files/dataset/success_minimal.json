@@ -27,7 +27,7 @@
     "services": {
         "mdf_search": "Ingested",
         "citrine": "https://citrination.org/foo123",
-        "globus_publish": "https://publish.globus.org/foo123",
+        "mdf_publish": "https://publish.globus.org/foo123",
         "mrr": "Ingested"
     },
     "data": {

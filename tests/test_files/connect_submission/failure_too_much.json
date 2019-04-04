@@ -121,7 +121,7 @@
     },
     "services": {
         "citrine": true,
-        "globus_publish": true,
+        "mdf_publish": true,
         "mrr": true
     },
     "test": false,

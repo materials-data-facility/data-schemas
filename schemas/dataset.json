@@ -30,9 +30,9 @@
                     "type": "string",
                     "description": "Information on the dataset in MDF Search"
                 },
-                "globus_publish": {
+                "mdf_publish": {
                     "type": "string",
-                    "description": "The link to the Globus Publish dataset."
+                    "description": "The link to the MDF Publish dataset."
                 },
                 "citrine": {
                     "type": "string",

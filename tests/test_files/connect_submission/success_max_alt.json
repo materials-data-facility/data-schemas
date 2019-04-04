@@ -130,8 +130,8 @@
         "citrine": {
             "public": true
         },
-        "globus_publish": {
-            "collection_name": "Tester"
+        "mdf_publish": {
+            "publication_location": "globus://abc123/path/data/"
         },
         "mrr": true
     },
