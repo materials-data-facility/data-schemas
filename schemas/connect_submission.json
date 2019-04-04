@@ -250,6 +250,10 @@
     "test": {
       "type": "boolean",
       "description": "When true, will ingest into the test index and collection."
+    },
+    "no_convert": {
+        "type": "boolean",
+        "description": "When true, disables converting. Only for very large datasets."
     }
   },
   "additionalProperties": false,
