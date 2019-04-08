@@ -79,16 +79,7 @@
             }
         },
         "services": {
-            "oneOf": [{
-                "type": "array",
-                "description": "The required services and other integrations for the organization.",
-                "items": {
-                        "type": "string",
-                        "description": "One service integration."
-                }
-            }, {
-                "$ref": "services.json#/properties/services"
-            }]
+            "$ref": "services.json#/properties/services"
         }
     },
     "additionalProperties": false,
