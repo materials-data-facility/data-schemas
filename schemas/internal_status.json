@@ -81,8 +81,9 @@
             "description": "One extension."
         }
     },
-    "curation": {
-        "description": "Curation status of the submission."
+    "hibernating": {
+        "type": "boolean",
+        "description": "True for submission processes that appear dead, but are still active. This flag will prevent a submission from being cancelled when its process dies."
     }
 },
 "additionalProperties": false,
