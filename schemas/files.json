@@ -16,9 +16,14 @@
                     "description": "The Globus Endpoint ID and path to the data."
                 },
                 "url": {
-                    "type": "string",
-                    "format": "uri",
-                    "description": "The URL to the data."
+                    "oneOf": [{
+                        "type": "string",
+                        "format": "uri",
+                        "description": "The URL to the data."
+                    }, {
+                        "type": "null",
+                        "description": "A null/None to indicate that the file is not accessible through HTTP."
+                    }]
                 },
                 "data_type": {
                     "type": "string",
