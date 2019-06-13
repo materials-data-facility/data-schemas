@@ -5,12 +5,6 @@
         "foo": "bar",
         "foo_desc": "Sample Foo"
     },
-    "projects": {
-        "nanomfg": {
-            "base_pressure": 19.1,
-            "carbon_source": "CH4"
-        }
-    },
     "data": ["globus://abcdef123/path/data.zip"],
     "dc": {
         "creators": [{
@@ -112,7 +106,7 @@
     },
     "mdf": {
         "acl": ["public"],
-        "repositories": ["Repo1", "Repo2"],
+        "organizations": ["Repo1", "Repo2"],
         "source_name": "src_nm"
     },
     "mrr": {
@@ -126,13 +120,12 @@
         "synthesisProcessing": ["Other"]
     },
     "services": {
-        "citrine": {
-            "public": true
-        },
-        "globus_publish": {
-            "collection_name": "Tester"
-        },
+        "citrine": true,
+        "mdf_publish": true,
         "mrr": true
     },
-    "test": false
+    "test": false,
+    "no_good": {
+        "bad_data": true
+    }
 }

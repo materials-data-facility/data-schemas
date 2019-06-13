@@ -27,8 +27,7 @@ def test_sample_validation():
     jsonschemas_to_test = [
         "dataset",
         "record",
-        "connect_convert",
-        "connect_ingest",
+        "connect_submission",
         "internal_status"
     ]
     for schema_name in jsonschemas_to_test:

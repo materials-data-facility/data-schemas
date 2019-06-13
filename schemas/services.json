@@ -1,0 +1,58 @@
+{
+"$schema": "http://json-schema.org/draft-04/schema#",
+"title": "services",
+"description": "Schema for services block.",
+"type": "object",
+"properties": {
+    "services": {
+      "type": "object",
+      "description": "Options for sending data to integrated services.",
+      "properties": {
+        "mdf_publish": {
+          "oneOf": [
+            {
+              "type": "object",
+              "description": "Configuration for MDF Publish ingestion.",
+              "properties": {
+                "publication_location": {
+                    "type": "string",
+                    "format": "uri",
+                    "description": "The Globus link to the publication location."
+                }
+              },
+              "additionalProperties": false
+            },
+            {
+              "type": "boolean",
+              "description": "When true, will use default parameters to ingest to MDF Publish."
+            }
+          ]
+        },
+        "citrine": {
+          "oneOf": [
+            {
+              "type": "object",
+              "description": "Submission to Citrine Informatics.",
+              "properties": {
+                "public": {
+                  "type": "boolean",
+                  "description": "When true, will make data public. Will otherwise be inaccessible."
+                }
+              },
+              "additionalProperties": false
+            },
+            {
+              "type": "boolean",
+              "description": "When true, will use default parameters to ingest to Citrine."
+            }
+          ]
+        },
+        "mrr": {
+          "type": "boolean",
+          "description": "When true, will create entry in Materials Resource Registry."
+        }
+      },
+      "additionalProperties": false
+    }
+}
+}

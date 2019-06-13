@@ -21,9 +21,7 @@
     },
     "code": {
         "type": "string",
-        "description": "The submission's status code. Each character represents a step in the process.",
-        "minLength": 12,
-        "maxLength": 12
+        "description": "The submission's status code. Each character represents a step in the process."
     },
     "messages": {
         "type": "array",
@@ -49,14 +47,6 @@
     "source_id": {
         "$ref": "mdf.json#/properties/mdf/properties/source_id"
     },
-    "submission_code": {
-        "type": "string",
-        "description": "The type of submission: 'C' for Convert or 'I' for Ingest.",
-        "enum": [
-            "C",
-            "I"
-        ]
-    },
     "submission_time": {
         "type": "string",
         "description": "The time of submission."
@@ -66,7 +56,7 @@
         "description": "The name of the submission submitter (and therefore owner)."
     },
     "test": {
-        "$ref": "connect_convert.json#/properties/test"
+        "$ref": "connect_submission.json#/properties/test"
     },
     "title": {
         "$ref": "dc.json#/properties/dc/properties/titles/items/properties/title"
@@ -91,9 +81,9 @@
             "description": "One extension."
         }
     },
-    "converted": {
+    "hibernating": {
         "type": "boolean",
-        "description": "Whether or not the submission finished converting. Used as a sentinel for checking if a conversion succeeded or unexpectedly died."
+        "description": "True for submission processes that appear dead, but are still active. This flag will prevent a submission from being cancelled when its process dies."
     }
 },
 "additionalProperties": false,
@@ -102,11 +92,9 @@
     "active",
     "cancelled",
     "code",
-    "converted",
     "messages",
     "pid",
     "source_id",
-    "submission_code",
     "submission_time",
     "submitter",
     "test",
