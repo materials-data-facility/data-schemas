@@ -1,0 +1,47 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MDF Molecule",
+    "description": "Schema to describe a molecule.",
+    "type": "object",
+    "properties": {
+        "molecule": {
+            "type": "object",
+            "description": "Data describing a molecule",
+            "properties": {
+                "molecular_weight": {
+                    "type": "number",
+                    "description": "Molecular weight of the molecule in Da."
+                },
+                "chemical_formula": {
+                    "type": "string",
+                    "description": "Chemical formula of the molecule"
+                },
+                "number_of_atoms": {
+                    "type": "integer",
+                    "description": "Number of atoms in the molecule."
+                },
+                "smiles":{
+                    "type": "string",
+                    "description": "SMILES string representation of the molecule"
+                },
+                "inchi":{
+                    "type": "string",
+                    "description": "InChi string representation of the molecule"
+                },
+                "cross_reference": {
+                    "type": "object",
+                    "description": "Cross-references of this molecule in other databases.",
+                    "additionalProperties": false,
+                    "properties": {
+                        "chemspider": {
+                            "type": "integer",
+                            "description": "Chemspider ID of the molecule."
+                        }
+                    }
+                },
+
+            },
+            "additionalProperties": false
+        }
+    }
+}
