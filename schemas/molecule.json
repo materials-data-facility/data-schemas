@@ -10,11 +10,19 @@
             "properties": {
                 "molecular_weight": {
                     "type": "number",
-                    "description": "Molecular weight of the molecule in Da."
+                    "description": "Molecular weight of the molecule in g/mol."
                 },
                 "chemical_formula": {
                     "type": "string",
                     "description": "Chemical formula of the molecule"
+                },
+                "iupac_name": {
+                    "type": "string",
+                    "description": "IUPAC name of the molecule"
+                },
+                "synonyms": {
+                    "type": "string",
+                    "description": "Synonymous names of the molecule"
                 },
                 "number_of_atoms": {
                     "type": "integer",
@@ -36,10 +44,13 @@
                         "chemspider": {
                             "type": "integer",
                             "description": "Chemspider ID of the molecule."
+                        },
+                        "pubchem_cid": {
+                            "type": "integer",
+                            "description": "PubChem CID of the molecule."
                         }
                     }
-                },
-
+                }
             },
             "additionalProperties": false
         }
