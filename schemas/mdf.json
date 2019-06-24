@@ -13,7 +13,7 @@
             },
             "source_id": {
                 "type": "string",
-                "description": "A unique (globally) identifier for the dataset."
+                "description": "A unique (globally) identifier for the dataset, in the form '{source_name}_v{MDF Search version}.{submission version}'. The MDF Search version is how many times this dataset has been submitted to MDF Search, and the submission version is how many times that Search version was submitted to MDF Connect (due to errors, resubmissions, etc.)."
             },
             "mdf_id": {
                 "type": "string",
