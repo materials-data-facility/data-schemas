@@ -46,18 +46,6 @@
                 "spot_size": {
                     "description": "Spot size.",
                     "type": "integer"
-                },
-                "dimensionality": {
-                    "description": "Dimensionality of the data.",
-                    "type": "integer"
-                },
-                "dimension_sizes": {
-                    "description": "Sizes of each dimension.",
-                    "type": "array",
-                    "items": {
-                        "description": "One dimension size. Unit: pixel",
-                        "type": "integer"
-                    }
                 }
             },
             "additionalProperties": false

@@ -66,8 +66,6 @@
     },
     "image": {
         "megapixels": 55,
-        "width": 555,
-        "height": 5555,
         "color_depth": 5,
         "channels": 2
     },

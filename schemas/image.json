@@ -11,13 +11,17 @@
                     "description": "Millions of pixels within an image",
                     "type": "number"
                 },
-                "width": {
-                    "description": "Number of pixels in the horizontal direction",
+                "dimensionality": {
+                    "description": "Number of dimensions in the image.",
                     "type": "integer"
                 },
-                "height": {
-                    "description": "Number of pixels in the vertical direction",
-                    "type": "integer"
+                "dimension_sizes": {
+                    "description": "Sizes of each dimension, in pixels.",
+                    "type": "array",
+                    "items": {
+                        "description": "One dimension size. Unit: pixel",
+                        "type": "integer"
+                    }
                 },
                 "color_depth": {
                     "description": "Number of bits used to describe each color",
