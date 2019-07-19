@@ -26,6 +26,38 @@
                 "collection_angle": {
                     "description": "Collection angle. Unit: degrees",
                     "type": "number"
+                },
+                "emission_current": {
+                    "description": "Emission current. Unit: uA",
+                    "type": "number"
+                },
+                "actual_magnification": {
+                    "description": "Actual magnification of the sample.",
+                    "type": "number"
+                },
+                "operation_mode": {
+                    "description": "Mode of operation, such as 'diffraction'.",
+                    "type": "string"
+                },
+                "microscope": {
+                    "description": "The microscope used.",
+                    "type": "string"
+                },
+                "spot_size": {
+                    "description": "Spot size.",
+                    "type": "integer"
+                },
+                "dimensionality": {
+                    "description": "Dimensionality of the data.",
+                    "type": "integer"
+                },
+                "dimension_sizes": {
+                    "description": "Sizes of each dimension.",
+                    "type": "array",
+                    "items": {
+                        "description": "One dimension size. Unit: pixel",
+                        "type": "integer"
+                    }
                 }
             },
             "additionalProperties": false
