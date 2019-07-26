@@ -31,10 +31,6 @@
                     "description": "Emission current. Unit: uA",
                     "type": "number"
                 },
-                "actual_magnification": {
-                    "description": "Actual magnification of the sample.",
-                    "type": "number"
-                },
                 "operation_mode": {
                     "description": "Mode of operation, such as 'diffraction'.",
                     "type": "string"
