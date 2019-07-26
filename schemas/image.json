@@ -7,20 +7,16 @@
             "type": "object",
             "description": "Key metadata about images",
             "properties": {
-                "dimensions": {
-                    "description": "The dimensions of the image.",
+                "shape": {
+                    "description": "The shape of the image, in channels-last format.",
                     "type": "array",
                     "items": {
-                        "description": "One dimension size. Unit: pixel",
+                        "description": "Dimension size. Unit: #",
                         "type": "integer"
                     }
                 },
                 "color_depth": {
                     "description": "Number of bits used to describe each color",
-                    "type": "integer"
-                },
-                "channels": {
-                    "description": "Number of color channels or spectra",
                     "type": "integer"
                 }
             },

@@ -65,10 +65,9 @@
         "collection_angle": 360
     },
     "image": {
-        "dimensions": [
+        "shape": [
             1, 2, 3, 999
-        ],
-        "channels": 2
+        ]
     },
     "md": {
         "ensemble": "Something",
