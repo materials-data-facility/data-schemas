@@ -7,16 +7,8 @@
             "type": "object",
             "description": "Key metadata about images",
             "properties": {
-                "megapixels": {
-                    "description": "Millions of pixels within an image",
-                    "type": "number"
-                },
-                "dimensionality": {
-                    "description": "Number of dimensions in the image.",
-                    "type": "integer"
-                },
-                "dimension_sizes": {
-                    "description": "Sizes of each dimension, in pixels.",
+                "dimensions": {
+                    "description": "The dimensions of the image.",
                     "type": "array",
                     "items": {
                         "description": "One dimension size. Unit: pixel",
