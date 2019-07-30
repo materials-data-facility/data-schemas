@@ -184,4 +184,19 @@
     "parent_organizations": [
         "National Institute of Standards and Technology"
     ]
+}, {
+    "canonical_name": "MDF Open",
+    "aliases": [
+        "Open"
+    ],
+    "description": "A template for open and published data.",
+    "permission_groups": [
+        "public"
+    ],
+    "acl": [
+        "public"
+    ],
+    "services": {
+        "mdf_publish": true
+    }
 }]
