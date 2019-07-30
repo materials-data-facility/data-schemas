@@ -191,12 +191,15 @@
     ],
     "description": "A template for open and published data.",
     "permission_groups": [
-        "public"
+        "cc192dca-3751-11e8-90c1-0a7c735d220a"
     ],
     "acl": [
         "public"
     ],
+    "curation": true,
     "services": {
-        "mdf_publish": true
+        "mdf_publish": {
+            "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/"
+        }
     }
 }]
