@@ -65,11 +65,9 @@
         "collection_angle": 360
     },
     "image": {
-        "megapixels": 55,
-        "width": 555,
-        "height": 5555,
-        "color_depth": 5,
-        "channels": 2
+        "shape": [
+            1, 2, 3, 999
+        ]
     },
     "md": {
         "ensemble": "Something",
