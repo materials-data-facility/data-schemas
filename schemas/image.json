@@ -8,10 +8,10 @@
             "description": "Key metadata about images",
             "properties": {
                 "shape": {
-                    "description": "The shape of the image, in channels-last format.",
+                    "description": "The shape of the image, in [y, x, z, ..., channels] format.",
                     "type": "array",
                     "items": {
-                        "description": "Dimension size. Unit: #",
+                        "description": "Dimension size or channel count. Unit: Pixels or number.",
                         "type": "integer"
                     }
                 },
