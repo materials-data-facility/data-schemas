@@ -7,7 +7,7 @@
             "type": "object",
             "description": "Analysis of spectrograph.",
             "properties": {
-                "spectroscopic technique":{
+                "technique":{
                   "description": "Technique used to generate spectrograph",
                   "type": "string"
                 },
@@ -38,12 +38,16 @@
                     "type": "object",
                     "description": "Ratios of areas between pairs of peaks",
                     "properties": {
-                      "peak-pair": {
-                        "description": "Lables of two peaks separated by a dash",
+                      "peak_1":{
+                        "description": "Label for the peak that is numerator of the ratio",
+                        "type": "string"
+                      },
+                      "peak_2":{
+                        "description": "Label for the peak that is denominator of the ratio",
                         "type": "string"
                       },
                       "ratio": {
-                        "description": "The ratio of the area of the two peaks",
+                        "description": "The ratio of the area peak_1 and peak_2",
                         "type": "number"
                       }
                     }
