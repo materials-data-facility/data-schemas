@@ -36,6 +36,18 @@
                     "type": "string",
                     "description": "InChi string representation of the molecule"
                 },
+                "homo":{
+                    "type":"number",
+                    "description":"Highest occupied molecular orbital. Units: eV"
+                },
+                "lumo":{
+                    "type":"number",
+                    "description":"Lowest unoccupied molecular orbital. Units: eV"
+                },
+                "dipole_moment":{
+                    "type":"number",
+                    "description":"Electric dipole moment. Units: Debye"
+                },
                 "cross_reference": {
                     "type": "object",
                     "description": "Cross-references of this molecule in other databases.",
