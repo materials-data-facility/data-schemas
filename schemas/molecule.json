@@ -36,6 +36,10 @@
                     "type": "string",
                     "description": "InChi string representation of the molecule"
                 },
+                "inchi_key":{
+                    "type": "string",
+                    "description": "Hashed InChi string of the molecule"
+                },
                 "homo":{
                     "type":"number",
                     "description":"Highest occupied molecular orbital. Units: eV"
