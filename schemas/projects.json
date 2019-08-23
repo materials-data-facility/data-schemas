@@ -1,46 +1,116 @@
 {
-"$schema": "http://json-schema.org/draft-04/schema#",
-"title": "projects block",
-"type": "object",
-"description": "Schema for organization-defined project blocks.",
-"properties": {
-    "projects": {
-        "type": "object",
-        "description": "External organization-defined block.",
-        "properties": {
-            "nanomfg": {
-                "type": "object",
-                "description": "Project block for NanoMFG.",
-                "properties": {
-                    "base_pressure": {
-                        "type": "number"
-                    },
-                    "carbon_source": {
-                        "type": "string"
-                    },
-                    "catalyst": {
-                        "type": "string"
-                    },
-                    "grain_size": {
-                        "type": "string"
-                    },
-                    "max_temperature": {
-                        "type": "number"
-                    },
-                    "orientation": {
-                        "type": "string"
-                    },
-                    "sample_surface_area": {
-                        "type": "number"
-                    },
-                    "sample_thickness": {
-                        "type": "number"
-                    }
-                },
-                "additionalProperties": false
-            }
-        },
-        "additionalProperties": false
-    }
-}
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "projects block",
+	"type": "object",
+	"description": "Schema for organization-defined project blocks.",
+	"properties": {
+		"projects": {
+			"type": "object",
+			"description": "External organization-defined block.",
+			"properties": {
+				"nanomfg": {
+					"type": "object",
+					"description": "Project block for NanoMFG.",
+					"properties": {
+						"base_pressure": {
+							"type": "number"
+						},
+						"carbon_source": {
+							"type": "string"
+						},
+						"catalyst": {
+							"type": "string"
+						},
+						"grain_size": {
+							"type": "string"
+						},
+						"max_temperature": {
+							"type": "number"
+						},
+						"orientation": {
+							"type": "string"
+						},
+						"sample_surface_area": {
+							"type": "number"
+						},
+						"sample_thickness": {
+							"type": "number"
+						}
+					},
+					"additionalProperties": false
+				},
+				"verde": {
+					"type": "object",
+					"description": "VERDE calculation outputs",
+					"properties": {
+						"vertical_excitation_energy": {
+							"type": "number",
+							"description": "Vertical excitation energy. Units: eV"
+						},
+						"ionization_potential": {
+							"type": "number",
+							"description": "Ionization potential. Units: eV"
+						},
+						"redox_potential": {
+							"type": "object",
+							"description": "Redox potentials of the molecule. Units: eV",
+							"additionalProperties": false,
+							"properties": {
+								"S0": {
+									"type": "number",
+									"description": "Redox potential for electronic ground state S0. Units: eV"
+								},
+								"S1": {
+									"type": "number",
+									"description": "Redox potential for electronicically excited state S1. Units: eV"
+								},
+								"T1": {
+									"type": "number",
+									"description": "Redox potential for electronically excited state T1. Units: eV"
+								}
+							}
+						},
+						"dipole_moment": {
+							"type": "object",
+							"description": "Dipole moment of the molecule. Units: Debye",
+							"additionalProperties": false,
+							"properties": {
+								"S0": {
+									"type": "number",
+									"description": "Dipole moment for electronic ground state S0. Units: Debye"
+								},
+								"S1": {
+									"type": "number",
+									"description": "Dipole moment for electronicically excited state S1. Units: Debye"
+								},
+								"T1": {
+									"type": "number",
+									"description": "Dipole moment for electronically excited state T1. Units: Debye"
+								}
+							}
+						},
+						"0_0": {
+							"type": "object",
+							"description": "0-0 transition energies of the molecule. Units: eV",
+							"additionalProperties": false,
+							"properties": {
+								"S1": {
+									"type": "number",
+									"description": "0_0 energy for electronicically excited state S1. Units: eV"
+								},
+								"T1": {
+									"type": "number",
+									"description": "0_0 energy for electronically excited state T1. Units: eV"
+								}
+							}
+						}
+					},
+					"additionalProperties": false
+				}
+
+
+			},
+			"additionalProperties": false
+		}
+	}
 }
