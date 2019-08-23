@@ -24,6 +24,10 @@
                     "type": "string",
                     "description": "Synonymous names of the molecule"
                 },
+                "vendor":{
+                    "type":"string",
+                    "description":"Vendor the molecule was obtaiend from"
+                },
                 "number_of_atoms": {
                     "type": "integer",
                     "description": "Number of atoms in the molecule."
