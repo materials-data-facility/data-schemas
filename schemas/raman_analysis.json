@@ -1,16 +1,12 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "MDF Spectrographic Analysis schema",
-    "description": "Schema to describe analysis of a spectrograph.",
+    "title": "MDF Raman Analysis schema",
+    "description": "Schema to describe analysis of a Raman spectrograph.",
     "properties": {
-        "spectrographic_analysis": {
+        "raman_analysis": {
             "type": "object",
-            "description": "Analysis of spectrograph.",
+            "description": "Analysis of Raman spectrograph.",
             "properties": {
-                "technique":{
-                  "description": "Technique used to generate spectrograph",
-                  "type": "string"
-                },
                 "wavelength": {
                     "description": "Wavelength of the electromagnetic source",
                     "type": "number"
@@ -26,7 +22,11 @@
                         "type": "string"
                       },
                       "width": {
-                        "description": "Width of peak in *** units?",
+                        "description": "Width of peak in cm-1",
+                        "type": "number"
+                      },
+                      "center": {
+                        "description": "Position of the center of the peak in cm-1",
                         "type": "number"
                       }
                     }
