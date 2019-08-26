@@ -8,7 +8,7 @@
             "type": "object",
             "description": "material block",
             "properties": {
-                "common-name": {
+                "common_name": {
                     "type": "string",
                     "description": "The common name of the material studied."
                 },
