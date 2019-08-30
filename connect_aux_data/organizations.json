@@ -220,4 +220,17 @@
 			"publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/afrl-challenge-data/"
 		}
 	}
+},{
+	"canonical_name": "Center for Predictive Simulation of Functional Materials",
+	"aliases": [
+		"CPSFM"
+	],
+	"description": "The Center for Predictive Simulation of Functional Materials develops, applies, validates, and disseminates parameter-free methods, open source codes, and scientific data to predict and explain the properties of functional materials for energy applications.",
+	"homepage": "https://cpsfm.ornl.gov",
+	"permission_groups": [
+        	"cc192dca-3751-11e8-90c1-0a7c735d220a"
+	],
+	"acl": [
+		"public"
+	]
 }]
