@@ -62,12 +62,20 @@
         "beam_energy": 5,
         "detector": "On",
         "magnification": 5,
-        "collection_angle": 360
+        "collection_angle": 360,
+        "emission_current": 1
     },
     "image": {
         "shape": [
             1, 2, 3, 999
         ]
+    },
+    "raman": {
+        "peaks": [{
+            "label": "g",
+            "width": 5,
+            "center": 1
+        }]
     },
     "md": {
         "ensemble": "Something",

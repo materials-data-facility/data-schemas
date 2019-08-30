@@ -31,6 +31,9 @@
         "image": {
             "$ref": "image.json#/properties/image"
         },
+        "raman": {
+            "$ref": "raman.json#/properties/raman"
+        },
         "md": {
             "$ref": "md.json#/properties/md"
         },
