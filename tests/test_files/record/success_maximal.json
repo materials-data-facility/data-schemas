@@ -47,12 +47,12 @@
         "space_group_number": 5,
         "number_of_atoms": 1.5,
         "volume": 5.5,
-        "stoichiometry": "A2B",
-        "cross_reference": {
-            "icsd": 555,
-            "cod": 5555,
-            "amcsd": 55555
-        }
+        "stoichiometry": "A2B"
+    },
+    "cross_reference": {
+        "icsd": 555,
+        "cod": 5555,
+        "amcsd": 55555
     },
     "dft": {
         "converged": true,

@@ -1,0 +1,35 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MDF Cross-Reference Block",
+    "description": "Cross-references into other data sources.",
+    "type": "object",
+    "properties": {
+        "cross_reference": {
+            "type": "object",
+            "description": "References into other data sources.",
+            "properties": {
+                "chemspider": {
+                    "type": "integer",
+                    "description": "Chemspider ID of the molecule."
+                },
+                "pubchem_cid": {
+                    "type": "integer",
+                    "description": "PubChem CID of the molecule."
+                },
+                "icsd": {
+                    "type": "integer",
+                    "description": "Inorganic Crystal Structure Database (ICSD) collection code."
+                },
+                "cod": {
+                    "type": "integer",
+                    "description": "Crystallography Open Database (COD) identification code."
+                },
+                "amcsd": {
+                    "type": "integer",
+                    "description": "American Mineralogist Crystal Structure Database (AMCSD) identification code."
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}
