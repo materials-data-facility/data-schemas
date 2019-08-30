@@ -1,0 +1,59 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MDF Raman schema",
+    "description": "Schema to describe analysis of a Raman spectrograph.",
+    "properties": {
+        "raman": {
+            "type": "object",
+            "description": "Analysis of Raman spectrograph.",
+            "properties": {
+                "wavelength": {
+                    "description": "Wavelength of the electromagnetic source",
+                    "type": "number"
+                },
+                "peaks": {
+                  "type": "array",
+                  "items":{
+                    "type": "object",
+                    "description": "A single peak detected by the analysis",
+                    "properties": {
+                      "label": {
+                        "description": "Label for this peak",
+                        "type": "string"
+                      },
+                      "width": {
+                        "description": "Width of peak in cm-1",
+                        "type": "number"
+                      },
+                      "center": {
+                        "description": "Position of the center of the peak in cm-1",
+                        "type": "number"
+                      }
+                    }
+                  }
+                },
+                "ratios": {
+                  "type": "array",
+                  "items":{
+                    "type": "object",
+                    "description": "Ratios of areas between pairs of peaks",
+                    "properties": {
+                      "peak_1":{
+                        "description": "Label for the peak that is numerator of the ratio",
+                        "type": "string"
+                      },
+                      "peak_2":{
+                        "description": "Label for the peak that is denominator of the ratio",
+                        "type": "string"
+                      },
+                      "ratio": {
+                        "description": "The ratio of the area peak_1 and peak_2",
+                        "type": "number"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }

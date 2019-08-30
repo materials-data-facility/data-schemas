@@ -7,24 +7,16 @@
             "type": "object",
             "description": "Key metadata about images",
             "properties": {
-                "megapixels": {
-                    "description": "Millions of pixels within an image",
-                    "type": "number"
-                },
-                "width": {
-                    "description": "Number of pixels in the horizontal direction",
-                    "type": "integer"
-                },
-                "height": {
-                    "description": "Number of pixels in the vertical direction",
-                    "type": "integer"
+                "shape": {
+                    "description": "The shape of the image, in [y, x, z, ..., channels] format.",
+                    "type": "array",
+                    "items": {
+                        "description": "Dimension size or channel count. Unit: Pixels or number.",
+                        "type": "integer"
+                    }
                 },
                 "color_depth": {
                     "description": "Number of bits used to describe each color",
-                    "type": "integer"
-                },
-                "channels": {
-                    "description": "Number of color channels or spectra",
                     "type": "integer"
                 }
             },
