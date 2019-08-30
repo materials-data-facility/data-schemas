@@ -1,9 +1,9 @@
 {
     "$schema": "http://json-schema.org/draft-04/schema#",
-    "title": "MDF Raman Analysis schema",
+    "title": "MDF Raman schema",
     "description": "Schema to describe analysis of a Raman spectrograph.",
     "properties": {
-        "raman_analysis": {
+        "raman": {
             "type": "object",
             "description": "Analysis of Raman spectrograph.",
             "properties": {
