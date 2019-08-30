@@ -40,6 +40,9 @@
         "xrd": {
             "$ref": "xrd.json#/properties/xrd"
         },
+        "cross_reference": {
+            "$ref": "cross_reference.json#/properties/cross_reference"
+        },
         "custom": {
             "$ref": "custom.json#/properties/custom"
         },

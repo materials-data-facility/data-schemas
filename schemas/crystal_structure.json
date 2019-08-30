@@ -23,25 +23,6 @@
                 "stoichiometry": {
                     "type": "string",
                     "description": "Generic formula of the crystal (e.g., A2B)"
-                },
-                "cross_reference": {
-                    "type": "object",
-                    "description": "Cross-references of this crystal structure in other databases.",
-                    "additionalProperties": false,
-                    "properties": {
-                        "icsd": {
-                            "type": "integer",
-                            "description": "Inorganic Crystal Structure Database (ICSD) collection code."
-                        },
-                        "cod": {
-                            "type": "integer",
-                            "description": "Crystallography Open Database (COD) identification code."
-                        },
-                        "amcsd": {
-                            "type": "integer",
-                            "description": "American Mineralogist Crystal Structure Database (AMCSD) identification code."
-                        }
-                    }
                 }
             },
             "additionalProperties": false,
