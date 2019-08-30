@@ -2,9 +2,7 @@
     "mdf": {
         "source_name": "foobar",
         "source_id": "foobar_v1-2",
-        "mdf_id": "abcd123",
         "scroll_id": 0,
-        "parent_id": "abcd123",
         "acl": ["public"],
         "ingest_date": "2018-11-15T17:04:10.315060Z",
         "resource_type": "dataset",
@@ -64,14 +62,20 @@
         "beam_energy": 5,
         "detector": "On",
         "magnification": 5,
-        "collection_angle": 360
+        "collection_angle": 360,
+        "emission_current": 1
     },
     "image": {
-        "megapixels": 55,
-        "width": 555,
-        "height": 5555,
-        "color_depth": 5,
-        "channels": 2
+        "shape": [
+            1, 2, 3, 999
+        ]
+    },
+    "raman": {
+        "peaks": [{
+            "label": "g",
+            "width": 5,
+            "center": 1
+        }]
     },
     "md": {
         "ensemble": "Something",

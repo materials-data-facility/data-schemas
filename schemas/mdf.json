@@ -13,19 +13,11 @@
             },
             "source_id": {
                 "type": "string",
-                "description": "A unique (globally) identifier for the dataset."
-            },
-            "mdf_id": {
-                "type": "string",
-                "description": "The BSON ID of the entry, which is not static between dataset versions."
+                "description": "A unique (globally) identifier for the dataset, in the form '{source_name}_v{MDF Search version}.{submission version}'. The MDF Search version is how many times this dataset has been submitted to MDF Search, and the submission version is how many times that Search version was submitted to MDF Connect (due to errors, resubmissions, etc.)."
             },
             "scroll_id": {
                 "type": "integer",
                 "description": "A number to enable aggregating (via simulated scrolling) in Forge."
-            },
-            "parent_id": {
-                "type": "string",
-                "description": "The BSON ID of the entry's parent."
             },
             "acl": {
                 "type": "array",
@@ -66,7 +58,6 @@
         "required": [
             "source_name",
             "source_id",
-            "mdf_id",
             "acl",
             "ingest_date",
             "resource_type"
