@@ -1,0 +1,45 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MDF Figure Block",
+    "description": "Schema to describe figures.",
+    "type": "object",
+    "properties": {
+        "figure": {
+            "type": "object",
+            "description": "Figure block",
+            "properties": {
+                "caption": {
+                    "type": "string",
+                    "description": "Figure caption."
+                },
+                "panels": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "description": "Figure panels",
+                        "properties": {
+                            "label": {
+                                "description": "Label for this panel",
+                                "type": "string"
+                            },
+                            "axes": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "description": "Figure axes",
+                                    "properties": {
+                                        "label": {
+                                            "description": "Axis label",
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}
