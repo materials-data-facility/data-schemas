@@ -12,7 +12,7 @@
                     "type": "string",
                     "description": "TODO"
                 },
-                "heat_treatment":
+                "heat_treatment": {
                     "type": "string",
                     "description": "TODO"
                 },
