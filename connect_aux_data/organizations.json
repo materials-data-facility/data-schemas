@@ -128,7 +128,7 @@
     "description": "The aim of the nanomanufacturing (nanoMFG) node is to develop computational software tools aimed at creating smart, model-driven and experimentally informed nanomanufactured structures and devices.",
     "homepage": "https://nanohub.org/groups/nanomfg",
     "permission_groups": [
-        "TODO"
+        "ad88f7cb-cf53-11e9-8526-0e161d24c936"
     ],
     "project_blocks": [
         "nanomfg"
