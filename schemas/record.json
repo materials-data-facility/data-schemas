@@ -13,6 +13,9 @@
         "material": {
             "$ref": "material.json#/properties/material"
         },
+        "molecule": {
+            "$ref": "molecule.json#/properties/molecule"
+        },
         "origin": {
             "$ref": "origin.json#/properties/origin"
         },
@@ -53,7 +56,6 @@
     "additionalProperties": false,
     "required": [
         "mdf",
-        "files",
-        "material"
+        "files"
     ]
 }
