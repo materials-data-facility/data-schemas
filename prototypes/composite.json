@@ -5,32 +5,24 @@
     "type": "object",
     "properties": {
         "composite": {
-            "type": "object",
+            "type": "array",
             "description": "Composite material block, composed of other MDF blocks.",
-            "properties": {
-                "materials": {
-                    "type": "array",
-                    "description": "Material blocks",
-                    "items": {
+            "items": {
+                "type": "object",
+                "description": "One composite material, expressed in other MDF blocks.",
+                "properties": {
+                    "material": {
                         "$ref": "material.json#/properties/material"
-                    }
-                },
-                "molecules": {
-                    "type": "array",
-                    "description": "Molecule blocks",
-                    "items": {
+                    },
+                    "molecule": {
                         "$ref": "molecule.json#/properties/molecule"
-                    }
-                },
-                "alloys": {
-                    "type": "array",
-                    "description": "Alloy blocks",
-                    "items": {
+                    },
+                    "alloy": {
                         "$ref": "alloy.json#/properties/alloy"
                     }
-                }
-            },
-            "additionalProperties": false
+                },
+                "additionalProperties": false
+            }
         }
     }
 }
