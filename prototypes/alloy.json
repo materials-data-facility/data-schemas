@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MDF Alloy Block",
+    "description": "Schema for the alloy block in MDF records.",
+    "type": "object",
+    "properties": {
+        "alloy": {
+            "type": "object",
+            "description": "Alloy block",
+            "properties": {
+                "specification": {
+                    "type": "string",
+                    "description": "TODO"
+                },
+                "heat_treatment": {
+                    "type": "string",
+                    "description": "TODO"
+                },
+                "condition":{
+                    "type": "string",
+                    "description": "TODO"
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}

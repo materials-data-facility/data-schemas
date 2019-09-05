@@ -1,0 +1,28 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MDF Composite Block",
+    "description": "Schema for composite materials in MDF records, composed of other MDF blocks.",
+    "type": "object",
+    "properties": {
+        "composite": {
+            "type": "array",
+            "description": "Composite material block, composed of other MDF blocks.",
+            "items": {
+                "type": "object",
+                "description": "One composite material, expressed in other MDF blocks.",
+                "properties": {
+                    "material": {
+                        "$ref": "material.json#/properties/material"
+                    },
+                    "molecule": {
+                        "$ref": "molecule.json#/properties/molecule"
+                    },
+                    "alloy": {
+                        "$ref": "alloy.json#/properties/alloy"
+                    }
+                },
+                "additionalProperties": false
+            }
+        }
+    }
+}

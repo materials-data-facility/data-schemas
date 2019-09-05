@@ -13,6 +13,9 @@
         "material": {
             "$ref": "material.json#/properties/material"
         },
+        "molecule": {
+            "$ref": "molecule.json#/properties/molecule"
+        },
         "origin": {
             "$ref": "origin.json#/properties/origin"
         },
@@ -40,6 +43,9 @@
         "xrd": {
             "$ref": "xrd.json#/properties/xrd"
         },
+        "cross_reference": {
+            "$ref": "cross_reference.json#/properties/cross_reference"
+        },
         "custom": {
             "$ref": "custom.json#/properties/custom"
         },
@@ -50,7 +56,6 @@
     "additionalProperties": false,
     "required": [
         "mdf",
-        "files",
-        "material"
+        "files"
     ]
 }
