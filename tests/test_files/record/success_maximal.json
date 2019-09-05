@@ -45,12 +45,12 @@
         "space_group_number": 5,
         "number_of_atoms": 1.5,
         "volume": 5.5,
-        "stoichiometry": "A2B",
-        "cross_reference": {
-            "icsd": 555,
-            "cod": 5555,
-            "amcsd": 55555
-        }
+        "stoichiometry": "A2B"
+    },
+    "cross_reference": {
+        "icsd": 555,
+        "cod": 5555,
+        "amcsd": 55555
     },
     "dft": {
         "converged": true,
@@ -62,14 +62,20 @@
         "beam_energy": 5,
         "detector": "On",
         "magnification": 5,
-        "collection_angle": 360
+        "collection_angle": 360,
+        "emission_current": 1
     },
     "image": {
-        "megapixels": 55,
-        "width": 555,
-        "height": 5555,
-        "color_depth": 5,
-        "channels": 2
+        "shape": [
+            1, 2, 3, 999
+        ]
+    },
+    "raman": {
+        "peaks": [{
+            "label": "g",
+            "width": 5,
+            "center": 1
+        }]
     },
     "md": {
         "ensemble": "Something",

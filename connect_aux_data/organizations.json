@@ -36,6 +36,24 @@
         "Argonne National Laboratory"
     ]
 }, {
+	"canonical_name": "AFRL Additive Manufacturing Challenge",
+	"aliases": [
+		"MIDAS"
+	],
+	"description": "Organization for AFRL Additive Manufacturing Challenge datasets",
+	"permission_groups": [
+		"abcb2d16-02da-11e9-87e3-0e8017bdda58"
+	],
+	"acl": [
+		"fe6bbb86-74fe-11e8-b558-0a7d99bc78fe"
+	],
+	"curation": true,
+	"services": {
+		"mdf_publish": {
+			"publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/afrl-challenge-data/"
+		}
+	}
+}, {
     "canonical_name": "APS Sector 1",
     "aliases": [
     ],
@@ -98,6 +116,19 @@
     "parent_organizations": [
     ]
 }, {
+	"canonical_name": "Center for Predictive Simulation of Functional Materials",
+	"aliases": [
+		"CPSFM"
+	],
+	"description": "The Center for Predictive Simulation of Functional Materials develops, applies, validates, and disseminates parameter-free methods, open source codes, and scientific data to predict and explain the properties of functional materials for energy applications.",
+	"homepage": "https://cpsfm.ornl.gov",
+	"permission_groups": [
+        	"cc192dca-3751-11e8-90c1-0a7c735d220a"
+	],
+	"acl": [
+		"public"
+	]
+}, {
     "canonical_name": "High Throughput Experimental Materials Database",
     "aliases": [
         "HTEM"
@@ -128,7 +159,7 @@
     "description": "The aim of the nanomanufacturing (nanoMFG) node is to develop computational software tools aimed at creating smart, model-driven and experimentally informed nanomanufactured structures and devices.",
     "homepage": "https://nanohub.org/groups/nanomfg",
     "permission_groups": [
-        "TODO"
+        "ad88f7cb-cf53-11e9-8526-0e161d24c936"
     ],
     "project_blocks": [
         "nanomfg"
@@ -202,17 +233,4 @@
             "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_open/"
         }
     }
-},{
-	"canonical_name": "Center for Predictive Simulation of Functional Materials",
-	"aliases": [
-		"CPSFM"
-	],
-	"description": "The Center for Predictive Simulation of Functional Materials develops, applies, validates, and disseminates parameter-free methods, open source codes, and scientific data to predict and explain the properties of functional materials for energy applications.",
-	"homepage": "https://cpsfm.ornl.gov",
-	"permission_groups": [
-        	"cc192dca-3751-11e8-90c1-0a7c735d220a"
-	],
-	"acl": [
-		"public"
-	]
 }]

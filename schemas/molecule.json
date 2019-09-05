@@ -1,0 +1,63 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "MDF Molecule",
+    "description": "Schema to describe a molecule.",
+    "type": "object",
+    "properties": {
+        "molecule": {
+            "type": "object",
+            "description": "Data describing a molecule",
+            "properties": {
+                "molecular_weight": {
+                    "type": "number",
+                    "description": "Molecular weight of the molecule in g/mol."
+                },
+                "iupac_name": {
+                    "type": "string",
+                    "description": "IUPAC name of the molecule"
+                },
+                "synonyms": {
+                    "type": "array",
+                    "description": "Synonymous names of the molecule",
+                    "items": {
+                        "type": "string",
+                        "description": "One synonym for the molecule."
+                    }
+                },
+                "vendor": {
+                    "type": "string",
+                    "description": "Vendor the molecule was obtained from"
+                },
+                "number_of_atoms": {
+                    "type": "integer",
+                    "description": "Number of atoms in the molecule."
+                },
+                "smiles": {
+                    "type": "string",
+                    "description": "SMILES string representation of the molecule"
+                },
+                "inchi": {
+                    "type": "string",
+                    "description": "InChi string representation of the molecule"
+                },
+                "inchi_key": {
+                    "type": "string",
+                    "description": "Hashed InChi string of the molecule"
+                },
+                "homo": {
+                    "type": "number",
+                    "description": "Highest occupied molecular orbital. Units: eV"
+                },
+                "lumo": {
+                    "type": "number",
+                    "description": "Lowest unoccupied molecular orbital. Units: eV"
+                },
+                "dipole_moment": {
+                    "type": "number",
+                    "description": "Electric dipole moment. Units: Debye"
+                }
+            },
+            "additionalProperties": false
+        }
+    }
+}
