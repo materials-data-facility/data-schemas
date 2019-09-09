@@ -235,7 +235,7 @@
     }
 },{
     "canonical_name": "Virtual Excited State Reference for the Discovery of Electronic Materials Database",
-    "aliases" ["VERDE Materials DB"],
+    "aliases":["VERDE Materials DB"],
     "description": "An organization to support the VERDE Materials DB",
     "permission_groups": [
 	"cc35fe9d-d312-11e9-9c88-0ad4acb67ed4"
