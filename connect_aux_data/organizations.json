@@ -248,5 +248,21 @@
         "mdf_publish": {
 	    "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/verde/"
     }
+}, {
+    "canonical_name": "Polymer Property Predictor and Database",
+         "aliases"["PPPDB"],
+    "description": "An organization to support the Polymer Property Predictor and Database",
+    "permission_groups": [
+        "5773d4af-d316-11e9-9c88-0ad4acb67ed4"
+    ],
+    "acl": [
+        "public"
+    ],
+    "curation": true,
+    "services": {
+        "mdf_publish": {
+            "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/pppdb/"
+        }
+    }
 }
 }]
