@@ -250,7 +250,7 @@
     }
 }, {
     "canonical_name": "Polymer Property Predictor and Database",
-         "aliases"["PPPDB"],
+    "aliases":["PPPDB"],
     "description": "An organization to support the Polymer Property Predictor and Database",
     "permission_groups": [
         "5773d4af-d316-11e9-9c88-0ad4acb67ed4"
