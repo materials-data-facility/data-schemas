@@ -243,6 +243,10 @@
         "type": "boolean",
         "description": "Must be true for dataset updates, and false for new datasets. Serves as a check against accidental dataset overwriting."
     },
+    "incremental_update": {
+        "type": "string",
+        "description": "Set to a source_id previously submitted to perform an incremental update of that source_id, changing only the other metadata provided in this submission."
+    },
     "curation": {
         "type": "boolean",
         "description": "When true, trigger curation for this submission. This is normally set by an organization."
