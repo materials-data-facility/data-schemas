@@ -12,6 +12,17 @@
     "acl": [
         "5fc63928-3752-11e8-9c6f-0e00fd09bf20"
     ],
+    "rightsList": [{
+        "rightsURI": "https://example.com/license",
+        "rights": "Example License: No legal effect"
+    }],
+    "fundingReferences": [{
+        "funderName": "Materials Data Facility",
+        "awardNumber": {
+            "awardNumber": "42"
+        },
+        "awardTitle": "MDF Exemplary Organization Grant"
+    }],
     "data_destinations": [
         "globus://e38ee745-6d04-11e5-ba46-22000b92c6ec/MDF/mdf_connect/test_files/deleteme_contents/"
     ],
