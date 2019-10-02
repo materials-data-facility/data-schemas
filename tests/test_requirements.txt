@@ -1,5 +1,6 @@
 flake8>=3.5.0
 jsonschema>=2.6.0
+m2r>=0.2.1
 mdf_toolbox>=0.4.10
 pytest>=3.4.1
 sphinx_bootstrap_theme>=0.6.5
