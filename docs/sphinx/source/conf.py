@@ -14,6 +14,8 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_bootstrap_theme
+# Generate RSTs on-demand
+import gen_rst  # noqa: F401, Import unused
 
 
 # -- Project information -----------------------------------------------------
