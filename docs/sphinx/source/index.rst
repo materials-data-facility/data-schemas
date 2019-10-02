@@ -12,4 +12,4 @@ Index of schemas used in the Materials Data Facility.
    Organization schema <organization>
    List of all organizations <organizations_list>
 
-.. mdinclude:: ../../../README/md
+.. mdinclude:: ../../../README.md
