@@ -15,7 +15,7 @@
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_bootstrap_theme
 # Generate RSTs on-demand
-import gen_rst  # noqa: F401, Import unused
+# import gen_rst  # noqa: F401, Import unused
 
 
 # -- Project information -----------------------------------------------------
@@ -47,6 +47,10 @@ templates_path = ['_templates']
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = ['_build']
 
+# Cargo-culted from the Forge config
+source_suffix = ['.rst', '.md', '.ipynb']
+master_doc = 'index'
+pygments_style = 'sphinx'
 
 # -- Options for HTML output -------------------------------------------------
 
