@@ -63,6 +63,11 @@
             "description": "One Globus link."
         }
     },
+    "external_uri": {
+        "type": "string",
+        "format": "uri",
+        "description": "The external landing page for the dataset (e.g. an external repository's landing page)."
+    },
     "index": {
       "type": "object",
       "description": "Special instructions used by MDF Connect to index the data.",
