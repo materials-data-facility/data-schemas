@@ -3,7 +3,6 @@ import os
 
 import mdf_toolbox
 
-
 root_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 schema_path = os.path.join(root_path, "schemas")
 aux_path = os.path.join(root_path, "connect_aux_data")
@@ -17,11 +16,11 @@ for schema_name in schema_list:
     with open(os.path.join(docs_path, f"{schema_name}.rst"), 'w') as f:
         # Prepend header
         header = f"MDF {schema_name.capitalize()} Schema"
-        f.write(f"{header}\n{'=' * len(header)}\n")
+        f.write(f"{header}\n{'=' * len(header)}\n\n")
         for line in mdf_toolbox.prettify_jsonschema(
                                     mdf_toolbox.expand_jsonschema(schema_raw, schema_path)):
             f.write(line)
-            f.write("\n")
+            f.write("\ntest\n")
 
 with open(os.path.join(aux_path, "organizations.json")) as f:
     org_list_raw = json.load(f)
