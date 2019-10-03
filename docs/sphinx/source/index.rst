@@ -9,7 +9,6 @@ Index of schemas used in the Materials Data Facility.
    :maxdepth: 2
    :titlesonly:
 
-   Code <generate_schemas>
    Dataset schema <dataset>
    Record schema <record>
    Organization schema <organization>

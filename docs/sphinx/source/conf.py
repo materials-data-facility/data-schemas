@@ -14,8 +14,13 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 import sphinx_bootstrap_theme
+
 # Generate RSTs on-demand
 # import gen_rst  # noqa: F401, Import unused
+import os
+import subprocess
+gen_rst_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "gen_rst.py")
+subprocess.run(["python3", gen_rst_path])
 
 
 # -- Project information -----------------------------------------------------

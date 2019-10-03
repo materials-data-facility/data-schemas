@@ -3,12 +3,14 @@ import os
 
 import mdf_toolbox
 
-root_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+root_path = os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(
+                os.path.abspath(__file__)))))
 schema_path = os.path.join(root_path, "schemas")
 aux_path = os.path.join(root_path, "connect_aux_data")
-docs_path = os.path.join(os.path.dirname(__file__), "source")
+docs_path = os.path.dirname(os.path.abspath(__file__))
 
 schema_list = ["dataset", "record", "organization"]
+print(root_path)
 
 for schema_name in schema_list:
     with open(os.path.join(schema_path, f"{schema_name}.json")) as f:
@@ -20,7 +22,7 @@ for schema_name in schema_list:
         for line in mdf_toolbox.prettify_jsonschema(
                                     mdf_toolbox.expand_jsonschema(schema_raw, schema_path)):
             f.write(line)
-            f.write("\ntest\n")
+            f.write("\n")
 
 with open(os.path.join(aux_path, "organizations.json")) as f:
     org_list_raw = json.load(f)
