@@ -42,6 +42,12 @@
                 "description": "One Globus Auth UUID or the special value 'public' to require all datasets be public."
             }
         },
+        "rightsList": {
+            "$ref": "dc.json#/properties/dc/properties/rightsList"
+        },
+        "fundingReferences": {
+            "$ref": "dc.json#/properties/dc/properties/fundingReferences"
+        },
         "data_destinations": {
             "type": "array",
             "description": "Data locations (Globus endpoints) to send data for this organization.",

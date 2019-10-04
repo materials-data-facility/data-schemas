@@ -102,3 +102,10 @@ ENV/
 
 # vim swap
 *.swp
+
+# Sphinx generated files
+docs/sphinx/build*
+docs/sphinx/source/dataset.rst
+docs/sphinx/source/record.rst
+docs/sphinx/source/organization.rst
+docs/sphinx/source/organizations_list.rst
