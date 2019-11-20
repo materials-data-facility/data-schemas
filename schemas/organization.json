@@ -27,7 +27,7 @@
         },
         "permission_groups": {
             "type": "array",
-            "description": "UUIDs of Globus Groups. Members, managers, and admins of the group(s) will be given permissions within this organization in MDF.",
+            "description": "UUIDs of Globus Groups. Members of the group(s) will be given read access to organization datasets. Managers and higher roles (such as admins) will be given permission to curate organization datasets.",
             "items": {
                 "type": "string",
                 "description": "One Globus Group UUID."
@@ -39,7 +39,7 @@
             "description": "The minimum Access Control List for access to datasets in thie organization.",
             "items": {
                 "type": "string",
-                "description": "One Globus Auth UUID or the special value 'public' to require all datasets be public."
+                "description": "One Globus Auth UUID (for one Globus Auth identity or Globus Group) or the special value 'public' to require all datasets be public."
             }
         },
         "rightsList": {
@@ -50,7 +50,7 @@
         },
         "data_destinations": {
             "type": "array",
-            "description": "Data locations (Globus endpoints) to send data for this organization.",
+            "description": "Data locations (which must be Globus endpoints) to send data for this organization.",
             "items": {
                 "type": "string",
                 "description": "One Globus link."
@@ -78,7 +78,7 @@
         },
         "parent_organizations": {
             "type": "array",
-            "descriptions": "The organization(s) that are direct parents to this one.",
+            "descriptions": "The organization(s) that are direct parents to this one. Grandparent organizations are implied and should not be specified.",
             "items": {
                 "type": "string",
                 "description": "The canonical_name of one parent organization."
