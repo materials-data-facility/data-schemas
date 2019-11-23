@@ -282,4 +282,21 @@
             "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/verde/"
         }
     }
+},
+{
+    "canonical_name": "XPCS 8-ID",
+    "description": "XPCS Beamline 8-ID at Argonne National Laboratory's Advanced Photon Source (APS)",
+    "permission_groups": [
+        "13d05c3b-0a3e-11ea-94e3-0a9045086069"
+    ],
+    "acl": [
+        "13d05c3b-0a3e-11ea-94e3-0a9045086069"
+    ],
+    "curation": true,
+    "parent_organizations":["Advanced Photon Source"],
+    "services": {
+        "mdf_publish": {
+            "publication_location": "globus://e55b4eab-6d04-11e5-ba46-22000b92c6ec/XPCSDATA/MDF/"
+        }
+    }
 }]
