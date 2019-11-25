@@ -13,7 +13,7 @@
       "properties": {
         "acl": {
           "type": "array",
-          "description": "The UUIDs of Users or Groups allowed to view this dataset, or the special (and default) value 'public'.",
+          "description": "The UUIDs of Users or Groups allowed to view the full dataset, or the special (and default) value 'public'.",
           "items": {
             "type": "string",
             "description": "UUID for Globus User or Group."
@@ -255,6 +255,14 @@
     "curation": {
         "type": "boolean",
         "description": "When true, trigger curation for this submission. This is normally set by an organization."
+    },
+    "dataset_acl": {
+      "type": "array",
+      "description": "The UUIDs of Users or Groups allowed to view only the dataset entry, or the special (and default) value 'public'. This does not grant permission to view records or files in the dataset, only the dataset entry itself.",
+      "items": {
+        "type": "string",
+        "description": "UUID for Globus User or Group."
+      }
     },
     "test": {
       "type": "boolean",
