@@ -27,7 +27,7 @@
         },
         "permission_groups": {
             "type": "array",
-            "description": "UUIDs of Globus Groups. Members of the group(s) will be allowed to submit data to MDF Connect using this organization, and be given read access to organization datasets. Managers and higher roles (such as admins) will additionally be given permission to curate organization datasets.",
+            "description": "UUIDs of Globus Groups. Members of the group(s) will be allowed to submit data to MDF Connect using this organization. Managers and higher roles (such as admins) will additionally be given permission to curate organization datasets. Non-members cannot submit data to this organization.",
             "items": {
                 "type": "string",
                 "description": "One Globus Group UUID."
