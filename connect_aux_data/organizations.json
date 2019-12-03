@@ -56,7 +56,10 @@
         "fe6bbb86-74fe-11e8-b558-0a7d99bc78fe"
     ],
     "acl": [
-        "fe6bbb86-74fe-11e8-b558-0a7d99bc78fe"
+        "abcb2d16-02da-11e9-87e3-0e8017bdda58"
+    ],
+    "dataset_acl":[
+        "abcb2d16-02da-11e9-87e3-0e8017bdda58"
     ],
     "curation": true,
     "services": {
