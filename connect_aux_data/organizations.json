@@ -53,17 +53,18 @@
     ],
     "description": "Organization for AFRL Additive Manufacturing Challenge datasets",
     "permission_groups": [
-        "abcb2d16-02da-11e9-87e3-0e8017bdda58"
-    ],
-    "acl": [
         "fe6bbb86-74fe-11e8-b558-0a7d99bc78fe"
     ],
+    "acl": [
+        "abcb2d16-02da-11e9-87e3-0e8017bdda58"
+    ],
+    "dataset_acl":[
+        "abcb2d16-02da-11e9-87e3-0e8017bdda58"
+    ],
     "curation": true,
-    "services": {
-        "mdf_publish": {
-            "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/afrl-challenge-data/"
-        }
-    }
+    "data_destinations":[
+        "globus://e38ee745-6d04-11e5-ba46-22000b92c6ec/afrl-midas/submissions"
+    ]
 }, {
     "canonical_name": "APS Sector 1",
     "aliases": [
