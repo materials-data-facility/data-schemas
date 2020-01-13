@@ -74,7 +74,7 @@
       "properties": {
         "json": {
           "type": "object",
-          "description": "JSON parsing parameters.",
+          "description": "JSON extraction parameters.",
           "properties": {
             "mapping": {
               "type": "object",
@@ -97,7 +97,7 @@
         },
         "csv": {
           "type": "object",
-          "description": "CSV parsing parameters.",
+          "description": "CSV extraction parameters.",
           "properties": {
             "mapping": {
               "type": "object",
@@ -124,7 +124,7 @@
         },
         "yaml": {
           "type": "object",
-          "description": "YAML parsing parameters.",
+          "description": "YAML extraction parameters.",
           "properties": {
             "mapping": {
               "type": "object",
@@ -147,7 +147,7 @@
         },
         "xml": {
           "type": "object",
-          "description": "XML parsing parameters.",
+          "description": "XML extraction parameters.",
           "properties": {
             "mapping": {
               "type": "object",
@@ -170,7 +170,7 @@
         },
         "excel": {
           "type": "object",
-          "description": "MS Excel file parsing parameters.",
+          "description": "MS Excel file extraction parameters.",
           "properties": {
             "mapping": {
               "type": "object",
@@ -193,7 +193,7 @@
         },
         "filename": {
           "type": "object",
-          "description": "Filename parsing parameters.",
+          "description": "Filename extraction parameters.",
           "properties": {
             "mapping": {
               "type": "object",
@@ -217,9 +217,9 @@
       },
       "additionalProperties": false
     },
-    "conversion_config": {
+    "extraction_config": {
         "type": "object",
-        "description": "Advanced conversion configuration, including file grouping configuration.",
+        "description": "Advanced extraction configuration, including file grouping configuration.",
         "properties": {
             "group_by_dir": {
                 "type": "boolean",
@@ -268,9 +268,9 @@
       "type": "boolean",
       "description": "When true, will ingest into the test index and collection."
     },
-    "no_convert": {
+    "no_extract": {
         "type": "boolean",
-        "description": "When true, disables converting. Only for very large datasets."
+        "description": "When true, disables metadata extraction. Only for special cases."
     }
   },
   "additionalProperties": false,
