@@ -63,7 +63,8 @@
     ],
     "curation": true,
     "data_destinations":[
-        "globus://e38ee745-6d04-11e5-ba46-22000b92c6ec/afrl-midas/submissions"
+        "globus://e55b4eab-6d04-11e5-ba46-22000b92c6ec/afrl-midas/submissions"
+        
     ]
 }, {
     "canonical_name": "APS Sector 1",
@@ -300,6 +301,24 @@
     "services": {
         "mdf_publish": {
             "publication_location": "globus://e55b4eab-6d04-11e5-ba46-22000b92c6ec/XPCSDATA/MDF/"
+        }
+    }
+},{
+    "canonical_name": "Hersam Group",
+    "description": "Hersam Group organization",
+    "permission_groups": [
+        "a422c034-13a3-11e6-8367-22000ab80e73"
+    ],
+    "acl": [
+        "ea14d488-13a3-11e6-81e9-22000aef184d"
+    ],
+    "dataset_acl":[
+        "public"
+    ],
+    "curation": true,
+    "services": {
+        "mdf_publish": {
+            "publication_location": "globus://e55b4eab-6d04-11e5-ba46-22000b92c6ec/hersam/"
         }
     }
 }]
