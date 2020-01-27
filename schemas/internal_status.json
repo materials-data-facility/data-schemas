@@ -73,6 +73,10 @@
         "type": "string",
         "description": "The original Connect submission, as a JSON string."
     },
+    "updates": {
+        "type": "array",
+        "description": "Any submitted updates ot the original submission."
+    },
     "extensions": {
         "type": "array",
         "description": "The file extensions found in the data (for re-processing purposes).",
