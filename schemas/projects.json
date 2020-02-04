@@ -108,7 +108,7 @@
                     },
                     "additionalProperties": false
                 },
-                "test": {
+                "foundry": {
                     "type": "object",
                     "description": "Project block for Foundry data packages.",
                     "properties": {
