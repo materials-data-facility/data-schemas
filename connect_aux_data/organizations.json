@@ -64,7 +64,6 @@
     "curation": true,
     "data_destinations":[
         "globus://e55b4eab-6d04-11e5-ba46-22000b92c6ec/afrl-midas/submissions"
-        
     ]
 }, {
     "canonical_name": "APS Sector 1",
@@ -321,4 +320,27 @@
             "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/hersam_protected/"
         }
     }
-}]
+},{
+    "canonical_name": "Foundry",
+    "description": "Foundry data package organization",
+    "permission_groups": [
+        "42a7a77c-4789-11ea-95b7-0ef992ed7ca1"
+    ],
+    "acl": [
+        "public"
+    ],
+    "dataset_acl":[
+        "public"
+    ],
+    "curation": true,
+    "project_blocks":["foundry"],
+    "data_destinations":[
+        "globus://e38ee745-6d04-11e5-ba46-22000b92c6ec/foundry"
+    ],
+    "services": {
+        "mdf_publish": {
+            "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/foundry/"
+        }
+    }
+}
+]
