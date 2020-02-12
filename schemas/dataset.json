@@ -47,7 +47,7 @@
         },
         "data": {
             "type": "object",
-            "description": "The location of the full dataset.",
+            "description": "The location of and information about the full dataset.",
             "properties": {
                 "endpoint_path": {
                     "type": "string",
@@ -61,8 +61,13 @@
                     "type": "string",
                     "format": "uri",
                     "description": "Location of the whole dataset."
+                },
+                "total_size": {
+                    "type": "integer",
+                    "description": "The size of the full dataset, in bytes."
                 }
-            }
+            },
+            "additionalProperties": false
         }
     },
     "additionalProperties": false,
