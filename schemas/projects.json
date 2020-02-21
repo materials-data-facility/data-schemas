@@ -162,6 +162,37 @@
                         }
                     },
                     "additionalProperties": false
+                },
+                "pfhub": {
+                    "type": "object",
+                    "description": "Project block for PFHub.",
+                    "properties": {
+                        "cpu_architecture": {
+                            "type": "string"
+                        },
+                        "acc_architecture": {
+                            "type": "string"
+                        },
+                        "parallel_model": {
+                            "type": "string"
+                        },
+                        "clock_rate": {
+                            "type": "number"
+                        },
+                        "cores": {
+                            "type": "integer"
+                        },
+                        "nodes": {
+                            "type": "integer"
+                        },
+                        "benchmark_id": {
+                            "type": "string"
+                        },
+                        "benchmark_version": {
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": false
                 }
             },
             "additionalProperties": false
