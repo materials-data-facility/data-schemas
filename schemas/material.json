@@ -31,6 +31,10 @@
                     "additionalProperties": {
                         "type": "number"
                     }
+                },
+                "density": {
+                    "type": "number",
+                    "description": "The density of the material studied. Units: g/cm^3"
                 }
             },
             "additionalProperties": false
