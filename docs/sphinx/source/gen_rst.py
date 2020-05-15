@@ -27,7 +27,7 @@ for schema_name in schema_list:
 with open(os.path.join(aux_path, "organizations.json")) as f:
     org_list_raw = json.load(f)
 with open(os.path.join(docs_path, "organizations_list.rst"), 'w') as f:
-    header = f"MDF Organizations"
+    header = "MDF Organizations"
     f.write(f"{header}\n{'=' * len(header)}\n")
     for org in org_list_raw:
         f.write(f"\n{org['canonical_name']}\n{'-'*len(org['canonical_name'])}\n\n")
