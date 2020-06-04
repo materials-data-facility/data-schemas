@@ -334,9 +334,6 @@
     ],
     "curation": true,
     "project_blocks":["foundry"],
-    "data_destinations":[
-        "globus://e38ee745-6d04-11e5-ba46-22000b92c6ec/foundry"
-    ],
     "services": {
         "mdf_publish": {
             "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/foundry/"
