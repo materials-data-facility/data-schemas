@@ -321,6 +321,24 @@
         }
     }
 },{
+    "canonical_name": "Lauhon Group",
+    "description": "Lauhon Group organization",
+    "permission_groups": [
+        "8eca1609-0994-11eb-ab07-0a15f6c86f93"
+    ],
+    "acl": [
+        "b62955ff-0994-11eb-a171-0aba59fa28e5"
+    ],
+    "dataset_acl":[
+        "public"
+    ],
+    "curation": true,
+    "services": {
+        "mdf_publish": {
+            "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/lauhon_protected/"
+        }
+    }
+},{
     "canonical_name": "Foundry",
     "description": "Foundry data package organization",
     "permission_groups": [
