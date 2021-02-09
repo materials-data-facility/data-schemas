@@ -357,5 +357,43 @@
             "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/foundry/"
         }
     }
+},
+{
+    "canonical_name": "Electrochemical Energy Lab",
+    "description": "Electrochemical Energy Lab at MIT",
+    "permission_groups": [
+        "cd106a54-6635-11eb-bfe2-0aa21a0136a3"
+    ],
+    "acl": [
+        "cd106a54-6635-11eb-bfe2-0aa21a0136a3"
+    ],
+    "dataset_acl":[
+        "cd106a54-6635-11eb-bfe2-0aa21a0136a3"
+    ],
+    "curation": true,
+    "services": {
+        "mdf_publish": {
+            "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/EEL_protected/"
+        }
+    }
+},
+{
+    "canonical_name": "Differentiate Catalysis",
+    "description": "Differentiate Catalysis Team",
+    "permission_groups": [
+        "4421683d-665e-11eb-b92d-0a4debe59093"
+    ],
+    "acl": [
+        "4421683d-665e-11eb-b92d-0a4debe59093"
+    ],
+    "dataset_acl":[
+        "4421683d-665e-11eb-b92d-0a4debe59093"
+    ],
+    "curation": true,
+    "services": {
+        "mdf_publish": {
+            "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/differentiate_protected/"
+        }
+    }
 }
 ]
