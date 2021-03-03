@@ -50,12 +50,6 @@
                 "description": "One Globus Auth UUID (for one Globus Auth identity or Globus Group) or the special value 'public' to require all dataset entries be public."
             }
         },
-        "rightsList": {
-            "$ref": "dc.json#/properties/dc/properties/rightsList"
-        },
-        "fundingReferences": {
-            "$ref": "dc.json#/properties/dc/properties/fundingReferences"
-        },
         "data_destinations": {
             "type": "array",
             "description": "Data locations (which must be Globus endpoints) to send data for this organization.",
@@ -75,28 +69,8 @@
                 "type": "string",
                 "description": "One project block name."
             }
-        },
-        "required_fields": {
-            "type": "array",
-            "description": "Fields or blocks in the dataset metadata that are required for an organizational dataset to be valid, using dot syntax.",
-            "items": {
-                "type": "string",
-                "description": "One required field or block in the dataset metadata."
-            }
-        },
-        "parent_organizations": {
-            "type": "array",
-            "descriptions": "The organization(s) that are direct parents to this one. Grandparent organizations are implied and should not be specified.",
-            "items": {
-                "type": "string",
-                "description": "The canonical_name of one parent organization."
-            }
-        },
-        "services": {
-            "$ref": "services.json#/properties/services"
         }
     },
-    "additionalProperties": false,
     "required": [
         "canonical_name",
         "permission_groups"
