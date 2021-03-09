@@ -350,7 +350,7 @@
     "dataset_acl":[
         "public"
     ],
-    "curation": true,
+    "curation": false,
     "project_blocks":["foundry"],
     "services": {
         "mdf_publish": {
