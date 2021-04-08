@@ -73,6 +73,11 @@
         "type": "string",
         "description": "The original Connect submission, as a JSON string."
     },
+    "action_id": {
+        "type": "string",
+        "description": "The Globus Automate ID of the action processing this record."
+    },
+
     "updates": {
         "type": "array",
         "description": "Any submitted updates ot the original submission."
