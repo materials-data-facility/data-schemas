@@ -108,6 +108,103 @@
                     },
                     "additionalProperties": false
                 },
+                "foundry-dev": {
+                    "type": "object",
+                    "description": "Project block for Foundry data packages.",
+                    "properties": {
+                      "inputs": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "input_descriptions": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "input_units": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "targets": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "target_descriptions": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "target_units": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "target_labels": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      },
+                      "short_name": {
+                        "type": "string"
+                      },
+                      "package_type": {
+                        "type": "string"
+                      },
+                      "format": {
+                        "description": "File format of the dataset",
+                        "type": "string"
+                      },
+                      "splits": {
+                        "type": "array",
+                        "description": "Define all partitions of tje dataset (train, test, validation, etc.)",
+                        "items": {
+                          "type": "object"
+                        },
+                        "properties": {
+                          "split_type": {
+                            "type": "string",
+                            "description": "The kind of partition of the dataset (train, test, validation, etc)"
+                          },
+                          "path": {
+                            "type": "string",
+                            "description": "The full filepath to the dataset file or directory"
+                          },
+                          "label": {
+                            "type": "string",
+                            "description": "Classification or regression label, used primarily for datasets divided by directories"
+                          }
+                        }
+                      },
+                      "keys": {
+                        "type": "array",
+                        "description": "The keys (if HDF5) or columns (if tabular data) of the dataset",
+                        "items": {
+                          "type": "object"
+                        },
+                        "properties": {
+                          "key": {
+                            "type": "string",
+                            "description": "Column or header name for tabular data, key/path for HDF5 data"
+                          },
+                          "type": {
+                            "type": "string",
+                            "description": "Whether input or target"
+                          }
+                        }
+                      }
+                    },
+                    "additionalProperties": false
+                },
                 "foundry": {
                     "type": "object",
                     "description": "Project block for Foundry data packages.",
