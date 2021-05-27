@@ -1,0 +1,31 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "MDF link schema",
+	"description": "Schema to describe links between MDF dataset and other objects.",
+	"additionalProperties": false,
+	"properties": {
+		"links": {
+			"type": "array",
+			"description": "Key metadata enumerating links",
+			"additionalProperties": false,
+			"items": {
+				"type": "object",
+				"additionalProperties": false,
+				"properties": {
+					"type": {
+						"type": "string"
+					},
+					"doi": {
+						"type": "string"
+					},
+					"url": {
+						"type": "string"
+					},
+                    "description":{
+                        "type":"string"
+                    }
+				}
+			}
+		}
+	}
+}

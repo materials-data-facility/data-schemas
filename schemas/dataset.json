@@ -22,6 +22,9 @@
         "projects": {
             "$ref": "projects.json#/properties/projects"
         },
+        "links":{
+            "$ref": "links.json#/properties/links"
+        },
         "services": {
             "type": "object",
             "description": "Cross references to other integrated services.",

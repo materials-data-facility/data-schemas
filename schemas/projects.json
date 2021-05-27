@@ -111,99 +111,104 @@
                 "foundry-dev": {
                     "type": "object",
                     "description": "Project block for Foundry data packages.",
+                    "additionalProperties":false,
                     "properties": {
-                      "inputs": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "input_descriptions": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "input_units": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "targets": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "target_descriptions": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "target_units": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
-                      "target_labels": {
-                        "type": "array",
-                        "items": {
-                          "type": "string"
-                        }
-                      },
                       "short_name": {
                         "type": "string"
                       },
-                      "package_type": {
+                      "data_type": {
                         "type": "string"
                       },
-                      "format": {
-                        "description": "File format of the dataset",
-                        "type": "string"
+                      "task_type":{
+                        "type":"array",
+                        "description":"The type of task. e.g., supervised, unsupervised, generative.",
+                        "items": {
+                              "type": "string"
+                        }
+                      },
+                      "domain":{
+                        "type":"array",
+                        "description":"The domain of applicability. e.g., materials science, chemistry, machine vision",
+                        "items": {
+                              "type": "string"
+                        }
+                      },
+                      "n_items":{
+                        "description":"The number of total items in the dataset including all splits.",
+                        "type":"number"
                       },
                       "splits": {
                         "type": "array",
-                        "description": "Define all partitions of tje dataset (train, test, validation, etc.)",
+                        "description": "Define all partitions of the dataset (train, test, validation, etc.)",
                         "items": {
-                          "type": "object"
-                        },
-                        "properties": {
-                          "split_type": {
-                            "type": "string",
-                            "description": "The kind of partition of the dataset (train, test, validation, etc)"
-                          },
-                          "path": {
-                            "type": "string",
-                            "description": "The full filepath to the dataset file or directory"
-                          },
-                          "label": {
-                            "type": "string",
-                            "description": "Classification or regression label, used primarily for datasets divided by directories"
-                          }
+                          "type": "object",
+                          "additionalProperties":false,
+                          "properties": {
+                            "type": {
+                              "type": "string",
+                              "description": "The kind of partition of the dataset (train, test, validation, etc)"
+                            },
+                            "path": {
+                              "type": "string",
+                              "description": "The full filepath to the dataset file or directory"
+                            },
+                            "label": {
+                              "type": "string",
+                              "description": "A label to assign to this split"
+                            }
                         }
+                      }
                       },
                       "keys": {
                         "type": "array",
-                        "description": "The keys (if HDF5) or columns (if tabular data) of the dataset",
+                        "description": "Keys describing how to load the data",
                         "items": {
-                          "type": "object"
-                        },
-                        "properties": {
+                          "type": "object",
+                          "additionalProperties":false,
+                          "properties": {
                           "key": {
-                            "type": "string",
-                            "description": "Column or header name for tabular data, key/path for HDF5 data"
+                            "type": "array",
+                            "description": "Column or header name for tabular data, key/path for HDF5 data",
+                            "items": {
+                              "type": "string"
+                            }
                           },
                           "type": {
                             "type": "string",
                             "description": "Whether input or target"
+                          },
+                          "filter": {
+                            "type": "string",
+                            "description": "How apply the defined key"
+                          },
+                          "description": {
+                            "type": "string",
+                            "description": "Free text description of the key"
+                          },
+                          "units": {
+                            "type": "string",
+                            "description": "The units associated with the key"
+                          },
+                          "classes": {
+                            "type": "array",
+                            "items": {
+                              "type": "object"
+                            },
+                            "additionalProperties":false,
+                            "properties": {
+                              "label": {
+                                "type": "string",
+                                "description": "The label that exists in the data"
+                              },
+                              "name": {
+                                "type": "string",
+                                "description": "The name the label maps onto."
+                              }
+                            }
                           }
                         }
                       }
-                    },
-                    "additionalProperties": false
+                    }
                 },
                 "foundry": {
                     "type": "object",
