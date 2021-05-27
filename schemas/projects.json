@@ -209,6 +209,7 @@
                         }
                       }
                     }
+                  }
                 },
                 "foundry": {
                     "type": "object",
