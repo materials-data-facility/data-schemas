@@ -77,7 +77,10 @@
         "type": "string",
         "description": "The Globus Automate ID of the action processing this record."
     },
-
+    "version": {
+        "type": "string",
+        "description": "SemVer version string for this submission"
+    },
     "updates": {
         "type": "array",
         "description": "Any submitted updates ot the original submission."
@@ -108,6 +111,7 @@
     "submitter",
     "test",
     "title",
-    "user_id"
+    "user_id",
+    "version"
 ]
 }
