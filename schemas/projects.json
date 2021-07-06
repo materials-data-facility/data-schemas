@@ -108,7 +108,7 @@
                     },
                     "additionalProperties": false
                 },
-                "foundry-dev": {
+                "foundry": {
                     "type": "object",
                     "description": "Project block for Foundry data packages.",
                     "additionalProperties":false,
@@ -210,61 +210,6 @@
                       }
                     }
                   }
-                },
-                "foundry": {
-                    "type": "object",
-                    "description": "Project block for Foundry data packages.",
-                    "properties": {
-                        "inputs":{
-                                "type":"array", 
-                                "items": { 
-                                    "type": "string"
-                                }
-                        },
-                        "input_descriptions":{
-                            "type":"array", 
-                            "items": { 
-                                "type": "string"
-                            }
-                        },
-                        "input_units":{
-                            "type":"array", 
-                            "items": { 
-                                "type": "string"
-                            }
-                        },
-                        "outputs":{
-                            "type":"array", 
-                            "items": { 
-                                "type": "string"
-                            }
-                        },
-                        "output_descriptions":{
-                            "type":"array", 
-                            "items": { 
-                                "type": "string"
-                            }
-                        },
-                        "output_units":{
-                            "type":"array", 
-                            "items": { 
-                                "type": "string"
-                            }
-                        },
-                        "output_labels":{
-                            "type":"array", 
-                            "items": { 
-                                "type": "string"
-                            }
-                        },
-                        "short_name":{
-                            "type":"string"
-                        },
-                        "package_type":{
-                            "type":"string"
-                        }
-                    },
-                    "additionalProperties": false
                 }
             },
             "additionalProperties": false
