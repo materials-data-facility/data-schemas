@@ -111,105 +111,105 @@
                 "foundry": {
                     "type": "object",
                     "description": "Project block for Foundry data packages.",
-                    "additionalProperties":false,
+                    "additionalProperties": false,
                     "properties": {
-                      "short_name": {
-                        "type": "string"
-                      },
-                      "data_type": {
-                        "type": "string"
-                      },
-                      "task_type":{
-                        "type":"array",
-                        "description":"The type of task. e.g., supervised, unsupervised, generative.",
-                        "items": {
-                              "type": "string"
-                        }
-                      },
-                      "domain":{
-                        "type":"array",
-                        "description":"The domain of applicability. e.g., materials science, chemistry, machine vision",
-                        "items": {
-                              "type": "string"
-                        }
-                      },
-                      "n_items":{
-                        "description":"The number of total items in the dataset including all splits.",
-                        "type":"number"
-                      },
-                      "splits": {
-                        "type": "array",
-                        "description": "Define all partitions of the dataset (train, test, validation, etc.)",
-                        "items": {
-                          "type": "object",
-                          "additionalProperties":false,
-                          "properties": {
-                            "type": {
-                              "type": "string",
-                              "description": "The kind of partition of the dataset (train, test, validation, etc)"
-                            },
-                            "path": {
-                              "type": "string",
-                              "description": "The full filepath to the dataset file or directory"
-                            },
-                            "label": {
-                              "type": "string",
-                              "description": "A label to assign to this split"
-                            }
-                        }
-                      }
-                      },
-                      "keys": {
-                        "type": "array",
-                        "description": "Keys describing how to load the data",
-                        "items": {
-                          "type": "object",
-                          "additionalProperties":false,
-                          "properties": {
-                          "key": {
+                        "short_name": {
+                            "type": "string"
+                        },
+                        "data_type": {
+                            "type": "string"
+                        },
+                        "task_type": {
                             "type": "array",
-                            "description": "Column or header name for tabular data, key/path for HDF5 data",
+                            "description": "The type of task. e.g., supervised, unsupervised, generative.",
                             "items": {
-                              "type": "string"
+                                "type": "string"
                             }
-                          },
-                          "type": {
-                            "type": "string",
-                            "description": "Whether input or target"
-                          },
-                          "filter": {
-                            "type": "string",
-                            "description": "How apply the defined key"
-                          },
-                          "description": {
-                            "type": "string",
-                            "description": "Free text description of the key"
-                          },
-                          "units": {
-                            "type": "string",
-                            "description": "The units associated with the key"
-                          },
-                          "classes": {
+                        },
+                        "domain": {
                             "type": "array",
+                            "description": "The domain of applicability. e.g., materials science, chemistry, machine vision",
                             "items": {
-                              "type": "object"
-                            },
-                            "additionalProperties":false,
-                            "properties": {
-                              "label": {
-                                "type": "string",
-                                "description": "The label that exists in the data"
-                              },
-                              "name": {
-                                "type": "string",
-                                "description": "The name the label maps onto."
-                              }
+                                "type": "string"
                             }
-                          }
+                        },
+                        "n_items": {
+                            "description": "The number of total items in the dataset including all splits.",
+                            "type": "number"
+                        },
+                        "splits": {
+                            "type": "array",
+                            "description": "Define all partitions of the dataset (train, test, validation, etc.)",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "type": {
+                                        "type": "string",
+                                        "description": "The kind of partition of the dataset (train, test, validation, etc)"
+                                    },
+                                    "path": {
+                                        "type": "string",
+                                        "description": "The full filepath to the dataset file or directory"
+                                    },
+                                    "label": {
+                                        "type": "string",
+                                        "description": "A label to assign to this split"
+                                    }
+                                }
+                            }
+                        },
+                        "keys": {
+                            "type": "array",
+                            "description": "Keys describing how to load the data",
+                            "items": {
+                                "type": "object",
+                                "additionalProperties": false,
+                                "properties": {
+                                    "key": {
+                                        "type": "array",
+                                        "description": "Column or header name for tabular data, key/path for HDF5 data",
+                                        "items": {
+                                            "type": "string"
+                                        }
+                                    },
+                                    "type": {
+                                        "type": "string",
+                                        "description": "Whether input or target"
+                                    },
+                                    "filter": {
+                                        "type": "string",
+                                        "description": "How apply the defined key"
+                                    },
+                                    "description": {
+                                        "type": "string",
+                                        "description": "Free text description of the key"
+                                    },
+                                    "units": {
+                                        "type": "string",
+                                        "description": "The units associated with the key"
+                                    },
+                                    "classes": {
+                                        "type": "array",
+                                        "items": {
+                                            "type": "object"
+                                        },
+                                        "additionalProperties": false,
+                                        "properties": {
+                                            "label": {
+                                                "type": "string",
+                                                "description": "The label that exists in the data"
+                                            },
+                                            "name": {
+                                                "type": "string",
+                                                "description": "The name the label maps onto."
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
-                      }
                     }
-                  }
                 }
             },
             "additionalProperties": false
