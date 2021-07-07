@@ -110,14 +110,15 @@
                 },
                 "foundry": {
                     "type": "object",
-                    "description": "Project block for Foundry data packages.",
+                    "description": "Project block for Foundry datasets.",
                     "additionalProperties": false,
                     "properties": {
                         "short_name": {
                             "type": "string"
                         },
                         "data_type": {
-                            "type": "string"
+                            "type": "string",
+                            "description": "The kind of data in the dataset, e.g. tabular, json, hdf5"
                         },
                         "task_type": {
                             "type": "array",

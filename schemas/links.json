@@ -1,29 +1,37 @@
 {
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"title": "MDF link schema",
-	"description": "Schema to describe links between MDF dataset and other objects.",
+	"description": "Schema to describe links between MDF dataset and other objects or resources.",
 	"additionalProperties": false,
 	"properties": {
 		"links": {
 			"type": "array",
-			"description": "Key metadata enumerating links",
+			"description": "Key metadata enumerating links to resources",
 			"additionalProperties": false,
 			"items": {
 				"type": "object",
 				"additionalProperties": false,
 				"properties": {
 					"type": {
-						"type": "string"
+						"type": "string",
+						"description": "The kind of resource the link points to, e.g. dataset_paper, model, code, citation, dataset",
 					},
 					"doi": {
-						"type": "string"
+						"type": "string",
+						"description": "Unique DOI for the object or resource"
 					},
 					"url": {
-						"type": "string"
+						"type": "string",
+						"description": "URL pointing to the resource (i.e. the link)"
 					},
                     "description":{
-                        "type":"string"
-                    }
+                        "type": "string",
+						"description": "A description of the resource or object"
+                    },
+					"bibtex": {
+						"type": "string",
+						"description": "The raw Bibtex plain text for citing this resource"
+					}
 				}
 			}
 		}
