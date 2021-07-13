@@ -52,6 +52,37 @@
                     "type": "string",
                     "description": "One organization."
                 }
+            },
+            "links": {
+                "type": "array",
+                "description": "Key metadata enumerating links to resources",
+                "additionalProperties": false,
+                "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                        "type": {
+                            "type": "string",
+                            "description": "The kind of resource the link points to, e.g. dataset_paper, model, code, citation, dataset"
+                        },
+                        "doi": {
+                            "type": "string",
+                            "description": "Unique DOI for the object or resource"
+                        },
+                        "url": {
+                            "type": "string",
+                            "description": "URL pointing to the resource (i.e. the link)"
+                        },
+                        "description":{
+                            "type": "string",
+                            "description": "A description of the resource or object"
+                        },
+                        "bibtex": {
+                            "type": "string",
+                            "description": "The raw Bibtex plain text for citing this resource"
+                        }
+                    }
+                }
             }
         },
         "additionalProperties": false,
