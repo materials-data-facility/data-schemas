@@ -171,7 +171,10 @@
 		"acl": [
 			"public"
 		],
-		"curation": true
+		"curation": true,
+		"data_destinations": [
+			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/pppdb/"
+		]
 	},
 	{
 		"canonical_name": "Virtual Excited State Reference for the Discovery of Electronic Materials Database",
@@ -187,7 +190,10 @@
 		"acl": [
 			"public"
 		],
-		"curation": true
+		"curation": true,
+		"data_destinations": [
+			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/verde/"
+		]
 	},
 	{
 		"canonical_name": "XPCS 8-ID",
@@ -198,7 +204,10 @@
 		"acl": [
 			"13d05c3b-0a3e-11ea-94e3-0a9045086069"
 		],
-		"curation": true
+		"curation": true,
+		"data_destinations": [
+			"globus://e55b4eab-6d04-11e5-ba46-22000b92c6ec/XPCSDATA/MDF/"
+		]
 	},
 	{
 		"canonical_name": "Hersam Group",
@@ -212,7 +221,11 @@
 		"dataset_acl": [
 			"public"
 		],
-		"curation": true
+		"curation": true,
+		"data_destinations": [
+			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/hersam_protected/"
+		]
+
 	}, {
 		"canonical_name": "Lauhon Group",
 		"description": "Lauhon Group organization",
@@ -225,7 +238,10 @@
 		"dataset_acl": [
 			"public"
 		],
-		"curation": true
+		"curation": true,
+		"data_destinations": [
+			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/lauhon_protected/"
+		]
 	}, {
 		"canonical_name": "Foundry",
 		"description": "Foundry data package organization",
@@ -238,7 +254,28 @@
 		"dataset_acl": [
 			"public"
 		],
-		"curation": true
+		"curation": true,
+		"data_destinations": [
+			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/foundry/"
+		]
+	},
+	{
+		"canonical_name": "Foundry-dev",
+		"description": "Foundry dataset organization",
+		"permission_groups": [
+			"cc192dca-3751-11e8-90c1-0a7c735d220a"
+		],
+		"acl": [
+			"public"
+		],
+		"dataset_acl":[
+			"public"
+		],
+		"curation": true,
+		"project_blocks":["foundry-dev"],
+		"data_destinations": [
+			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/foundry/"
+		]
 	},
 	{
 		"canonical_name": "Electrochemical Energy Lab",
@@ -252,7 +289,10 @@
 		"dataset_acl": [
 			"cd106a54-6635-11eb-bfe2-0aa21a0136a3"
 		],
-		"curation": true
+		"curation": true,
+		"data_destinations": [
+			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/EEL_protected/"
+		]
 	},
 	{
 		"canonical_name": "Differentiate Catalysis",
@@ -266,6 +306,9 @@
 		"dataset_acl": [
 			"4421683d-665e-11eb-b92d-0a4debe59093"
 		],
-		"curation": true
+		"curation": true,
+		"data_destinations": [
+			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/differentiate_protected/"
+		]
 	}
 ]
