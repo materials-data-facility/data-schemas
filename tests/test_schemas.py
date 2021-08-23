@@ -31,6 +31,7 @@ def test_sample_validation():
         "internal_status"
     ]
     for schema_name in jsonschemas_to_test:
+        print("Schema ", schema_name)
         # Get schema
         with open(os.path.join(SCHEMA_PATH, schema_name+".json")) as f:
             schema = json.load(f)
@@ -40,6 +41,7 @@ def test_sample_validation():
         # Run all test cases
         test_files_dir = os.path.join(TEST_FILES_PATH, schema_name)
         for test_file in os.listdir(test_files_dir):
+            print("....Test ", test_file)
             with open(os.path.join(test_files_dir, test_file)) as t:
                 test_case = json.load(t)
             # Success cases start with "success", failure cases start with "failure"

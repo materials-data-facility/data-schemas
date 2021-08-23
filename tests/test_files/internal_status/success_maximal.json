@@ -18,6 +18,7 @@
     "user_email": "test@example.com",
     "user_id": "abc123",
     "original_submission": "{...}",
+    "version": "1.0",
     "extensions": [
         "json"
     ],

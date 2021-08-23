@@ -14,5 +14,6 @@
     "submitter": "Tester McPerson",
     "user_id": "abc123",
     "test": true,
+    "version": "1.0",
     "title": "Thing"
 }
