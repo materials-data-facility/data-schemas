@@ -193,12 +193,11 @@
     "acl": [
         "public"
     ],
+    "data_destinations": [
+        "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_test/"
+    ],
     "curation": false,
-    "services": {
-        "mdf_publish": {
-            "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_test/"
-        }
-    }
+    "services": {}
 },{
     "canonical_name": "NanoMFG",
     "description": "The aim of the nanomanufacturing (nanoMFG) node is to develop computational software tools aimed at creating smart, model-driven and experimentally informed nanomanufactured structures and devices.",
