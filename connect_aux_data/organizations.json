@@ -184,7 +184,22 @@
             "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_open/"
         }
     }
-}, {
+},{
+    "canonical_name": "MDF Test",
+    "description": "An organization to allow testing of MDF capabilities.",
+    "permission_groups": [
+        "cc192dca-3751-11e8-90c1-0a7c735d220a"
+    ],
+    "acl": [
+        "public"
+    ],
+    "curation": false,
+    "services": {
+        "mdf_publish": {
+            "publication_location": "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_test/"
+        }
+    }
+},{
     "canonical_name": "NanoMFG",
     "description": "The aim of the nanomanufacturing (nanoMFG) node is to develop computational software tools aimed at creating smart, model-driven and experimentally informed nanomanufactured structures and devices.",
     "homepage": "https://nanohub.org/groups/nanomfg",
