@@ -356,7 +356,7 @@
     "canonical_name": "Foundry",
     "description": "Foundry dataset organization",
     "permission_groups": [
-        "cc192dca-3751-11e8-90c1-0a7c735d220a"
+        "42a7a77c-4789-11ea-95b7-0ef992ed7ca1"
     ],
     "acl": [
         "public"
@@ -375,7 +375,7 @@
     "canonical_name": "Foundry-dev",
     "description": "Foundry dataset organization",
     "permission_groups": [
-        "cc192dca-3751-11e8-90c1-0a7c735d220a"
+        "42a7a77c-4789-11ea-95b7-0ef992ed7ca1"
     ],
     "acl": [
         "public"
