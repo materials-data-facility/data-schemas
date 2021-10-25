@@ -248,8 +248,8 @@
         "type": "boolean",
         "description": "Must be true for dataset updates, and false for new datasets. Serves as a check against accidental dataset overwriting."
     },
-    "incremental_update": {
-        "type": "string",
+    "update_meta_only": {
+        "type": "boolean",
         "description": "Set to a source_id previously submitted to perform an incremental update of that source_id, changing only the other metadata provided in this submission."
     },
     "curation": {
@@ -271,6 +271,10 @@
     "no_extract": {
         "type": "boolean",
         "description": "When true, disables metadata extraction. Only for special cases."
+    },
+    "meta_only": {
+      "type": "boolean",
+      "description": "When true, disables data transfer."
     }
   },
   "additionalProperties": false,
