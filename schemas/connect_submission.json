@@ -271,10 +271,6 @@
     "no_extract": {
         "type": "boolean",
         "description": "When true, disables metadata extraction. Only for special cases."
-    },
-    "meta_only": {
-      "type": "boolean",
-      "description": "When true, disables data transfer."
     }
   },
   "additionalProperties": false,
