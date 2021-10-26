@@ -250,7 +250,7 @@
     },
     "update_meta_only": {
         "type": "boolean",
-        "description": "Set to a source_id previously submitted to perform an incremental update of that source_id, changing only the other metadata provided in this submission."
+        "description": "When true performs an update on the metadata only with no file transfer."
     },
     "curation": {
         "type": "boolean",
