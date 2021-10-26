@@ -96,6 +96,10 @@
     "hibernating": {
         "type": "boolean",
         "description": "True for submission processes that appear dead, but are still active. This flag will prevent a submission from being cancelled when its process dies."
+    },
+    "update_meta_only": {
+        "type": "boolean",
+        "description": "True when update without file transfer"
     }
 },
 "additionalProperties": false,
