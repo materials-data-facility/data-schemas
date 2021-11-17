@@ -28,17 +28,6 @@
 		]
 	},
 	{
-		"canonical_name": "Center for Hierarchical Materials Design",
-		"aliases": [
-			"CHiMaD"
-		],
-		"description": "Center for Hierarchical Materials Design (CHiMaD) is a NIST-sponsored center of excellence for advanced materials research focusing on developing the next generation of computational tools, databases and experimental techniques in order to enable the accelerated design of novel materials and their integration to industry, one of the primary goals of the U.S. Government's Materials Genome Initiative (MGI).",
-		"homepage": "http://chimad.northwestern.edu/",
-		"permission_groups": [
-			"public"
-		]
-	},
-	{
 		"canonical_name": "Center for Predictive Integrated Structural Materials Science",
 		"aliases": [
 			"PRISMS",
@@ -115,28 +104,6 @@
 		]
 	},
 	{
-		"canonical_name": "National Institute of Standards and Technology",
-		"aliases": [
-			"NIST"
-		],
-		"description": "The National Institute of Standards and Technology (NIST) was founded in 1901 and is now part of the U.S. Department of Commerce. NIST is one of the nation's oldest physical science laboratories.",
-		"homepage": "https://www.nist.gov/",
-		"permission_groups": [
-			"public"
-		]
-	},
-	{
-		"canonical_name": "National Renewable Energy Laboratory",
-		"aliases": [
-			"NREL"
-		],
-		"description": "The National Renewable Energy Laboratory is a national laboratory of the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable Energy, LLC.",
-		"homepage": "https://www.nrel.gov/",
-		"permission_groups": [
-			"public"
-		]
-	},
-	{
 		"canonical_name": "National Science Foundation",
 		"aliases": [
 			"NSF"
@@ -160,23 +127,6 @@
 		]
 	},
 	{
-		"canonical_name": "Polymer Property Predictor and Database",
-		"aliases": [
-			"PPPDB"
-		],
-		"description": "An organization to support the Polymer Property Predictor and Database",
-		"permission_groups": [
-			"5773d4af-d316-11e9-9c88-0ad4acb67ed4"
-		],
-		"acl": [
-			"public"
-		],
-		"curation": true,
-		"data_destinations": [
-			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/pppdb/"
-		]
-	},
-	{
 		"canonical_name": "Virtual Excited State Reference for the Discovery of Electronic Materials Database",
 		"aliases": [
 			"VERDE",
@@ -193,20 +143,6 @@
 		"curation": true,
 		"data_destinations": [
 			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/verde/"
-		]
-	},
-	{
-		"canonical_name": "XPCS 8-ID",
-		"description": "XPCS Beamline 8-ID at Argonne National Laboratory's Advanced Photon Source (APS)",
-		"permission_groups": [
-			"13d05c3b-0a3e-11ea-94e3-0a9045086069"
-		],
-		"acl": [
-			"13d05c3b-0a3e-11ea-94e3-0a9045086069"
-		],
-		"curation": true,
-		"data_destinations": [
-			"globus://e55b4eab-6d04-11e5-ba46-22000b92c6ec/XPCSDATA/MDF/"
 		]
 	},
 	{
