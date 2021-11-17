@@ -34,20 +34,12 @@
             },
             "minItems": 1
         },
-        "acl": {
+        "visible_to": {
             "type": "array",
-            "description": "The minimum Access Control List for full access to datasets in this organization.",
+            "description": "This is a list of security principals allowed to read the metadata.",
             "items": {
                 "type": "string",
-                "description": "One Globus Auth UUID or the special value 'public' to require all datasets be fully public."
-            }
-        },
-        "dataset_acl": {
-            "type": "array",
-            "description": "The minimum Access Control List for access to dataset entries in this organization. This does not grant permission to access records or files from datasets, only permission to see the dataset entry itself.",
-            "items": {
-                "type": "string",
-                "description": "One Globus Auth UUID (for one Globus Auth identity or Globus Group) or the special value 'public' to require all dataset entries be public."
+                "description": "Each string will be in the form of a Principal URN, or the special string \"public\""
             }
         },
         "data_destinations": {
@@ -62,6 +54,10 @@
             "type": "boolean",
             "description": "Whether or not curation is required for all datasets in this organization."
         },
+        "mint_doi": {
+            "type": "boolean",
+            "description": "Whether datasets submitted to this organization mint a Digital Object Identifier"
+        },
         "project_blocks": {
             "type": "array",
             "description": "The special project blocks associated with this organization's metadata.",
@@ -73,6 +69,8 @@
     },
     "required": [
         "canonical_name",
-        "permission_groups"
+        "permission_groups",
+        "visible_to",
+        "data_destinations"
     ]
 }

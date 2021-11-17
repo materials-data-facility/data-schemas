@@ -1,314 +1,192 @@
-[{
-		"canonical_name": "AFRL Additive Manufacturing Challenge",
-		"aliases": [
-			"MIDAS"
-		],
-		"description": "Organization for AFRL Additive Manufacturing Challenge datasets",
-		"permission_groups": [
-			"fe6bbb86-74fe-11e8-b558-0a7d99bc78fe"
-		],
-		"acl": [
-			"abcb2d16-02da-11e9-87e3-0e8017bdda58"
-		],
-		"dataset_acl": [
-			"abcb2d16-02da-11e9-87e3-0e8017bdda58"
-		],
-		"curation": true,
-		"data_destinations": [
-			"globus://e55b4eab-6d04-11e5-ba46-22000b92c6ec/afrl-midas/submissions"
-		]
-	},
-	{
-		"canonical_name": "APS Sector 1",
-		"aliases": [],
-		"description": "Sector 1 of the Advanced Photon Source.",
-		"homepage": "https://www.aps.anl.gov/Users-Information/Help-Reference/Contacts/Sector-Beamline-Locations-Phones",
-		"permission_groups": [
-			"public"
-		]
-	},
-	{
-		"canonical_name": "Center for Hierarchical Materials Design",
-		"aliases": [
-			"CHiMaD"
-		],
-		"description": "Center for Hierarchical Materials Design (CHiMaD) is a NIST-sponsored center of excellence for advanced materials research focusing on developing the next generation of computational tools, databases and experimental techniques in order to enable the accelerated design of novel materials and their integration to industry, one of the primary goals of the U.S. Government's Materials Genome Initiative (MGI).",
-		"homepage": "http://chimad.northwestern.edu/",
-		"permission_groups": [
-			"public"
-		]
-	},
-	{
-		"canonical_name": "Center for Predictive Integrated Structural Materials Science",
-		"aliases": [
-			"PRISMS",
-			"Department of Energy Software Innovation Center for Integrated Multi-Scale Modeling of Structural Metals"
-		],
-		"description": "Combining the efforts of experimental and computational researchers, the overarching goal of the PRISMS Center is to establish a unique scientific platform that will enable accelerated predictive materials science for structural metals.",
-		"homepage": "http://prisms-center.org/",
-		"permission_groups": [
-			"public"
-		]
-	},
-	{
-		"canonical_name": "Center for Predictive Simulation of Functional Materials",
-		"aliases": [
-			"CPSFM"
-		],
-		"description": "The Center for Predictive Simulation of Functional Materials develops, applies, validates, and disseminates parameter-free methods, open source codes, and scientific data to predict and explain the properties of functional materials for energy applications.",
-		"homepage": "https://cpsfm.ornl.gov",
-		"permission_groups": [
-			"cc192dca-3751-11e8-90c1-0a7c735d220a"
-		],
-		"acl": [
-			"public"
-		]
-	},
-	{
-		"canonical_name": "High Throughput Experimental Materials Database",
-		"aliases": [
-			"HTEM"
-		],
-		"description": "The HTEM DB contains information about materials obtained from high-throughput experiments at NREL.",
-		"homepage": "https://htem.nrel.gov/",
-		"permission_groups": [
-			"public"
-		]
-	},
-	{
-		"canonical_name": "Materials Commons",
-		"aliases": [
-			"MCPub"
-		],
-		"description": "The Materials Commons is a platform for organizing, collaborating, publishing and sharing research data.",
-		"homepage": "https://materialscommons.org/",
-		"permission_groups": [
-			"public"
-		]
-	},
-	{
-		"canonical_name": "MDF Open",
-      "aliases": [
-        "Open"
-      ],
-      "description": "A template for open and published data.",
-      "permission_groups": [
-        "cc192dca-3751-11e8-90c1-0a7c735d220a"
-      ],
-      "acl": [
-        "public"
-      ],
-      "curation": true,
-      "data_destinations": [
-        "globus://e38ee745-6d04-11e5-ba46-22000b92c6ec/MDF/mdf_connect/test_files/deleteme_contents/"
-      ]
-    },
-	{
-		"canonical_name": "NanoMFG",
-		"description": "The aim of the nanomanufacturing (nanoMFG) node is to develop computational software tools aimed at creating smart, model-driven and experimentally informed nanomanufactured structures and devices.",
-		"homepage": "https://nanohub.org/groups/nanomfg",
-		"permission_groups": [
-			"ad88f7cb-cf53-11e9-8526-0e161d24c936"
-		],
-		"project_blocks": [
-			"nanomfg"
-		]
-	},
-	{
-		"canonical_name": "National Institute of Standards and Technology",
-		"aliases": [
-			"NIST"
-		],
-		"description": "The National Institute of Standards and Technology (NIST) was founded in 1901 and is now part of the U.S. Department of Commerce. NIST is one of the nation's oldest physical science laboratories.",
-		"homepage": "https://www.nist.gov/",
-		"permission_groups": [
-			"public"
-		]
-	},
-	{
-		"canonical_name": "National Renewable Energy Laboratory",
-		"aliases": [
-			"NREL"
-		],
-		"description": "The National Renewable Energy Laboratory is a national laboratory of the U.S. Department of Energy, Office of Energy Efficiency and Renewable Energy, operated by the Alliance for Sustainable Energy, LLC.",
-		"homepage": "https://www.nrel.gov/",
-		"permission_groups": [
-			"public"
-		]
-	},
-	{
-		"canonical_name": "National Science Foundation",
-		"aliases": [
-			"NSF"
-		],
-		"description": "The National Science Foundation (NSF) is an independent federal agency created by Congress in 1950 \"to promote the progress of science; to advance the national health, prosperity, and welfare; to secure the national defense...\"",
-		"homepage": "https://nsf.gov/",
-		"permission_groups": [
-			"public"
-		]
-	},
-	{
-		"canonical_name": "NIST Materials Data Repository",
-		"aliases": [
-			"NIST MDR",
-			"MDR"
-		],
-		"description": "The National Institute of Standards and Technology has created a materials science data repository as part of an effort in coordination with the Materials Genome Initiative (MGI) to establish data exchange protocols and mechanisms that will foster data sharing and reuse across a wide community of researchers, with the goal of enhancing the quality of materials data and models.",
-		"homepage": "https://materialsdata.nist.gov/",
-		"permission_groups": [
-			"public"
-		]
-	},
-	{
-		"canonical_name": "Polymer Property Predictor and Database",
-		"aliases": [
-			"PPPDB"
-		],
-		"description": "An organization to support the Polymer Property Predictor and Database",
-		"permission_groups": [
-			"5773d4af-d316-11e9-9c88-0ad4acb67ed4"
-		],
-		"acl": [
-			"public"
-		],
-		"curation": true,
-		"data_destinations": [
-			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/pppdb/"
-		]
-	},
-	{
-		"canonical_name": "Virtual Excited State Reference for the Discovery of Electronic Materials Database",
-		"aliases": [
-			"VERDE",
-			"VERDE DB",
-			"VERDE Materials DB"
-		],
-		"description": "An organization to support the VERDE Materials DB",
-		"permission_groups": [
-			"cc35fe9d-d312-11e9-9c88-0ad4acb67ed4"
-		],
-		"acl": [
-			"public"
-		],
-		"curation": true,
-		"data_destinations": [
-			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/verde/"
-		]
-	},
-	{
-		"canonical_name": "XPCS 8-ID",
-		"description": "XPCS Beamline 8-ID at Argonne National Laboratory's Advanced Photon Source (APS)",
-		"permission_groups": [
-			"13d05c3b-0a3e-11ea-94e3-0a9045086069"
-		],
-		"acl": [
-			"13d05c3b-0a3e-11ea-94e3-0a9045086069"
-		],
-		"curation": true,
-		"data_destinations": [
-			"globus://e55b4eab-6d04-11e5-ba46-22000b92c6ec/XPCSDATA/MDF/"
-		]
-	},
-	{
-		"canonical_name": "Hersam Group",
-		"description": "Hersam Group organization",
-		"permission_groups": [
-			"a422c034-13a3-11e6-8367-22000ab80e73"
-		],
-		"acl": [
-			"ea14d488-13a3-11e6-81e9-22000aef184d"
-		],
-		"dataset_acl": [
-			"public"
-		],
-		"curation": true,
-		"data_destinations": [
-			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/hersam_protected/"
-		]
-
-	}, {
-		"canonical_name": "Lauhon Group",
-		"description": "Lauhon Group organization",
-		"permission_groups": [
-			"8eca1609-0994-11eb-ab07-0a15f6c86f93"
-		],
-		"acl": [
-			"b62955ff-0994-11eb-a171-0aba59fa28e5"
-		],
-		"dataset_acl": [
-			"public"
-		],
-		"curation": true,
-		"data_destinations": [
-			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/lauhon_protected/"
-		]
-	}, {
-		"canonical_name": "Foundry",
-		"description": "Foundry data package organization",
-		"permission_groups": [
-			"42a7a77c-4789-11ea-95b7-0ef992ed7ca1"
-		],
-		"acl": [
-			"public"
-		],
-		"dataset_acl": [
-			"public"
-		],
-		"curation": true,
-		"data_destinations": [
-			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/foundry/"
-		]
-	},
-	{
-		"canonical_name": "Foundry-dev",
-		"description": "Foundry dataset organization",
-		"permission_groups": [
-			"cc192dca-3751-11e8-90c1-0a7c735d220a"
-		],
-		"acl": [
-			"public"
-		],
-		"dataset_acl":[
-			"public"
-		],
-		"curation": true,
-		"project_blocks":["foundry-dev"],
-		"data_destinations": [
-			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/foundry/"
-		]
-	},
-	{
-		"canonical_name": "Electrochemical Energy Lab",
-		"description": "Electrochemical Energy Lab at MIT",
-		"permission_groups": [
-			"cd106a54-6635-11eb-bfe2-0aa21a0136a3"
-		],
-		"acl": [
-			"cd106a54-6635-11eb-bfe2-0aa21a0136a3"
-		],
-		"dataset_acl": [
-			"cd106a54-6635-11eb-bfe2-0aa21a0136a3"
-		],
-		"curation": true,
-		"data_destinations": [
-			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/EEL_protected/"
-		]
-	},
-	{
-		"canonical_name": "Differentiate Catalysis",
-		"description": "Differentiate Catalysis Team",
-		"permission_groups": [
-			"4421683d-665e-11eb-b92d-0a4debe59093"
-		],
-		"acl": [
-			"4421683d-665e-11eb-b92d-0a4debe59093"
-		],
-		"dataset_acl": [
-			"4421683d-665e-11eb-b92d-0a4debe59093"
-		],
-		"curation": true,
-		"data_destinations": [
-			"globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/differentiate_protected/"
-		]
-	}
+[
+  {
+    "canonical_name": "AFRL Additive Manufacturing Challenge",
+    "aliases": [
+      "MIDAS"
+    ],
+    "description": "Organization for AFRL Additive Manufacturing Challenge datasets",
+    "permission_groups": [
+      "fe6bbb86-74fe-11e8-b558-0a7d99bc78fe"
+    ],
+    "visible_to": [
+      "public"
+    ],
+    "curation": true,
+    "data_destinations": [
+      "globus://e55b4eab-6d04-11e5-ba46-22000b92c6ec/afrl-midas/submissions"
+    ]
+  },
+  {
+    "canonical_name": "APS Sector 1",
+    "aliases": [],
+    "description": "Sector 1 of the Advanced Photon Source.",
+    "homepage": "https://www.aps.anl.gov/Users-Information/Help-Reference/Contacts/Sector-Beamline-Locations-Phones",
+    "permission_groups": [
+      "public"
+    ],
+    "data_destinations": [
+      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_open/"
+    ],
+    "visible_to": [
+      "public"
+    ]
+  },
+  {
+    "canonical_name": "MDF Open",
+    "aliases": [
+      "Open"
+    ],
+    "description": "A template for open and published data.",
+    "permission_groups": [
+      "cc192dca-3751-11e8-90c1-0a7c735d220a"
+    ],
+    "visible_to": [
+      "public"
+    ],
+    "curation": true,
+    "data_destinations": [
+      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_open/"
+    ]
+  },
+  {
+    "canonical_name": "NanoMFG",
+    "description": "The aim of the nanomanufacturing (nanoMFG) node is to develop computational software tools aimed at creating smart, model-driven and experimentally informed nanomanufactured structures and devices.",
+    "homepage": "https://nanohub.org/groups/nanomfg",
+    "permission_groups": [
+      "ad88f7cb-cf53-11e9-8526-0e161d24c936"
+    ],
+    "visible_to": [
+      "public"
+    ],
+    "data_destinations": [
+      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_open/"
+    ],
+    "project_blocks": [
+      "nanomfg"
+    ]
+  },
+  {
+    "canonical_name": "NIST Materials Data Repository",
+    "aliases": [
+      "NIST MDR",
+      "MDR"
+    ],
+    "description": "The National Institute of Standards and Technology has created a materials science data repository as part of an effort in coordination with the Materials Genome Initiative (MGI) to establish data exchange protocols and mechanisms that will foster data sharing and reuse across a wide community of researchers, with the goal of enhancing the quality of materials data and models.",
+    "homepage": "https://materialsdata.nist.gov/",
+    "permission_groups": [
+      "public"
+    ],
+    "visible_to": [
+      "public"
+    ],
+    "data_destinations": [
+      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_open/"
+    ]
+  },
+  {
+    "canonical_name": "Virtual Excited State Reference for the Discovery of Electronic Materials Database",
+    "aliases": [
+      "VERDE",
+      "VERDE DB",
+      "VERDE Materials DB"
+    ],
+    "description": "An organization to support the VERDE Materials DB",
+    "permission_groups": [
+      "cc35fe9d-d312-11e9-9c88-0ad4acb67ed4"
+    ],
+    "visible_to": [
+      "public"
+    ],
+    "curation": true,
+    "data_destinations": [
+      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/verde/"
+    ]
+  },
+  {
+    "canonical_name": "Hersam Group",
+    "description": "Hersam Group organization",
+    "permission_groups": [
+      "a422c034-13a3-11e6-8367-22000ab80e73"
+    ],
+    "visible_to": [
+      "public"
+    ],
+    "curation": true,
+    "data_destinations": [
+      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/hersam_protected/"
+    ]
+  },
+  {
+    "canonical_name": "Lauhon Group",
+    "description": "Lauhon Group organization",
+    "permission_groups": [
+      "8eca1609-0994-11eb-ab07-0a15f6c86f93"
+    ],
+    "visible_to": [
+      "public"
+    ],
+    "curation": true,
+    "data_destinations": [
+      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/lauhon_protected/"
+    ]
+  },
+  {
+    "canonical_name": "Foundry",
+    "description": "Foundry data package organization",
+    "permission_groups": [
+      "42a7a77c-4789-11ea-95b7-0ef992ed7ca1"
+    ],
+    "visible_to": [
+      "public"
+    ],
+    "curation": true,
+    "data_destinations": [
+      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/foundry/"
+    ]
+  },
+  {
+    "canonical_name": "Foundry-dev",
+    "description": "Foundry dataset organization",
+    "permission_groups": [
+      "cc192dca-3751-11e8-90c1-0a7c735d220a"
+    ],
+    "visible_to": [
+      "public"
+    ],
+    "curation": true,
+    "project_blocks": [
+      "foundry-dev"
+    ],
+    "data_destinations": [
+      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/foundry/"
+    ]
+  },
+  {
+    "canonical_name": "Electrochemical Energy Lab",
+    "description": "Electrochemical Energy Lab at MIT",
+    "permission_groups": [
+      "cd106a54-6635-11eb-bfe2-0aa21a0136a3"
+    ],
+    "visible_to": [
+      "urn:globus:groups:id:cd106a54-6635-11eb-bfe2-0aa21a0136a3"
+    ],
+    "curation": true,
+    "data_destinations": [
+      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/EEL_protected/"
+    ]
+  },
+  {
+    "canonical_name": "Differentiate Catalysis",
+    "description": "Differentiate Catalysis Team",
+    "permission_groups": [
+      "4421683d-665e-11eb-b92d-0a4debe59093"
+    ],
+    "visible_to": [
+      "urn:globus:groups:id:4421683d-665e-11eb-b92d-0a4debe59093"
+    ],
+    "curation": true,
+    "data_destinations": [
+      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/differentiate_protected/"
+    ]
+  }
 ]
