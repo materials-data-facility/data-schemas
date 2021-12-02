@@ -248,7 +248,7 @@
         "type": "boolean",
         "description": "Must be true for dataset updates, and false for new datasets. Serves as a check against accidental dataset overwriting."
     },
-    "update_meta_only": {
+    "update_metadata_only": {
         "type": "boolean",
         "description": "When true performs an update on the metadata only with no file transfer."
     },
