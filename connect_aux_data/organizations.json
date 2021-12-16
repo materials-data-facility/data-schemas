@@ -44,6 +44,7 @@
       "public"
     ],
     "curation": true,
+    "mint_doi": true,
     "data_destinations": [
       "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_open/"
     ]
@@ -112,6 +113,7 @@
       "public"
     ],
     "curation": true,
+    "mint_doi": true,
     "data_destinations": [
       "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/hersam_protected/"
     ]
