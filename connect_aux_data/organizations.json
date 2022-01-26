@@ -25,10 +25,79 @@
       "public"
     ],
     "data_destinations": [
-      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_open/"
+      "globus://e38ee745-6d04-11e5-ba46-22000b92c6ec/MDF/mdf_connect/test_files/deleteme_contents/"
     ],
     "visible_to": [
       "public"
+    ]
+  },
+  {
+    "canonical_name": "Center for Predictive Integrated Structural Materials Science",
+    "aliases": [
+      "PRISMS",
+      "Department of Energy Software Innovation Center for Integrated Multi-Scale Modeling of Structural Metals"
+    ],
+    "description": "Combining the efforts of experimental and computational researchers, the overarching goal of the PRISMS Center is to establish a unique scientific platform that will enable accelerated predictive materials science for structural metals.",
+    "homepage": "http://prisms-center.org/",
+    "permission_groups": [
+      "public"
+    ],
+    "visible_to": [
+      "public"
+    ],
+    "data_destinations": [
+      "globus://e38ee745-6d04-11e5-ba46-22000b92c6ec/MDF/mdf_connect/test_files/deleteme_contents/"
+    ]
+  },
+  {
+    "canonical_name": "Center for Predictive Simulation of Functional Materials",
+    "aliases": [
+      "CPSFM"
+    ],
+    "description": "The Center for Predictive Simulation of Functional Materials develops, applies, validates, and disseminates parameter-free methods, open source codes, and scientific data to predict and explain the properties of functional materials for energy applications.",
+    "homepage": "https://cpsfm.ornl.gov",
+    "permission_groups": [
+      "cc192dca-3751-11e8-90c1-0a7c735d220a"
+    ],
+    "visible_to": [
+      "public"
+    ],
+    "data_destinations": [
+      "globus://e38ee745-6d04-11e5-ba46-22000b92c6ec/MDF/mdf_connect/test_files/deleteme_contents/"
+    ]
+  },
+  {
+    "canonical_name": "High Throughput Experimental Materials Database",
+    "aliases": [
+      "HTEM"
+    ],
+    "description": "The HTEM DB contains information about materials obtained from high-throughput experiments at NREL.",
+    "homepage": "https://htem.nrel.gov/",
+    "permission_groups": [
+      "public"
+    ],
+    "visible_to": [
+      "public"
+    ],
+    "data_destinations": [
+      "globus://e38ee745-6d04-11e5-ba46-22000b92c6ec/MDF/mdf_connect/test_files/deleteme_contents/"
+    ]
+  },
+  {
+    "canonical_name": "Materials Commons",
+    "aliases": [
+      "MCPub"
+    ],
+    "description": "The Materials Commons is a platform for organizing, collaborating, publishing and sharing research data.",
+    "homepage": "https://materialscommons.org/",
+    "permission_groups": [
+      "public"
+    ],
+    "visible_to": [
+      "public"
+    ],
+    "data_destinations": [
+      "globus://e38ee745-6d04-11e5-ba46-22000b92c6ec/MDF/mdf_connect/test_files/deleteme_contents/"
     ]
   },
   {
@@ -44,9 +113,8 @@
       "public"
     ],
     "curation": true,
-    "mint_doi": true,
     "data_destinations": [
-      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_open/"
+      "globus://e38ee745-6d04-11e5-ba46-22000b92c6ec/MDF/mdf_connect/test_files/deleteme_contents/"
     ]
   },
   {
@@ -60,7 +128,7 @@
       "public"
     ],
     "data_destinations": [
-      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_open/"
+      "globus://e38ee745-6d04-11e5-ba46-22000b92c6ec/MDF/mdf_connect/test_files/deleteme_contents/"
     ],
     "project_blocks": [
       "nanomfg"
@@ -81,7 +149,7 @@
       "public"
     ],
     "data_destinations": [
-      "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_open/"
+      "globus://e38ee745-6d04-11e5-ba46-22000b92c6ec/MDF/mdf_connect/test_files/deleteme_contents/"
     ]
   },
   {
@@ -113,7 +181,6 @@
       "public"
     ],
     "curation": true,
-    "mint_doi": true,
     "data_destinations": [
       "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/hersam_protected/"
     ]
