@@ -71,6 +71,7 @@
         "canonical_name",
         "permission_groups",
         "visible_to",
-        "data_destinations"
+        "data_destinations",
+        "mint_doi"
     ]
 }
