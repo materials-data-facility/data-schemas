@@ -113,7 +113,7 @@
     },
     "mdf": {
         "acl": ["public"],
-        "organizations": ["Org1", "Org2"],
+        "organization": "Org1",
         "source_name": "src_nm"
     },
     "mrr": {

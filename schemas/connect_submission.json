@@ -25,7 +25,7 @@
         },
         "organization": {
           "type": "string",
-          "description": "The organization responsible for dataset creation. Will apply any organizational rules and requirements to the dataset.",
+          "description": "The organization responsible for dataset creation. Will apply any organizational rules and requirements to the dataset."
         }
       },
       "additionalProperties": false
