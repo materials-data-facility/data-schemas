@@ -23,13 +23,9 @@
           "type": "string",
           "description": "A unique program-friendly name for this dataset (will be generated from the title if not specified)."
         },
-        "organizations": {
-          "type": "array",
-          "description": "The organizations responsible for dataset creation. Adding organizations here will apply any organizational rules and requirements to the dataset.",
-          "items": {
-            "type": "string",
-            "description": "Name of an organization (e.g., NIST)."
-          }
+        "organization": {
+          "type": "string",
+          "description": "The organization responsible for dataset creation. Will apply any organizational rules and requirements to the dataset."
         }
       },
       "additionalProperties": false
