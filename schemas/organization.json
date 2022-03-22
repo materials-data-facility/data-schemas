@@ -58,6 +58,14 @@
             "type": "boolean",
             "description": "Whether datasets submitted to this organization mint a Digital Object Identifier"
         },
+        "domains": {
+            "type": "array",
+            "description": "Facility domains of the submission. e.g., materials, chemistry.",
+            "items": {
+                "type": "string",
+                "description": "One facility domain. e.g., materials"
+            }
+        },
         "project_blocks": {
             "type": "array",
             "description": "The special project blocks associated with this organization's metadata.",
