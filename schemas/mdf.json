@@ -28,6 +28,14 @@
                 },
                 "minItems": 1
             },
+            "domains": {
+                "type": "array",
+                "description": "Facility domains of the dataset. e.g., materials, chemistry.",
+                "items": {
+                    "type": "string",
+                    "description": "One facility domain. e.g., materials"
+                }
+            },
             "ingest_date": {
                 "type": "string",
                 "format": "date-time",
