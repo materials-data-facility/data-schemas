@@ -15,7 +15,8 @@
     "mint_doi": true,
     "data_destinations": [
       "globus://e55b4eab-6d04-11e5-ba46-22000b92c6ec/afrl-midas/submissions"
-    ]
+    ],
+    "domains": ["materials"]
   },
   {
     "canonical_name": "APS Sector 1",
@@ -31,7 +32,8 @@
     ],
     "visible_to": [
       "public"
-    ]
+    ],
+    "domains": ["materials"]
   },
   {
     "canonical_name": "MDF Open",
@@ -49,7 +51,8 @@
     "mint_doi": true,
     "data_destinations": [
       "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_open/"
-    ]
+    ],
+    "domains": ["materials"]
   },
   {
     "canonical_name": "NanoMFG",
@@ -67,7 +70,8 @@
     ],
     "project_blocks": [
       "nanomfg"
-    ]
+    ],
+    "domains": ["materials"]
   },
   {
     "canonical_name": "NIST Materials Data Repository",
@@ -86,7 +90,8 @@
     ],
     "data_destinations": [
       "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/mdf_open/"
-    ]
+    ],
+    "domains": ["materials"]
   },
   {
     "canonical_name": "Virtual Excited State Reference for the Discovery of Electronic Materials Database",
@@ -106,7 +111,8 @@
     "mint_doi": true,
     "data_destinations": [
       "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/verde/"
-    ]
+    ],
+    "domains": ["materials"]
   },
   {
     "canonical_name": "Hersam Group",
@@ -136,7 +142,8 @@
     "mint_doi": true,
     "data_destinations": [
       "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/lauhon_protected/"
-    ]
+    ],
+    "domains": ["materials"]
   },
   {
     "canonical_name": "Foundry",
@@ -151,7 +158,8 @@
     "mint_doi": true,
     "data_destinations": [
       "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/foundry/"
-    ]
+    ],
+    "domains": ["materials"]
   },
   {
     "canonical_name": "Foundry-dev",
@@ -169,7 +177,8 @@
     ],
     "data_destinations": [
       "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/foundry/"
-    ]
+    ],
+    "domains": ["materials"]
   },
   {
     "canonical_name": "Electrochemical Energy Lab",
@@ -184,7 +193,8 @@
     "mint_doi": true,
     "data_destinations": [
       "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/EEL_protected/"
-    ]
+    ],
+    "domains": ["materials"]
   },
   {
     "canonical_name": "Differentiate Catalysis",
@@ -199,6 +209,7 @@
     "mint_doi": true,
     "data_destinations": [
       "globus://82f1b5c6-6e9b-11e5-ba47-22000b92c6ec/differentiate_protected/"
-    ]
+    ],
+    "domains": ["materials"]
   }
 ]
