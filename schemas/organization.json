@@ -80,6 +80,7 @@
         "permission_groups",
         "visible_to",
         "data_destinations",
-        "mint_doi"
+        "mint_doi",
+        "curation"
     ]
 }
