@@ -81,6 +81,14 @@
         "type": "string",
         "description": "SemVer version string for this submission"
     },
+    "previous_versions": {
+        "type": "array",
+        "description": "Ordered list of previous versions",
+        "items": {
+            "type": "string",
+            "description": "Versioned SourceID"
+        }
+    },
     "updates": {
         "type": "array",
         "description": "Any submitted updates ot the original submission."
