@@ -354,6 +354,9 @@
     }
 },{
     "canonical_name": "Foundry",
+    "aliases": [
+        "foundry"
+    ]
     "description": "Foundry dataset organization",
     "permission_groups": [
         "42a7a77c-4789-11ea-95b7-0ef992ed7ca1"
